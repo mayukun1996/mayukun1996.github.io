@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[OLS]]></title>
+    <url>%2F2019%2F05%2F13%2FOLS%2F</url>
+    <content type="text"><![CDATA[OLS（最小二乘法）小样本OLS假定1：线性假定总体模型为： $$y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)$$ 假定2：严格外生性$$E(\varepsilon_i|\boldsymbol X)=E(\varepsilon_i|\boldsymbol x_1,\dots,\boldsymbol x_n)=0\quad(i=1,\dots,n)$$ 假定3：不存在严格多重共线性变量个数小于等于样本个数。 假定4：球形扰动项同方差假定。 假定5：误差的正态性假定用于t检验给定$\boldsymbol X$的情况下，$\boldsymbol \varepsilon | \boldsymbol X$的条件分布为正态。 大样本OLS]]></content>
+      <categories>
+        <category>定量</category>
+        <category>统计</category>
+      </categories>
+      <tags>
+        <tag>统计</tag>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初始]]></title>
+    <url>%2F2019%2F05%2F13%2Fstart%2F</url>
+    <content type="text"><![CDATA[博客的第一篇文章终于正式发了出来，中间实在是耐心不足，走了很多弯路。不过最终还是成功了，也算是有了一个较为个性化的平台。]]></content>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+</search>
