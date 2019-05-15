@@ -15,7 +15,7 @@
   <entry>
     <title><![CDATA[OLS]]></title>
     <url>%2F2019%2F05%2F13%2FOLS%2F</url>
-    <content type="text"><![CDATA[小样本OLS假定1：线性假定总体模型为： $$y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)$$ 假定2：严格外生性$$E(\varepsilon_i|\boldsymbol X)=E(\varepsilon_i|\boldsymbol x_1,\dots,\boldsymbol x_n)=0\quad(i=1,\dots,n)$$ 假定3：不存在严格多重共线性变量个数小于等于样本个数。 假定4：球形扰动项同方差假定。 假定5：误差的正态性假定用于t检验给定$\boldsymbol X$的情况下，$\boldsymbol \varepsilon | \boldsymbol X$的条件分布为正态。 大样本OLS]]></content>
+    <content type="text"><![CDATA[小样本OLS假定1：线性假定总体模型为： $$y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)$$ 假定2：严格外生性$$E(\varepsilon_i|\boldsymbol X)=E(\varepsilon_i|\boldsymbol x_1,\dots,\boldsymbol x_n)=0\quad(i=1,\dots,n)$$ 假定3：不存在严格多重共线性变量个数小于等于样本个数。 假定4：球形扰动项同方差假定。 假定5：误差的正态性假定用于t检验给定$\boldsymbol X$的情况下，$\boldsymbol \varepsilon | \boldsymbol X$的条件分布为正态。 大样本OLS使用大样本理论的原因： 小样本理论假设过强。 小样本的情况下，需要研究统计量的精确分布；在大样本下，只需要研究渐近分布。 样本容量至少$n\geq30$，最好$n\geq100$。 假定1：线性假定假定2：渐近独立的平稳过程$(\boldsymbol K+1)维随机过程{y_i,\boldsymbol x_i}$为渐近独立的平稳过程。 假定3：前定解释变量假定4：秩条件定义如下列向量：$$\boldsymbol g_i\equiv \boldsymbol x_i\varepsilon_i =\left( \begin{matrix}x_{i1} \\vdots \x_{i\boldsymbol K}\end{matrix} \right)\boldsymbol \varepsilon_i$$ 假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵协方差矩阵公式为：$$\boldsymbol{S}\equiv E(\boldsymbol{g_ig_i’})=E(\varepsilon^2_i\boldsymbol{x_ix_i’})$$]]></content>
       <categories>
         <category>统计</category>
       </categories>

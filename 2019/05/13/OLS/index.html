@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="马昱堃">
 <meta property="og:description" content="小样本OLS假定1：线性假定总体模型为： $$y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)$$">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-13T11:07:20.635Z">
+<meta property="og:updated_time" content="2019-05-15T13:46:47.005Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OLS">
 <meta name="twitter:description" content="小样本OLS假定1：线性假定总体模型为： $$y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)$$">
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  132
+                  322
                 </span>
               
 
@@ -435,7 +435,16 @@
 <h3 id="假定4：球形扰动项"><a href="#假定4：球形扰动项" class="headerlink" title="假定4：球形扰动项"></a>假定4：球形扰动项</h3><p>同方差假定。</p>
 <h3 id="假定5：误差的正态性假定"><a href="#假定5：误差的正态性假定" class="headerlink" title="假定5：误差的正态性假定"></a>假定5：误差的正态性假定</h3><p><strong>用于t检验</strong><br>给定$\boldsymbol X$的情况下，$\boldsymbol \varepsilon | \boldsymbol X$的条件分布为正态。</p>
 <hr>
-<h2 id="大样本OLS"><a href="#大样本OLS" class="headerlink" title="大样本OLS"></a>大样本OLS</h2>
+<h2 id="大样本OLS"><a href="#大样本OLS" class="headerlink" title="大样本OLS"></a>大样本OLS</h2><p>使用大样本理论的原因：</p>
+<ol>
+<li>小样本理论假设过强。</li>
+<li>小样本的情况下，需要研究<strong>统计量</strong>的精确分布；在大样本下，只需要研究渐近分布。</li>
+<li>样本容量至少$n\geq30$，最好$n\geq100$。</li>
+</ol>
+<h3 id="假定1：线性假定-1"><a href="#假定1：线性假定-1" class="headerlink" title="假定1：线性假定"></a>假定1：线性假定</h3><h3 id="假定2：渐近独立的平稳过程"><a href="#假定2：渐近独立的平稳过程" class="headerlink" title="假定2：渐近独立的平稳过程"></a>假定2：渐近独立的平稳过程</h3><p>$(\boldsymbol K+1)维随机过程{y_i,\boldsymbol x_i}$为渐近独立的平稳过程。</p>
+<h3 id="假定3：前定解释变量"><a href="#假定3：前定解释变量" class="headerlink" title="假定3：前定解释变量"></a>假定3：前定解释变量</h3><h3 id="假定4：秩条件"><a href="#假定4：秩条件" class="headerlink" title="假定4：秩条件"></a>假定4：秩条件</h3><p>定义如下列向量：<br>$$<br>\boldsymbol g_i\equiv \boldsymbol x_i\varepsilon_i =<br>\left( \begin{matrix}<br>x_{i1} \<br>\vdots \<br>x_{i\boldsymbol K}<br>\end{matrix} \right)<br>\boldsymbol \varepsilon_i<br>$$</p>
+<h3 id="假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵"><a href="#假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵" class="headerlink" title="假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵"></a>假定5：<code>$\boldsymbol{g_i}$</code>为鞅差分序列，且其协方差矩阵为非退化矩阵</h3><p>协方差矩阵公式为：<br>$$<br>\boldsymbol{S}\equiv E(\boldsymbol{g_ig_i’})=E(\varepsilon^2_i\boldsymbol{x_ix_i’})<br>$$</p>
+
       
     </div>
     
@@ -639,7 +648,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#小样本OLS"><span class="nav-number">1.</span> <span class="nav-text">小样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定"><span class="nav-number">1.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：严格外生性"><span class="nav-number">1.2.</span> <span class="nav-text">假定2：严格外生性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：不存在严格多重共线性"><span class="nav-number">1.3.</span> <span class="nav-text">假定3：不存在严格多重共线性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：球形扰动项"><span class="nav-number">1.4.</span> <span class="nav-text">假定4：球形扰动项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：误差的正态性假定"><span class="nav-number">1.5.</span> <span class="nav-text">假定5：误差的正态性假定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大样本OLS"><span class="nav-number">2.</span> <span class="nav-text">大样本OLS</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#小样本OLS"><span class="nav-number">1.</span> <span class="nav-text">小样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定"><span class="nav-number">1.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：严格外生性"><span class="nav-number">1.2.</span> <span class="nav-text">假定2：严格外生性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：不存在严格多重共线性"><span class="nav-number">1.3.</span> <span class="nav-text">假定3：不存在严格多重共线性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：球形扰动项"><span class="nav-number">1.4.</span> <span class="nav-text">假定4：球形扰动项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：误差的正态性假定"><span class="nav-number">1.5.</span> <span class="nav-text">假定5：误差的正态性假定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大样本OLS"><span class="nav-number">2.</span> <span class="nav-text">大样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定-1"><span class="nav-number">2.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：渐近独立的平稳过程"><span class="nav-number">2.2.</span> <span class="nav-text">假定2：渐近独立的平稳过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：前定解释变量"><span class="nav-number">2.3.</span> <span class="nav-text">假定3：前定解释变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：秩条件"><span class="nav-number">2.4.</span> <span class="nav-text">假定4：秩条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵"><span class="nav-number">2.5.</span> <span class="nav-text">假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -673,7 +682,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.7k</span>
+    <span title="Site words total count">1.9k</span>
   
 </div>
 
