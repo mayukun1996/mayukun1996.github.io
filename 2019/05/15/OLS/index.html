@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="马昱堃">
 <meta property="og:description" content="小样本OLS假定1：线性假定总体模型为： $$y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)$$">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-15T14:12:16.062Z">
+<meta property="og:updated_time" content="2019-05-16T03:41:52.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OLS">
 <meta name="twitter:description" content="小样本OLS假定1：线性假定总体模型为： $$y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)$$">
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  324
+                  679
                 </span>
               
 
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -440,10 +440,18 @@
 <li>小样本理论假设过强。</li>
 <li>小样本的情况下，需要研究<strong>统计量</strong>的精确分布；在大样本下，只需要研究渐近分布。</li>
 <li>样本容量至少$n\geq30$，最好$n\geq100$。</li>
+<li>主要是针对时间序列不同时期随机变量的相关性做修正。</li>
 </ol>
-<h3 id="假定1：线性假定-1"><a href="#假定1：线性假定-1" class="headerlink" title="假定1：线性假定"></a>假定1：线性假定</h3><h3 id="假定2：渐近独立的平稳过程"><a href="#假定2：渐近独立的平稳过程" class="headerlink" title="假定2：渐近独立的平稳过程"></a>假定2：渐近独立的平稳过程</h3><p>$(\boldsymbol K+1)$维随机过程$\lbrace y_i,\boldsymbol x_i \rbrace$为渐近独立的平稳过程。</p>
-<h3 id="假定3：前定解释变量"><a href="#假定3：前定解释变量" class="headerlink" title="假定3：前定解释变量"></a>假定3：前定解释变量</h3><h3 id="假定4：秩条件"><a href="#假定4：秩条件" class="headerlink" title="假定4：秩条件"></a>假定4：秩条件</h3><p>定义如下列向量：<br>$$<br>\boldsymbol g_i\equiv \boldsymbol x_i\varepsilon_i =<br>\left(<br>\begin{matrix}<br>x_{i1} \\<br>\vdots \\<br>x_{i\boldsymbol K}<br>\end{matrix}<br>\right)<br>\boldsymbol \varepsilon_i<br>$$</p>
-<h3 id="假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵"><a href="#假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵" class="headerlink" title="假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵"></a>假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵</h3><p>协方差矩阵公式为：<br>$$<br>\boldsymbol{S}\equiv E(\boldsymbol{g_ig_i’})=E(\varepsilon^2_i\boldsymbol{x_ix_i’})<br>$$</p>
+<h3 id="假定1：线性假定-1"><a href="#假定1：线性假定-1" class="headerlink" title="假定1：线性假定"></a>假定1：线性假定</h3><p>这与小样本相同。</p>
+<h3 id="假定2：渐近独立的平稳过程"><a href="#假定2：渐近独立的平稳过程" class="headerlink" title="假定2：渐近独立的平稳过程"></a>假定2：渐近独立的平稳过程</h3><p>$(\boldsymbol K+1)$维随机过程$\lbrace y_i,\boldsymbol x_i \rbrace$为渐近独立的平稳过程。</p>
+<h4 id="平稳过程："><a href="#平稳过程：" class="headerlink" title="平稳过程："></a>平稳过程：</h4><p><strong>严格平稳过程</strong>（stictly stationary process），简称平稳过程，是针对随机过程$\lbrace x_t_1,x_t_2,\dots,x_t_m$而言。可以理解为：将$\lbrace x_{t_1},x_{t_2},\dots,x_{t_m} \rbrace$中的每个变量的时见下标全部平移$k$期，不会改变其分布。</p>
+<h4 id="渐近独立（ergodic）："><a href="#渐近独立（ergodic）：" class="headerlink" title="渐近独立（ergodic）："></a>渐近独立（ergodic）：</h4><p>可以理解为逐渐接近相互独立。在一个随机过程内，短期之内，不同期数之间不会相互独立，但长期过程中，前期与后期之间没有长期路径依赖，也就是接近独立。<br>渐近独立意味着只要两个随机变量期数相距足够远，则可以近似认为它们相互独立。</p>
+<h3 id="假定3：前定解释变量"><a href="#假定3：前定解释变量" class="headerlink" title="假定3：前定解释变量"></a>假定3：前定解释变量</h3><p>所有解释变量均为<strong>前定</strong>（predetermined），即它们与同期扰动项正交，即$E(x_{ik}\varepsilon_i)=0(\forall i,k)$。</p>
+<h3 id="假定4：秩条件"><a href="#假定4：秩条件" class="headerlink" title="假定4：秩条件"></a>假定4：秩条件</h3><p>$K\times K$矩阵$E(\boldsymbol{x_ix_i’})$的逆矩阵存在。</p>
+<p>定义如下列向量：<br>$$<br>\boldsymbol g_i\equiv \boldsymbol x_i\varepsilon_i =<br>\left(<br>\begin{matrix}<br>x_{i1} \\<br>\vdots \\<br>x_{i\boldsymbol K}<br>\end{matrix}<br>\right)<br>\boldsymbol \varepsilon_i<br>$$</p>
+<h3 id="假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵"><a href="#假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵" class="headerlink" title="假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵"></a>假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵</h3><h4 id="鞅（martingale）："><a href="#鞅（martingale）：" class="headerlink" title="鞅（martingale）："></a>鞅（martingale）：</h4><p>如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=x_{i-1},\forall i\geq2$，则称其为“<strong>鞅</strong>”。</p>
+<h4 id="鞅差分序列（Martingale-Difference-Sequence-MDS）："><a href="#鞅差分序列（Martingale-Difference-Sequence-MDS）：" class="headerlink" title="鞅差分序列（Martingale Difference Sequence, MDS）："></a>鞅差分序列（Martingale Difference Sequence, MDS）：</h4><p>如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=0,\forall i\geq2$，则称其为“<strong>鞅差分序列</strong>”。<br>这意味着$x_i$均值独立于它的过去所有值。</p>
+<p>协方差矩阵存在可逆矩阵,公式为：<br>$$<br>\boldsymbol{S}\equiv E(\boldsymbol{g_ig_i’})=E(\varepsilon^2_i\boldsymbol{x_ix_i’})<br>$$</p>
 
       
     </div>
@@ -492,8 +500,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/15/ideas2019/" rel="next" title="零碎想法2019">
-                <i class="fa fa-chevron-left"></i> 零碎想法2019
+              <a href="/2019/05/13/start/" rel="next" title="初始">
+                <i class="fa fa-chevron-left"></i> 初始
               </a>
             
           </div>
@@ -501,6 +509,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/16/ideas2019/" rel="prev" title="零碎想法2019">
+                零碎想法2019 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -644,7 +656,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#小样本OLS"><span class="nav-number">1.</span> <span class="nav-text">小样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定"><span class="nav-number">1.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：严格外生性"><span class="nav-number">1.2.</span> <span class="nav-text">假定2：严格外生性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：不存在严格多重共线性"><span class="nav-number">1.3.</span> <span class="nav-text">假定3：不存在严格多重共线性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：球形扰动项"><span class="nav-number">1.4.</span> <span class="nav-text">假定4：球形扰动项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：误差的正态性假定"><span class="nav-number">1.5.</span> <span class="nav-text">假定5：误差的正态性假定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大样本OLS"><span class="nav-number">2.</span> <span class="nav-text">大样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定-1"><span class="nav-number">2.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：渐近独立的平稳过程"><span class="nav-number">2.2.</span> <span class="nav-text">假定2：渐近独立的平稳过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：前定解释变量"><span class="nav-number">2.3.</span> <span class="nav-text">假定3：前定解释变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：秩条件"><span class="nav-number">2.4.</span> <span class="nav-text">假定4：秩条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵"><span class="nav-number">2.5.</span> <span class="nav-text">假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#小样本OLS"><span class="nav-number">1.</span> <span class="nav-text">小样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定"><span class="nav-number">1.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：严格外生性"><span class="nav-number">1.2.</span> <span class="nav-text">假定2：严格外生性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：不存在严格多重共线性"><span class="nav-number">1.3.</span> <span class="nav-text">假定3：不存在严格多重共线性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：球形扰动项"><span class="nav-number">1.4.</span> <span class="nav-text">假定4：球形扰动项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：误差的正态性假定"><span class="nav-number">1.5.</span> <span class="nav-text">假定5：误差的正态性假定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大样本OLS"><span class="nav-number">2.</span> <span class="nav-text">大样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定-1"><span class="nav-number">2.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：渐近独立的平稳过程"><span class="nav-number">2.2.</span> <span class="nav-text">假定2：渐近独立的平稳过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#平稳过程："><span class="nav-number">2.2.1.</span> <span class="nav-text">平稳过程：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#渐近独立（ergodic）："><span class="nav-number">2.2.2.</span> <span class="nav-text">渐近独立（ergodic）：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：前定解释变量"><span class="nav-number">2.3.</span> <span class="nav-text">假定3：前定解释变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：秩条件"><span class="nav-number">2.4.</span> <span class="nav-text">假定4：秩条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵"><span class="nav-number">2.5.</span> <span class="nav-text">假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#鞅（martingale）："><span class="nav-number">2.5.1.</span> <span class="nav-text">鞅（martingale）：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#鞅差分序列（Martingale-Difference-Sequence-MDS）："><span class="nav-number">2.5.2.</span> <span class="nav-text">鞅差分序列（Martingale Difference Sequence, MDS）：</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -678,7 +690,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.9k</span>
+    <span title="Site words total count">2.4k</span>
   
 </div>
 
