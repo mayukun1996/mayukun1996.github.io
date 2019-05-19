@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="马昱堃">
 <meta property="og:description" content="解决方式是：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-19T11:55:36.568Z">
+<meta property="og:updated_time" content="2019-05-19T11:59:52.876Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python之plotnine中ggplot中文乱码问题">
 <meta name="twitter:description" content="解决方式是：">
@@ -390,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  576
+                  632
                 </span>
               
 
@@ -429,11 +429,14 @@
       
         <p>解决方式是：<br><a id="more"></a></p>
 <ol>
-<li>找到“<strong>.matplotlib</strong>”这个文件夹（<em>注意前面有个点</em>），打开可以看到一个fontlist-v300.json的文件，打开之后是matplotlib支持的字体。只有录入这个清单的字体才能被使用（SimHei在里面，SimSun不在里面，所以我在画图时使用SimSun就还是会乱码并且报错）。</li>
-<li>找到matplotlib安装目录，打开matplotlib文件夹，在打开mpl-data文件夹，打开matplotlibrc文件，找到如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">font.family         : sans-serif</span><br><span class="line">#font.style          : normal</span><br><span class="line">#font.variant        : normal</span><br><span class="line">#font.weight         : normal</span><br><span class="line">#font.stretch        : normal</span><br><span class="line">## note that font.size controls default text sizes.  To configure</span><br><span class="line">## special text sizes tick labels, axes, labels, title, etc, see the rc</span><br><span class="line">## settings for axes and ticks. Special text sizes can be defined</span><br><span class="line">## relative to font.size, using the following values: xx-small, x-small,</span><br><span class="line">## small, medium, large, x-large, xx-large, larger, or smaller</span><br><span class="line">#font.size           : 10.0</span><br><span class="line">font.serif          : SimSun, SimHei, DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif</span><br><span class="line">font.sans-serif     : SimSun, SimHei, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif</span><br><span class="line">#font.cursive        : Apple Chancery, Textile, Zapf Chancery, Sand, Script MT, Felipa, cursive</span><br><span class="line">#font.fantasy        : Comic Sans MS, Chicago, Charcoal, ImpactWestern, Humor Sans, xkcd, fantasy</span><br><span class="line">#font.monospace      : DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typewriter, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace</span><br></pre></td></tr></table></figure>
+<li><p>找到“<strong>.matplotlib</strong>”这个文件夹（<em>注意前面有个点</em>），打开可以看到一个fontlist-v300.json的文件，打开之后是matplotlib支持的字体。只有录入这个清单的字体才能被使用（SimHei在里面，SimSun不在里面，所以我在画图时使用SimSun就还是会乱码并且报错）。</p>
+</li>
+<li><p>找到matplotlib安装目录，打开matplotlib文件夹，在打开mpl-data文件夹，打开matplotlibrc文件，找到如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">font.family         : sans-serif</span><br><span class="line">#font.style          : normal</span><br><span class="line">#font.variant        : normal</span><br><span class="line">#font.weight         : normal</span><br><span class="line">#font.stretch        : normal</span><br><span class="line">## note that font.size controls default text sizes.  To configure</span><br><span class="line">## special text sizes tick labels, axes, labels, title, etc, see the rc</span><br><span class="line">## settings for axes and ticks. Special text sizes can be defined</span><br><span class="line">## relative to font.size, using the following values: xx-small, x-small,</span><br><span class="line">## small, medium, large, x-large, xx-large, larger, or smaller</span><br><span class="line">#font.size           : 10.0</span><br><span class="line">font.serif          : SimSun, SimHei, DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, serif</span><br><span class="line">font.sans-serif     : SimSun, SimHei, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif</span><br><span class="line">#font.cursive        : Apple Chancery, Textile, Zapf Chancery, Sand, Script MT, Felipa, cursive</span><br><span class="line">#font.fantasy        : Comic Sans MS, Chicago, Charcoal, ImpactWestern, Humor Sans, xkcd, fantasy</span><br><span class="line">#font.monospace      : DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typewriter, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>将font.family、font.serif、font.sans-serif前面的注释去掉，并且在font.serif和font.sans-serif后加入中文支持字体，比如SimHei（黑体）</p>
+<p>如果图像中不能正常显示符号，在前面加以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.rcParams[&apos;font.sans-serif&apos;]=[&apos;SimHei&apos;]  # 用来正常显示中文标签  </span><br><span class="line">plt.rcParams[&apos;axes.unicode_minus&apos;]=False  # 用来正常显示负号</span><br></pre></td></tr></table></figure></p>
 <ol start="3">
 <li>打开plotnine文件夹，打开themes文件夹，编辑theme.py，看到如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># All complete themes are initiated with these rcparams. They</span><br><span class="line"># can be overridden.</span><br><span class="line">default_rcparams = &#123;</span><br><span class="line">    &apos;axes.axisbelow&apos;: &apos;True&apos;,</span><br><span class="line">    &apos;font.sans-serif&apos;: [&apos;SimSun&apos;,&apos;SimHei&apos;,&apos;DejaVu Sans&apos;, &apos;Helvetica&apos;, &apos;Avant Garde&apos;,</span><br><span class="line">                        &apos;Computer Modern Sans serif&apos;, &apos;Arial&apos;],</span><br><span class="line">    &apos;font.serif&apos;: [&apos;SImSun&apos;,&apos;SimHei&apos;,&apos;Times&apos;, &apos;Palatino&apos;,</span><br><span class="line">                   &apos;New Century Schoolbook&apos;, &apos;Bookman&apos;,</span><br><span class="line">                   &apos;Computer Modern Roman&apos;, &apos;Times New Roman&apos;],</span><br><span class="line">    &apos;lines.antialiased&apos;: &apos;True&apos;,</span><br><span class="line">    &apos;patch.antialiased&apos;: &apos;True&apos;,</span><br><span class="line">    &apos;timezone&apos;: &apos;UTC&apos;,</span><br></pre></td></tr></table></figure>
 </li>
@@ -655,7 +658,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.7k</span>
+    <span title="Site words total count">6.8k</span>
   
 </div>
 
