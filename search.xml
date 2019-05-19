@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python之plotnine中ggplot中文乱码问题]]></title>
+    <url>%2F2019%2F05%2F19%2Fplotnine-hanz-code%2F</url>
+    <content type="text"><![CDATA[解决方式是： 找到“.matplotlib”这个文件夹（注意前面有个点），打开可以看到一个fontlist-v300.json的文件，打开之后是matplotlib支持的字体。只有录入这个清单的字体才能被使用（SimHei在里面，SimSun不在里面，所以我在画图时使用SimSun就还是会乱码并且报错）。 找到matplotlib安装目录，打开matplotlib文件夹，在打开mpl-data文件夹，打开matplotlibrc文件，找到如下代码：12345678910111213141516font.family : sans-serif#font.style : normal#font.variant : normal#font.weight : normal#font.stretch : normal## note that font.size controls default text sizes. To configure## special text sizes tick labels, axes, labels, title, etc, see the rc## settings for axes and ticks. Special text sizes can be defined## relative to font.size, using the following values: xx-small, x-small,## small, medium, large, x-large, xx-large, larger, or smaller#font.size : 10.0font.serif : SimSun, SimHei, DejaVu Serif, Bitstream Vera Serif, Computer Modern Roman, New Century Schoolbook, Century Schoolbook L, Utopia, ITC Bookman, Bookman, Nimbus Roman No9 L, Times New Roman, Times, Palatino, Charter, seriffont.sans-serif : SimSun, SimHei, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif#font.cursive : Apple Chancery, Textile, Zapf Chancery, Sand, Script MT, Felipa, cursive#font.fantasy : Comic Sans MS, Chicago, Charcoal, ImpactWestern, Humor Sans, xkcd, fantasy#font.monospace : DejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typewriter, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace 将font.family、font.serif、font.sans-serif前面的注释去掉，并且在font.serif和font.sans-serif后加入中文支持字体，比如SimHei（黑体） 打开plotnine文件夹，打开themes文件夹，编辑theme.py，看到如下代码：123456789101112# All complete themes are initiated with these rcparams. They# can be overridden.default_rcparams = &#123; &apos;axes.axisbelow&apos;: &apos;True&apos;, &apos;font.sans-serif&apos;: [&apos;SimSun&apos;,&apos;SimHei&apos;,&apos;DejaVu Sans&apos;, &apos;Helvetica&apos;, &apos;Avant Garde&apos;, &apos;Computer Modern Sans serif&apos;, &apos;Arial&apos;], &apos;font.serif&apos;: [&apos;SImSun&apos;,&apos;SimHei&apos;,&apos;Times&apos;, &apos;Palatino&apos;, &apos;New Century Schoolbook&apos;, &apos;Bookman&apos;, &apos;Computer Modern Roman&apos;, &apos;Times New Roman&apos;], &apos;lines.antialiased&apos;: &apos;True&apos;, &apos;patch.antialiased&apos;: &apos;True&apos;, &apos;timezone&apos;: &apos;UTC&apos;, 在font.sans-serif后面的列表中加入SimHei，在font.serif后面的列表中加入SimHei。 重启Jupyter Notebook，ggplot绘图代码如下：1234ggplot(df) \+geom_point(aes(x=&apos;xtitle&apos;,y=&apos;ytitle&apos;),size=0.6,color=&apos;red&apos;) \+geom_text(aes(x=&apos;xtitle&apos;,y=&apos;ytitle&apos;),label=df[&apos;column1&apos;],size=df[&apos;column2&apos;]/4.5,angle=0,color=&apos;red&apos;,family=&apos;SimHei&apos;,show_legend=True) \+theme(text=element_text(family=&quot;SimHei&quot;)) 将相关绘图函数的family参数设置为SimHei。完成。]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[词嵌入在社科中的应用]]></title>
     <url>%2F2019%2F05%2F17%2FW2VAppInSociology%2F</url>
     <content type="text"><![CDATA[Word embeddings quantify 100 years of gender and ethnic stereotypes The Geometry of Culture Analyzing Meaning through Word Embeddings Skill Discrepancies Between Resarch, Education, and Jobs Reveal the Critical Need to Supply Soft Skills for the Data Economy Man is to Computer Programmer as Woman is to Homemaker Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes词嵌入就是通过机器学习将词汇转化为向量。这些向量的几何学关系在一定程度上反映出词汇在语义学上的关系。这篇文章提出了一个框架，用来展现随着时间发展，词向量如何反映20世纪到21世纪美国对女性和少数族裔态度的变化。使用的训练数据是100年来美国的文本数据，结合美国全国普查数据，揭示词嵌入的变化轨迹与职业和人口学特征变化的紧密关系。结果表明，词嵌入捕捉到了一些社会变迁，比如1960年代的女性运动以及亚裔移民，并能体现特定形容词和职业是如何变得紧密联系在一起的。 Embedding Framework Overview and Validations将词嵌入与调查和普查数据放在一起看，能够很好的对历史上的偏见和刻板印象进行描绘。 Summary of Data and Methods这篇文章的数据来源非常广泛，主要有以下几个来源： standard Google News word2vec trained on Google News dataset Google Books/Corpus of Historical American English(COHA) New York Times Annotated Corpus using GLoVe algorithm historical US census data 通过词嵌入训练得到的词汇表，可以用来测量中立词汇和一个群体的相关性强弱。比如，使用词嵌入来分析女性和一些职业词汇之间的嵌入偏离。 举例来说，首先计算代表女性的词向量与代表职业的词向量之间的平均嵌入距离，作为比较，以同样的方式操作男性词向量。 Validation of the Embedding BiasQuantifying Gender StereotypesOccupational Stereotypes Beyond Census DataQuantifying Changing Attitudes with Adjective EmbeddingsQuantifying Ethnic StereotypesTrends in Asian StereotypesTrends in Other Ethnic and Cultural StereotypesDiscussionMaterials and Methods The Geometry of Culture Analyzing Meaning through Word Embeddings Skill Discrepancies Between Resarch, Education, and Jobs Reveal the Critical Need to Supply Soft Skills for the Data Economy Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings 参考文献Bolukbasi, T., et al. (2016). Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings. Borner, K., et al. (2018). “Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy.” Proceedings of the National Academy of Sciences of the United States(50): 12630. Garg, N., et al. (2017). Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes. Kozlowski, A. C., et al. (2018). The Geometry of Culture: Analyzing Meaning through Word Embeddings.]]></content>
@@ -8,9 +20,9 @@
         <category>文献</category>
       </categories>
       <tags>
+        <tag>笔记</tag>
         <tag>词向量</tag>
         <tag>社会学</tag>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -21,8 +33,8 @@
         <category>读书笔记</category>
       </categories>
       <tags>
-        <tag>社会学</tag>
         <tag>笔记</tag>
+        <tag>社会学</tag>
       </tags>
   </entry>
   <entry>
@@ -33,8 +45,8 @@
         <category>日记</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
         <tag>想法</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
