@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="马昱堃">
 <meta property="og:description" content="小样本OLS大样本OLS">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-23T10:33:04.282Z">
+<meta property="og:updated_time" content="2019-05-23T10:35:12.734Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OLS">
 <meta name="twitter:description" content="小样本OLS大样本OLS">
@@ -457,15 +457,14 @@
 <h4 id="鞅（martingale）："><a href="#鞅（martingale）：" class="headerlink" title="鞅（martingale）："></a>鞅（martingale）：</h4><p>如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=x_{i-1},\forall i\geq2$，则称其为“<strong>鞅</strong>”。</p>
 <h4 id="鞅差分序列（Martingale-Difference-Sequence-MDS）："><a href="#鞅差分序列（Martingale-Difference-Sequence-MDS）：" class="headerlink" title="鞅差分序列（Martingale Difference Sequence, MDS）："></a>鞅差分序列（Martingale Difference Sequence, MDS）：</h4><p>如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=0,\forall i\geq2$，则称其为“<strong>鞅差分序列</strong>”。<br>这意味着$x_i$均值独立于它的过去所有值。</p>
 <p>协方差矩阵存在可逆矩阵,公式为：<br>$$<br>\boldsymbol{S}\equiv E(\boldsymbol{g_ig_i’})=E(\varepsilon^2_i\boldsymbol{x_ix_i’})<br>$$</p>
-﻿<div id="echarts5823" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<p><script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script><br>﻿<div id="echarts3407" style="width: 81%;height: 400px;margin: 0 auto"></div>
 <script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
 <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts5823'));
+        var myChart = echarts.init(document.getElementById('echarts3407'));
 
         // 指定图表的配置项和数据
-        var option = <script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
-option = {
+        var option = option = {
     title : {
         text: '某地区蒸发量和降水量',
         subtext: '纯属虚构'
@@ -536,6 +535,7 @@ option = {
 
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
+</script></p>
 
       
     </div>
