@@ -13,6 +13,8 @@
 <meta name="theme-color" content="#222">
 
 
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
 
   
   
@@ -94,7 +96,7 @@
 <meta property="og:site_name" content="马昱堃">
 <meta property="og:description" content="小样本OLS大样本OLS">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-17T03:48:30.306Z">
+<meta property="og:updated_time" content="2019-05-22T01:40:39.484Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OLS">
 <meta name="twitter:description" content="小样本OLS大样本OLS">
@@ -390,7 +392,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  687
+                  944
                 </span>
               
 
@@ -406,7 +408,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  4
                 </span>
               
             </div>
@@ -455,7 +457,84 @@
 <h4 id="鞅（martingale）："><a href="#鞅（martingale）：" class="headerlink" title="鞅（martingale）："></a>鞅（martingale）：</h4><p>如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=x_{i-1},\forall i\geq2$，则称其为“<strong>鞅</strong>”。</p>
 <h4 id="鞅差分序列（Martingale-Difference-Sequence-MDS）："><a href="#鞅差分序列（Martingale-Difference-Sequence-MDS）：" class="headerlink" title="鞅差分序列（Martingale Difference Sequence, MDS）："></a>鞅差分序列（Martingale Difference Sequence, MDS）：</h4><p>如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=0,\forall i\geq2$，则称其为“<strong>鞅差分序列</strong>”。<br>这意味着$x_i$均值独立于它的过去所有值。</p>
 <p>协方差矩阵存在可逆矩阵,公式为：<br>$$<br>\boldsymbol{S}\equiv E(\boldsymbol{g_ig_i’})=E(\varepsilon^2_i\boldsymbol{x_ix_i’})<br>$$</p>
+<div id="echarts6537" style="width: 81%;height: 400px;margin: 0 auto"></div>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts6537'));
 
+        // 指定图表的配置项和数据
+        var option = option = {
+    title : {
+        text: '某地区蒸发量和降水量',
+        subtext: '纯属虚构'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['蒸发量','降水量']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'蒸发量',
+            type:'bar',
+            data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+            markPoint : {
+                data : [
+                    {type : 'max', name: '最大值'},
+                    {type : 'min', name: '最小值'}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
+        },
+        {
+            name:'降水量',
+            type:'bar',
+            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+            markPoint : {
+                data : [
+                    {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                    {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : '平均值'}
+                ]
+            }
+        }
+    ]
+};
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
       
     </div>
     
@@ -693,7 +772,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">7.5k</span>
+    <span title="Site words total count">7.8k</span>
   
 </div>
 
