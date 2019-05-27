@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="马昱堃">
 <meta property="og:description" content="Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-27T08:08:24.633Z">
+<meta property="og:updated_time" content="2019-05-27T08:39:18.005Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="词嵌入在社科中的应用">
 <meta name="twitter:description" content="Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes">
@@ -392,7 +392,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.8k
+                  2.1k
                 </span>
               
 
@@ -408,7 +408,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  8
                 </span>
               
             </div>
@@ -460,12 +460,50 @@
 <h3 id="Skip-gram模型"><a href="#Skip-gram模型" class="headerlink" title="Skip-gram模型"></a>Skip-gram模型</h3><p>在自然语言处理中，语料的选取是一个相当重要的问题：第一，语料必须充分；第二，语料必须准确。</p>
 <p>但是，更多的时候并不是语料的选取引发了对准确性问题的担忧，而是处理方法。n元模型中，因为窗口大小的限制，导致超出窗口范围的词语与当前词之间的关系不能被正确地反映到模型之中，如果单纯扩大窗口大小又会增加训练的复杂度。Skip-gram模型的提出很好地解决了这些问题。</p>
 <p>Skip-gram就是“跳过某些符号”。训练目标就是使下式的值最大：<br>$$<br>\frac{1}{T}\sum_{t-1}^T\sum_{-c\leqslant j\leqslant c}logp(w_{t+j}|w_t)<br>$$<br>其中，c是窗口的大小，T是训练文本的大小。基本的Skip-gram模型计算条件概率如下式：<br>$$<br>p(w_O|w_I)=\frac{\boldsymbol{v’^T_{w_O}v_{w_I}}}{\sum_{w=1}^{|V|}exp(\boldsymbol{v’^T_w v_{w_I}})}<br>$$<br>其中，$v_w$和$v’_w$分别是词w的输入和输出向量。</p>
+<p>其中，CBOW 模型通过上下文来预测当前词，Skip＿gram 模型则通过当前词来预测其上下文（周练，2015）。周练将CBOW+HS和Skip-gram+HS训练框架总结对比如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>CBOW+HS</th>
+<th>Skip-gram+HS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>训练样本</td>
+<td>已知上下文，预测下一个词</td>
+<td>已知当前词，预测上下文</td>
+</tr>
+<tr>
+<td>输入层</td>
+<td>词语w前后各c个词对应的词向量</td>
+<td>当前词w对应的词向量</td>
+</tr>
+<tr>
+<td>投影层</td>
+<td>输入层的2c个词向量的累加</td>
+<td>当前词w对应的词向量（恒等投影）</td>
+</tr>
+<tr>
+<td>输出层</td>
+<td>以词语在语料库中的词频作为权值构造的一棵二叉树。叶子节点对应词汇表中的所有词语。假设叶子节点为N个，则非叶子节点为N-1个。叶子节点和非叶子节点均对应一个向量。其中叶子节点对应的向量即为词向量，而非叶子节点对应的向量是一个辅助向量。</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>训练参数</td>
+<td>词汇表中词语对应的词向量，输出层非叶子节点对应的辅助向量</td>
+<td>同左</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p>Bolukbasi, T., et al. (2016). Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings.</p>
 <p>Borner, K., et al. (2018). “Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy.” Proceedings of the National Academy of Sciences of the United States(50): 12630.</p>
 <p>Garg, N., et al. (2017). Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes.</p>
 <p>Kozlowski, A. C., et al. (2018). The Geometry of Culture: Analyzing Meaning through Word Embeddings.</p>
 <p>熊富林, 邓怡豪 and 唐晓晟 (2015). “Word2vec的核心架构及其应用.” 南京师范大学学报(工程技术版) 15(01): 43-48.</p>
+<p>周练 (2015). “Word2vec的工作原理及应用探究.” 科技情报开发与经济 25(02): 145-148.</p>
 
       
     </div>
@@ -704,7 +742,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">9.8k</span>
+    <span title="Site words total count">10.1k</span>
   
 </div>
 
