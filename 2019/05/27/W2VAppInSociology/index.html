@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="马昱堃">
 <meta property="og:description" content="Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-27T08:04:13.100Z">
+<meta property="og:updated_time" content="2019-05-27T08:08:24.633Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="词嵌入在社科中的应用">
 <meta name="twitter:description" content="Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes">
@@ -452,9 +452,11 @@
 <h1 id="Man-is-to-Computer-Programmer-as-Woman-is-to-Homemaker-Debiasing-Word-Embeddings"><a href="#Man-is-to-Computer-Programmer-as-Woman-is-to-Homemaker-Debiasing-Word-Embeddings" class="headerlink" title="Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings"></a><center>Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings</center></h1><hr>
 <h1 id="Word2vec的核心架构及其应用"><a href="#Word2vec的核心架构及其应用" class="headerlink" title="Word2vec的核心架构及其应用"></a><center>Word2vec的核心架构及其应用</center></h1><p>统计语言模型：<br>$$<br>\hat{p}\left( w_1^T \right)=\prod_{t=1}^T\hat{p}\left( w_t|w_1^{t-1} \right)<br>$$<br>其中，$w_t$是第t个词，$w_i^j$为上下文词序列：<br>$$<br>w_i^j=\left( w_i,w_{i+1},w_{i+2},\cdots ,w_{j-1},w_j \right)<br>$$<br>统计语言模型可以理解为，给定已知的一组词，求解下一个词的条件概率。</p>
 <h2 id="神经网络概率语言模型的发展"><a href="#神经网络概率语言模型的发展" class="headerlink" title="神经网络概率语言模型的发展"></a>神经网络概率语言模型的发展</h2><p>最知名的模型是Bengio等人在2003年提出的NNLM（Neural network language model）。经历十年的研究之后，在架构方面，有了比NNLM更简单的CBOW模型、Skip-gram模型；在训练算法方面，出现了Sierarchical Softmax算法、负采样算法（Negative Sampling），以及为了减小频繁词对结构准确性和训练速度的影响而引入的<strong>欠采样算法</strong>（Subsumpling）技术。</p>
-<h2 id="Word2vec模型的核心架构"><a href="#Word2vec模型的核心架构" class="headerlink" title="Word2vec模型的核心架构"></a>Word2vec模型的核心架构</h2><p>模型复杂度：<br>$$<br>O=E<em>T</em>Q<br>$$<br>其中，E表示训练的次数，T表示训练语料中词的个数，Q因模型而异。T取决于训练语料，值越大模型越精确。</p>
+<h2 id="Word2vec模型的核心架构"><a href="#Word2vec模型的核心架构" class="headerlink" title="Word2vec模型的核心架构"></a>Word2vec模型的核心架构</h2><p>模型复杂度：<br>$$<br>O=E*T*Q<br>$$<br>其中，E表示训练的次数，T表示训练语料中词的个数，Q因模型而异。T取决于训练语料，值越大模型越精确。</p>
 <h3 id="CBOW模型"><a href="#CBOW模型" class="headerlink" title="CBOW模型"></a>CBOW模型</h3><p>上下文决定当前词出现的概率。在CBOW模型中，上下文所有的词对当前词出现概率的影响的权重是一样的，因此叫做CBOW（continuous bag-of-words model）模型，正如在袋子中取词，取出数量足够的词就可以了，至于取出的先后顺序是无关紧要的。</p>
-<p>CBOW模型的训练复杂度为：<br>$$<br>Q=N<em>D+D</em>|V|<br>$$<br>其中，N为输入层窗口长度，D为发射层维度，|V|为训练语料的词典大小。</p>
+<p>CBOW模型的训练复杂度为：</p>
+<p>$$<br>Q=N*D+D*|V|<br>$$</p>
+<p>其中，N为输入层窗口长度，D为发射层维度，|V|为训练语料的词典大小。</p>
 <h3 id="Skip-gram模型"><a href="#Skip-gram模型" class="headerlink" title="Skip-gram模型"></a>Skip-gram模型</h3><p>在自然语言处理中，语料的选取是一个相当重要的问题：第一，语料必须充分；第二，语料必须准确。</p>
 <p>但是，更多的时候并不是语料的选取引发了对准确性问题的担忧，而是处理方法。n元模型中，因为窗口大小的限制，导致超出窗口范围的词语与当前词之间的关系不能被正确地反映到模型之中，如果单纯扩大窗口大小又会增加训练的复杂度。Skip-gram模型的提出很好地解决了这些问题。</p>
 <p>Skip-gram就是“跳过某些符号”。训练目标就是使下式的值最大：<br>$$<br>\frac{1}{T}\sum_{t-1}^T\sum_{-c\leqslant j\leqslant c}logp(w_{t+j}|w_t)<br>$$<br>其中，c是窗口的大小，T是训练文本的大小。基本的Skip-gram模型计算条件概率如下式：<br>$$<br>p(w_O|w_I)=\frac{\boldsymbol{v’^T_{w_O}v_{w_I}}}{\sum_{w=1}^{|V|}exp(\boldsymbol{v’^T_w v_{w_I}})}<br>$$<br>其中，$v_w$和$v’_w$分别是词w的输入和输出向量。</p>
