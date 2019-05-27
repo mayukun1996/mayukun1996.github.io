@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="马昱堃">
 <meta property="og:description" content="Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-27T08:39:18.005Z">
+<meta property="og:updated_time" content="2019-05-27T13:34:50.799Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="词嵌入在社科中的应用">
 <meta name="twitter:description" content="Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes">
@@ -459,8 +459,10 @@
 <p>其中，N为输入层窗口长度，D为发射层维度，|V|为训练语料的词典大小。</p>
 <h3 id="Skip-gram模型"><a href="#Skip-gram模型" class="headerlink" title="Skip-gram模型"></a>Skip-gram模型</h3><p>在自然语言处理中，语料的选取是一个相当重要的问题：第一，语料必须充分；第二，语料必须准确。</p>
 <p>但是，更多的时候并不是语料的选取引发了对准确性问题的担忧，而是处理方法。n元模型中，因为窗口大小的限制，导致超出窗口范围的词语与当前词之间的关系不能被正确地反映到模型之中，如果单纯扩大窗口大小又会增加训练的复杂度。Skip-gram模型的提出很好地解决了这些问题。</p>
-<p>Skip-gram就是“跳过某些符号”。训练目标就是使下式的值最大：<br>$$<br>\frac{1}{T}\sum_{t-1}^T\sum_{-c\leqslant j\leqslant c}logp(w_{t+j}|w_t)<br>$$<br>其中，c是窗口的大小，T是训练文本的大小。基本的Skip-gram模型计算条件概率如下式：<br>$$<br>p(w_O|w_I)=\frac{\boldsymbol{v’^T_{w_O}v_{w_I}}}{\sum_{w=1}^{|V|}exp(\boldsymbol{v’^T_w v_{w_I}})}<br>$$<br>其中，$v_w$和$v’_w$分别是词w的输入和输出向量。</p>
-<p>其中，CBOW 模型通过上下文来预测当前词，Skip＿gram 模型则通过当前词来预测其上下文（周练，2015）。周练将CBOW+HS和Skip-gram+HS训练框架总结对比如下表所示：</p>
+<p>Skip-gram就是“跳过某些符号”。训练目标就是使下式的值最大：<br>$$<br>\frac{1}{T}\sum_{t-1}^T\sum_{-c\leqslant j\leqslant c}logp(w_{t+j}|w_t)<br>$$<br>其中，c是窗口的大小，也即一次喂到模型里的词汇数；T是训练文本的大小。基本的Skip-gram模型计算条件概率如下式：<br>$$<br>p(w_O|w_I)=\frac{\boldsymbol{v’^T_{w_O}v_{w_I}}}{\sum_{w=1}^{|V|}exp(\boldsymbol{v’^T_w v_{w_I}})}<br>$$<br>其中，$v_w$和$v’_w$分别是词w的输入和输出向量。</p>
+<p>其中，CBOW 模型通过上下文来预测当前词，Skip-gram 模型则通过当前词来预测其上下文（周练，2015）。周练将CBOW+HS和Skip-gram+HS训练框架总结对比如下表1所示：</p>
+<center><strong>表1 Word2vec两种实现方法比较</strong></center>
+
 <table>
 <thead>
 <tr>
