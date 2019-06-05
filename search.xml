@@ -21,8 +21,8 @@
         <category>日记</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
         <tag>想法</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -33,9 +33,9 @@
         <category>日记</category>
       </categories>
       <tags>
+        <tag>想法</tag>
         <tag>笔记</tag>
         <tag>研究</tag>
-        <tag>想法</tag>
       </tags>
   </entry>
   <entry>
@@ -60,8 +60,8 @@
         <category>读书笔记</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
         <tag>想法</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -94,6 +94,7 @@
     <url>%2F2019%2F05%2F16%2FOLS%2F</url>
     <content type="text"><![CDATA[小样本OLS大样本OLS 小样本OLS假定1：线性假定总体模型为： $$y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)$$ 假定2：严格外生性$$E(\varepsilon_i|\boldsymbol X)=E(\varepsilon_i|\boldsymbol x_1,\dots,\boldsymbol x_n)=0\quad(i=1,\dots,n)$$ 假定3：不存在严格多重共线性变量个数小于等于样本个数。 假定4：球形扰动项同方差假定。 假定5：误差的正态性假定用于t检验给定$\boldsymbol X$的情况下，$\boldsymbol \varepsilon | \boldsymbol X$的条件分布为正态。 大样本OLS使用大样本理论的原因： 小样本理论假设过强。 小样本的情况下，需要研究统计量的精确分布；在大样本下，只需要研究渐近分布。 样本容量至少$n\geq30$，最好$n\geq100$。 主要是针对时间序列不同时期随机变量的相关性做修正。 假定1：线性假定这与小样本相同。 假定2：渐近独立的平稳过程$(\boldsymbol K+1)$维随机过程$\lbrace y_i,\boldsymbol x_i \rbrace$为渐近独立的平稳过程。 平稳过程：严格平稳过程（stictly stationary process），简称平稳过程，是针对随机过程$\lbrace x_t \rbrace_{t=1}^\infty$而言。可以理解为：将$\lbrace x_{t_1},x_{t_2},\dots,x_{t_m} \rbrace$中的每个变量的时见下标全部平移$k$期，不会改变其分布。 渐近独立（ergodic）：可以理解为逐渐接近相互独立。在一个随机过程内，短期之内，不同期数之间不会相互独立，但长期过程中，前期与后期之间没有长期路径依赖，也就是接近独立。渐近独立意味着只要两个随机变量期数相距足够远，则可以近似认为它们相互独立。 假定3：前定解释变量所有解释变量均为前定（predetermined），即它们与同期扰动项正交，即$E(x_{ik}\varepsilon_i)=0(\forall i,k)$。 假定4：秩条件$K\times K$矩阵$E(\boldsymbol{x_ix_i’})$的逆矩阵存在。 假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵定义如下列向量： $$\boldsymbol g_i\equiv \boldsymbol x_i\varepsilon_i =\left(\begin{matrix}x_{i1} \\\vdots \\x_{i\boldsymbol K}\end{matrix}\right)\boldsymbol \varepsilon_i$$ 鞅（martingale）：如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=x_{i-1},\forall i\geq2$，则称其为“鞅”。 鞅差分序列（Martingale Difference Sequence, MDS）：如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=0,\forall i\geq2$，则称其为“鞅差分序列”。这意味着$x_i$均值独立于它的过去所有值。 协方差矩阵存在可逆矩阵,公式为：$$\boldsymbol{S}\equiv E(\boldsymbol{g_ig_i’})=E(\varepsilon^2_i\boldsymbol{x_ix_i’})$$]]></content>
       <categories>
+        <category>工具</category>
         <category>统计</category>
       </categories>
       <tags>
