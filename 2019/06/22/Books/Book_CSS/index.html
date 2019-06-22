@@ -77,7 +77,7 @@
 
 
 
-  <meta name="keywords" content="笔记,社会学,计算社会科学,研究,词向量,">
+  <meta name="keywords" content="笔记,研究,社会学,计算社会科学,">
 
 
 
@@ -88,20 +88,18 @@
 
 
 
-<meta name="description" content="updating……">
-<meta name="keywords" content="笔记,社会学,计算社会科学,研究,词向量">
+<meta name="description" content="前言时代的变化与技术的发展，已经使得原来很难进行的研究方法变得非常容易，尤其是数据时代的到来使得社会科学的研究发生了革命性的转变。但目前来说，我们仍然处在数字时代的早期阶段。">
+<meta name="keywords" content="笔记,研究,社会学,计算社会科学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="词嵌入在社科中的应用">
-<meta property="og:url" content="http://mayukun1996.github.io/2019/05/27/Paper_W2VAppInSociology/index.html">
+<meta property="og:title" content="《计算社会学》">
+<meta property="og:url" content="http://mayukun1996.github.io/2019/06/22/Books/Book_CSS/index.html">
 <meta property="og:site_name" content="马昱堃">
-<meta property="og:description" content="updating……">
+<meta property="og:description" content="前言时代的变化与技术的发展，已经使得原来很难进行的研究方法变得非常容易，尤其是数据时代的到来使得社会科学的研究发生了革命性的转变。但目前来说，我们仍然处在数字时代的早期阶段。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://mayukun1996.github.io/img/词向量.jpg">
-<meta property="og:updated_time" content="2019-06-15T07:16:10.611Z">
+<meta property="og:updated_time" content="2019-06-22T12:01:40.240Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="词嵌入在社科中的应用">
-<meta name="twitter:description" content="updating……">
-<meta name="twitter:image" content="http://mayukun1996.github.io/img/词向量.jpg">
+<meta name="twitter:title" content="《计算社会学》">
+<meta name="twitter:description" content="前言时代的变化与技术的发展，已经使得原来很难进行的研究方法变得非常容易，尤其是数据时代的到来使得社会科学的研究发生了革命性的转变。但目前来说，我们仍然处在数字时代的早期阶段。">
 
 
 
@@ -131,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://mayukun1996.github.io/2019/05/27/Paper_W2VAppInSociology/">
+  <link rel="canonical" href="http://mayukun1996.github.io/2019/06/22/Books/Book_CSS/">
 
 
 
 
 
-  <title>词嵌入在社科中的应用 | 马昱堃</title>
+  <title>《计算社会学》 | 马昱堃</title>
   
 
 
@@ -306,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://mayukun1996.github.io/2019/05/27/Paper_W2VAppInSociology/">
+    <link itemprop="mainEntityOfPage" href="http://mayukun1996.github.io/2019/06/22/Books/Book_CSS/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="马昱堃">
@@ -323,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">词嵌入在社科中的应用</h1>
+          <h1 class="post-title" itemprop="name headline">《计算社会学》</h1>
         
 
         <div class="post-meta">
@@ -335,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-27T15:00:00+08:00">
-                2019-05-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-22T15:13:59+08:00">
+                2019-06-22
               </time>
             
 
@@ -358,8 +356,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/文献/" itemprop="url" rel="index">
-                    <span itemprop="name">文献</span>
+                  <a href="/categories/读书笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">读书笔记</span>
                   </a>
                 </span>
 
@@ -394,7 +392,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.1k
+                  665
                 </span>
               
 
@@ -410,7 +408,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8
+                  2
                 </span>
               
             </div>
@@ -431,86 +429,10 @@
       
 
       
-        <p>updating……<a id="more"></a></p>
-<h1 id="Word-Embeddings-Quantify-100-Years-of-Gender-and-Ethnic-Stereotypes"><a href="#Word-Embeddings-Quantify-100-Years-of-Gender-and-Ethnic-Stereotypes" class="headerlink" title="Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes"></a><center>Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes</center></h1><p>词嵌入就是通过机器学习将词汇转化为向量。这些向量的几何学关系在一定程度上反映出词汇在语义学上的关系。这篇文章提出了一个框架，用来展现随着时间发展，词向量如何反映20世纪到21世纪美国对女性和少数族裔态度的变化。使用的训练数据是100年来美国的文本数据，结合美国全国普查数据，揭示词嵌入的变化轨迹与职业和人口学特征变化的紧密关系。结果表明，词嵌入捕捉到了一些社会变迁，比如1960年代的女性运动以及亚裔移民，并能体现特定形容词和职业是如何变得紧密联系在一起的。</p>
-<h2 id="Embedding-Framework-Overview-and-Validations"><a href="#Embedding-Framework-Overview-and-Validations" class="headerlink" title="Embedding Framework Overview and Validations"></a>Embedding Framework Overview and Validations</h2><p>将词嵌入与调查和普查数据放在一起看，能够很好的对历史上的偏见和刻板印象进行描绘。</p>
-<h3 id="Summary-of-Data-and-Methods"><a href="#Summary-of-Data-and-Methods" class="headerlink" title="Summary of Data and Methods"></a>Summary of Data and Methods</h3><p>这篇文章的数据来源非常广泛，主要有以下几个来源：</p>
-<ul>
-<li>standard Google News word2vec trained on Google News dataset</li>
-<li>Google Books/Corpus of Historical American English(COHA)</li>
-<li>New York Times Annotated Corpus using GLoVe algorithm</li>
-<li>historical US census data</li>
-</ul>
-<p>通过词嵌入训练得到的词汇表，可以用来测量中立词汇和一个群体的相关性强弱。比如，使用词嵌入来分析女性和一些职业词汇之间的嵌入偏离。</p>
-<p>举例来说，首先计算代表女性的词向量与代表职业的词向量之间的平均嵌入距离，作为比较，以同样的方式操作男性词向量。</p>
-<h3 id="Validation-of-the-Embedding-Bias"><a href="#Validation-of-the-Embedding-Bias" class="headerlink" title="Validation of the Embedding Bias"></a>Validation of the Embedding Bias</h3><h2 id="Quantifying-Gender-Stereotypes"><a href="#Quantifying-Gender-Stereotypes" class="headerlink" title="Quantifying Gender Stereotypes"></a>Quantifying Gender Stereotypes</h2><h3 id="Occupational-Stereotypes-Beyond-Census-Data"><a href="#Occupational-Stereotypes-Beyond-Census-Data" class="headerlink" title="Occupational Stereotypes Beyond Census Data"></a>Occupational Stereotypes Beyond Census Data</h3><h3 id="Quantifying-Changing-Attitudes-with-Adjective-Embeddings"><a href="#Quantifying-Changing-Attitudes-with-Adjective-Embeddings" class="headerlink" title="Quantifying Changing Attitudes with Adjective Embeddings"></a>Quantifying Changing Attitudes with Adjective Embeddings</h3><h2 id="Quantifying-Ethnic-Stereotypes"><a href="#Quantifying-Ethnic-Stereotypes" class="headerlink" title="Quantifying Ethnic Stereotypes"></a>Quantifying Ethnic Stereotypes</h2><h3 id="Trends-in-Asian-Stereotypes"><a href="#Trends-in-Asian-Stereotypes" class="headerlink" title="Trends in Asian Stereotypes"></a>Trends in Asian Stereotypes</h3><h3 id="Trends-in-Other-Ethnic-and-Cultural-Stereotypes"><a href="#Trends-in-Other-Ethnic-and-Cultural-Stereotypes" class="headerlink" title="Trends in Other Ethnic and Cultural Stereotypes"></a>Trends in Other Ethnic and Cultural Stereotypes</h3><h2 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h2><h2 id="Materials-and-Methods"><a href="#Materials-and-Methods" class="headerlink" title="Materials and Methods"></a>Materials and Methods</h2><hr>
-<h1 id="The-Geometry-of-Culture-Analyzing-Meaning-through-Word-Embeddings"><a href="#The-Geometry-of-Culture-Analyzing-Meaning-through-Word-Embeddings" class="headerlink" title="The Geometry of Culture Analyzing Meaning through Word Embeddings"></a><center>The Geometry of Culture Analyzing Meaning through Word Embeddings</center></h1><p>文化几何学这篇文章的三位作者中有两位来自芝加哥大学社会学部，其中James更是于2017年暑假被中山大学请来做计算社会学的讲座，当时令我印象深刻，他同时也是圣塔菲研究所的成员。</p>
-<p>这篇文章即是介绍神经网络词嵌入模型揭示出大量文化中的关联和类别。词向量将语义学中词汇关系反映到高维空间当中的词向量关系上。比如在“男-女”、“富-穷”、“黑-白”、“自由-保守”的向量维度也能很好地反应文化意义。这篇文章还设计了一种检验词向量结构的稳健性方法，并且将其应用在美国文化变迁的历时性分析上。</p>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h2 id="Formal-text-analysis-in-the-study-of-culture"><a href="#Formal-text-analysis-in-the-study-of-culture" class="headerlink" title="Formal text analysis in the study of culture"></a>Formal text analysis in the study of culture</h2><h2 id="Word-embedding-models-and-complex-semantic-relationships"><a href="#Word-embedding-models-and-complex-semantic-relationships" class="headerlink" title="Word embedding models and complex semantic relationships"></a>Word embedding models and complex semantic relationships</h2><p><img src="/img/词向量.jpg" alt="词向量"></p>
-<h2 id="Cultural-Dimensions-of-word-embeddings"><a href="#Cultural-Dimensions-of-word-embeddings" class="headerlink" title="Cultural Dimensions of word embeddings"></a>Cultural Dimensions of word embeddings</h2><h2 id="Word-embeddings-and-cultural-theory"><a href="#Word-embeddings-and-cultural-theory" class="headerlink" title="Word embeddings and cultural theory"></a>Word embeddings and cultural theory</h2><h2 id="Data-amp-Methods"><a href="#Data-amp-Methods" class="headerlink" title="Data &amp; Methods"></a>Data &amp; Methods</h2><h3 id="Survey-of-Cultural-Associations"><a href="#Survey-of-Cultural-Associations" class="headerlink" title="Survey of Cultural Associations"></a>Survey of Cultural Associations</h3><h3 id="Word-embedding-data"><a href="#Word-embedding-data" class="headerlink" title="Word embedding data"></a>Word embedding data</h3><p>这一部分使用了4个数据库，前3个是开源的，第4个是作者使用Google Ngram文本自行训练的数据。</p>
-<h3 id="Statistical-Significance-of-Distances-and-Associations"><a href="#Statistical-Significance-of-Distances-and-Associations" class="headerlink" title="Statistical Significance of Distances and Associations"></a>Statistical Significance of Distances and Associations</h3><p>嵌入模型的词汇关联稳健性和显著性使用bootstrapping和subsampling方法进行非参数检验。这就可以构造模型中词汇之间距离和词汇在指定维度上投影的置信区间。如果假设文本（报纸、书等）是一个来自文化总体的独立同分布，那么bootstrapping就允许我们通过对替换文本的经验分布抽样来测量这些特性，从而估计单词距离和投影的方差。</p>
-<p>如果语料库非常大，就采用subsampling方法，将语料库不重复地分成不重复的样本，然后在这些子集上估计词嵌入模型，计算信度和置信区间作为距离和投影统计量的经验分布函数。subsampling基于独立同分布的bootstrap方法假定。</p>
-<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><h2 id="Discussion-1"><a href="#Discussion-1" class="headerlink" title="Discussion"></a>Discussion</h2><hr>
-<h1 id="Skill-Discrepancies-Between-Resarch-Education-and-Jobs-Reveal-the-Critical-Need-to-Supply-Soft-Skills-for-the-Data-Economy"><a href="#Skill-Discrepancies-Between-Resarch-Education-and-Jobs-Reveal-the-Critical-Need-to-Supply-Soft-Skills-for-the-Data-Economy" class="headerlink" title="Skill Discrepancies Between Resarch, Education, and Jobs Reveal the Critical Need to Supply Soft Skills for the Data Economy"></a><center>Skill Discrepancies Between Resarch, Education, and Jobs Reveal the Critical Need to Supply Soft Skills for the Data Economy</center></h1><hr>
-<h1 id="Man-is-to-Computer-Programmer-as-Woman-is-to-Homemaker-Debiasing-Word-Embeddings"><a href="#Man-is-to-Computer-Programmer-as-Woman-is-to-Homemaker-Debiasing-Word-Embeddings" class="headerlink" title="Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings"></a><center>Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings</center></h1><hr>
-<h1 id="Word2vec的核心架构及其应用"><a href="#Word2vec的核心架构及其应用" class="headerlink" title="Word2vec的核心架构及其应用"></a><center>Word2vec的核心架构及其应用</center></h1><p>统计语言模型：<br>$$<br>\hat{p}\left( w_1^T \right)=\prod_{t=1}^T\hat{p}\left( w_t|w_1^{t-1} \right)<br>$$<br>其中，$w_t$是第t个词，$w_i^j$为上下文词序列：<br>$$<br>w_i^j=\left( w_i,w_{i+1},w_{i+2},\cdots ,w_{j-1},w_j \right)<br>$$<br>统计语言模型可以理解为，给定已知的一组词，求解下一个词的条件概率。</p>
-<h2 id="神经网络概率语言模型的发展"><a href="#神经网络概率语言模型的发展" class="headerlink" title="神经网络概率语言模型的发展"></a>神经网络概率语言模型的发展</h2><p>最知名的模型是Bengio等人在2003年提出的NNLM（Neural network language model）。经历十年的研究之后，在架构方面，有了比NNLM更简单的CBOW模型、Skip-gram模型；在训练算法方面，出现了Sierarchical Softmax算法、负采样算法（Negative Sampling），以及为了减小频繁词对结构准确性和训练速度的影响而引入的<strong>欠采样算法</strong>（Subsumpling）技术。</p>
-<h2 id="Word2vec模型的核心架构"><a href="#Word2vec模型的核心架构" class="headerlink" title="Word2vec模型的核心架构"></a>Word2vec模型的核心架构</h2><p>模型复杂度：<br>$$<br>O=E*T*Q<br>$$<br>其中，E表示训练的次数，T表示训练语料中词的个数，Q因模型而异。T取决于训练语料，值越大模型越精确。</p>
-<h3 id="CBOW模型"><a href="#CBOW模型" class="headerlink" title="CBOW模型"></a>CBOW模型</h3><p>上下文决定当前词出现的概率。在CBOW模型中，上下文所有的词对当前词出现概率的影响的权重是一样的，因此叫做CBOW（continuous bag-of-words model）模型，正如在袋子中取词，取出数量足够的词就可以了，至于取出的先后顺序是无关紧要的。</p>
-<p>CBOW模型的训练复杂度为：</p>
-<p>$$<br>Q=N*D+D*|V|<br>$$</p>
-<p>其中，N为输入层窗口长度，D为发射层维度，|V|为训练语料的词典大小。</p>
-<h3 id="Skip-gram模型"><a href="#Skip-gram模型" class="headerlink" title="Skip-gram模型"></a>Skip-gram模型</h3><p>在自然语言处理中，语料的选取是一个相当重要的问题：第一，语料必须充分；第二，语料必须准确。</p>
-<p>但是，更多的时候并不是语料的选取引发了对准确性问题的担忧，而是处理方法。n元模型中，因为窗口大小的限制，导致超出窗口范围的词语与当前词之间的关系不能被正确地反映到模型之中，如果单纯扩大窗口大小又会增加训练的复杂度。Skip-gram模型的提出很好地解决了这些问题。</p>
-<p>Skip-gram就是“跳过某些符号”。训练目标就是使下式的值最大：<br>$$<br>\frac{1}{T}\sum_{t-1}^T\sum_{-c\leqslant j\leqslant c}logp(w_{t+j}|w_t)<br>$$<br>其中，c是窗口的大小，也即一次喂到模型里的词汇数；T是训练文本的大小。基本的Skip-gram模型计算条件概率如下式：<br>$$<br>p(w_O|w_I)=\frac{\boldsymbol{v’^T_{w_O}v_{w_I}}}{\sum_{w=1}^{|V|}exp(\boldsymbol{v’^T_w v_{w_I}})}<br>$$<br>其中，$v_w$和$v’_w$分别是词w的输入和输出向量。</p>
-<p>其中，CBOW 模型通过上下文来预测当前词，Skip-gram 模型则通过当前词来预测其上下文（周练，2015）。周练将CBOW+HS和Skip-gram+HS训练框架总结对比如下表1所示：</p>
-<center><strong>表1 Word2vec两种实现方法比较</strong></center>
-
-<table>
-<thead>
-<tr>
-<th>对比项</th>
-<th>CBOW+HS</th>
-<th>Skip-gram+HS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>训练样本</td>
-<td>已知上下文，预测下一个词</td>
-<td>已知当前词，预测上下文</td>
-</tr>
-<tr>
-<td>输入层</td>
-<td>词语w前后各c个词对应的词向量</td>
-<td>当前词w对应的词向量</td>
-</tr>
-<tr>
-<td>投影层</td>
-<td>输入层的2c个词向量的累加</td>
-<td>当前词w对应的词向量（恒等投影）</td>
-</tr>
-<tr>
-<td>输出层</td>
-<td>以词语在语料库中的词频作为权值构造的一棵二叉树。叶子节点对应词汇表中的所有词语。假设叶子节点为N个，则非叶子节点为N-1个。叶子节点和非叶子节点均对应一个向量。其中叶子节点对应的向量即为词向量，而非叶子节点对应的向量是一个辅助向量。</td>
-<td>同左</td>
-</tr>
-<tr>
-<td>训练参数</td>
-<td>词汇表中词语对应的词向量，输出层非叶子节点对应的辅助向量</td>
-<td>同左</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><ul>
-<li>Bolukbasi, T., et al. (2016). Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings.</li>
-<li>Borner, K., et al. (2018). “Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy.” Proceedings of the National Academy of Sciences of the United States(50): 12630.</li>
-<li>Garg, N., et al. (2017). Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes.</li>
-<li>Kozlowski, A. C., et al. (2018). The Geometry of Culture: Analyzing Meaning through Word Embeddings.</li>
-<li>熊富林, 邓怡豪 and 唐晓晟 (2015). “Word2vec的核心架构及其应用.” 南京师范大学学报(工程技术版) 15(01): 43-48.</li>
-<li>周练 (2015). “Word2vec的工作原理及应用探究.” 科技情报开发与经济 25(02): 145-148.</li>
-</ul>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>时代的变化与技术的发展，已经使得原来很难进行的研究方法变得非常容易，尤其是数据时代的到来使得社会科学的研究发生了革命性的转变。但目前来说，我们仍然处在数字时代的早期阶段。<a id="more"></a>这本书主要面向两个群体：社会科学家和数据科学家。</p>
+<p>对于数据科学家而言，有两个常见误解需要澄清。第一是认为数据越多越好。第二个是认为社会科学只是一种玩弄文字的游戏。而对于社会科学家而言，同样有两个误解。第一个是因为一些少数不真实的数据而彻底否定使用数字时代的工具进行研究；第二个是容易将现在和未来混淆，也就是“这类研究做得怎么样”和“这类研究将来会做得怎么样”。这本书更关心第二个问题，相对来说，对于计算社会科学的发展更乐观。这也具备了一定的科学社会学意义，任何新兴研究在刚开始的时候总是会受到来自社会各界，尤其是学术界的质疑。但通常来说，质疑往往代表旧有评判标准对新生事物的看法，其中一些具有建设性的质疑是可以纳入思考范围内的。</p>
+<h1 id="第一章-简介"><a href="#第一章-简介" class="headerlink" title="第一章 简介"></a>第一章 简介</h1><h2 id="一处墨迹"><a href="#一处墨迹" class="headerlink" title="一处墨迹"></a>一处墨迹</h2><h2 id="欢迎来到数字时代"><a href="#欢迎来到数字时代" class="headerlink" title="欢迎来到数字时代"></a>欢迎来到数字时代</h2><h2 id="研究设计"><a href="#研究设计" class="headerlink" title="研究设计"></a>研究设计</h2><h2 id="本书的主题"><a href="#本书的主题" class="headerlink" title="本书的主题"></a>本书的主题</h2><h2 id="本书梗概"><a href="#本书梗概" class="headerlink" title="本书梗概"></a>本书梗概</h2><h1 id="第二章-观察行为"><a href="#第二章-观察行为" class="headerlink" title="第二章 观察行为"></a>第二章 观察行为</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h2 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h2><h2 id="大数据的十个共同特征"><a href="#大数据的十个共同特征" class="headerlink" title="大数据的十个共同特征"></a>大数据的十个共同特征</h2><h2 id="研究策略"><a href="#研究策略" class="headerlink" title="研究策略"></a>研究策略</h2><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><h1 id="第三章-提问"><a href="#第三章-提问" class="headerlink" title="第三章 提问"></a>第三章 提问</h1><h2 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h2><h2 id="提问与观察"><a href="#提问与观察" class="headerlink" title="提问与观察"></a>提问与观察</h2><h2 id="调查误差总框架"><a href="#调查误差总框架" class="headerlink" title="调查误差总框架"></a>调查误差总框架</h2><h2 id="向谁提问"><a href="#向谁提问" class="headerlink" title="向谁提问"></a>向谁提问</h2><h2 id="提问的新方法"><a href="#提问的新方法" class="headerlink" title="提问的新方法"></a>提问的新方法</h2><h2 id="与大数据资源相结合的调查"><a href="#与大数据资源相结合的调查" class="headerlink" title="与大数据资源相结合的调查"></a>与大数据资源相结合的调查</h2><h2 id="结论-1"><a href="#结论-1" class="headerlink" title="结论"></a>结论</h2><h1 id="第四章-开展实验"><a href="#第四章-开展实验" class="headerlink" title="第四章 开展实验"></a>第四章 开展实验</h1><h2 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h2><h2 id="什么是实验"><a href="#什么是实验" class="headerlink" title="什么是实验"></a>什么是实验</h2><h2 id="实验的两个维度：实验室-实地以及模拟-数字"><a href="#实验的两个维度：实验室-实地以及模拟-数字" class="headerlink" title="实验的两个维度：实验室-实地以及模拟-数字"></a>实验的两个维度：实验室-实地以及模拟-数字</h2><h2 id="超越简单实验"><a href="#超越简单实验" class="headerlink" title="超越简单实验"></a>超越简单实验</h2><h2 id="使实验成为现实"><a href="#使实验成为现实" class="headerlink" title="使实验成为现实"></a>使实验成为现实</h2><h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><h2 id="结论-2"><a href="#结论-2" class="headerlink" title="结论"></a>结论</h2><h1 id="第五章-进行大规模协作"><a href="#第五章-进行大规模协作" class="headerlink" title="第五章 进行大规模协作"></a>第五章 进行大规模协作</h1><h2 id="简介-3"><a href="#简介-3" class="headerlink" title="简介"></a>简介</h2><h2 id="人本计算"><a href="#人本计算" class="headerlink" title="人本计算"></a>人本计算</h2><h2 id="公开征集"><a href="#公开征集" class="headerlink" title="公开征集"></a>公开征集</h2><h2 id="分布式数据采集"><a href="#分布式数据采集" class="headerlink" title="分布式数据采集"></a>分布式数据采集</h2><h2 id="设计你自己的大规模协作项目"><a href="#设计你自己的大规模协作项目" class="headerlink" title="设计你自己的大规模协作项目"></a>设计你自己的大规模协作项目</h2><h2 id="结论-3"><a href="#结论-3" class="headerlink" title="结论"></a>结论</h2><h1 id="第六章-道德伦理"><a href="#第六章-道德伦理" class="headerlink" title="第六章 道德伦理"></a>第六章 道德伦理</h1><h2 id="简介-4"><a href="#简介-4" class="headerlink" title="简介"></a>简介</h2><h2 id="三个事例"><a href="#三个事例" class="headerlink" title="三个事例"></a>三个事例</h2><h2 id="数字时代的不同"><a href="#数字时代的不同" class="headerlink" title="数字时代的不同"></a>数字时代的不同</h2><h2 id="四项原则"><a href="#四项原则" class="headerlink" title="四项原则"></a>四项原则</h2><h2 id="两种道德框架"><a href="#两种道德框架" class="headerlink" title="两种道德框架"></a>两种道德框架</h2><h2 id="困难面"><a href="#困难面" class="headerlink" title="困难面"></a>困难面</h2><h2 id="实用技巧"><a href="#实用技巧" class="headerlink" title="实用技巧"></a>实用技巧</h2><h2 id="结论-4"><a href="#结论-4" class="headerlink" title="结论"></a>结论</h2><h1 id="第七章-未来"><a href="#第七章-未来" class="headerlink" title="第七章 未来"></a>第七章 未来</h1><h2 id="展望"><a href="#展望" class="headerlink" title="展望"></a>展望</h2><h2 id="未来主题"><a href="#未来主题" class="headerlink" title="未来主题"></a>未来主题</h2><h2 id="回到开始"><a href="#回到开始" class="headerlink" title="回到开始"></a>回到开始</h2><hr>
+<p>作者：马修·萨尔加尼克【美】（Matthew J. Salganik）<br>原名：<em>Bit by Bit: Social Research in the Digital Age</em> (2018)<br>译者：赵红梅，赵婷<br>出版社：中信出版集团（北京）<br>出版年份：2019</p>
 
       
     </div>
@@ -531,7 +453,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://mayukun1996.github.io/2019/05/27/Paper_W2VAppInSociology/" title="词嵌入在社科中的应用">http://mayukun1996.github.io/2019/05/27/Paper_W2VAppInSociology/</a>
+    <a href="http://mayukun1996.github.io/2019/06/22/Books/Book_CSS/" title="《计算社会学》">http://mayukun1996.github.io/2019/06/22/Books/Book_CSS/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -548,13 +470,11 @@
           
             <a href="/tags/笔记/" rel="tag"># 笔记</a>
           
+            <a href="/tags/研究/" rel="tag"># 研究</a>
+          
             <a href="/tags/社会学/" rel="tag"># 社会学</a>
           
             <a href="/tags/计算社会科学/" rel="tag"># 计算社会科学</a>
-          
-            <a href="/tags/研究/" rel="tag"># 研究</a>
-          
-            <a href="/tags/词向量/" rel="tag"># 词向量</a>
           
         </div>
       
@@ -567,8 +487,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/19/plotnine-hanz-code/" rel="next" title="Python之plotnine中ggplot中文乱码问题">
-                <i class="fa fa-chevron-left"></i> Python之plotnine中ggplot中文乱码问题
+              <a href="/2019/06/14/Paper/Paper_occupational-prestige/" rel="next" title="职业声望">
+                <i class="fa fa-chevron-left"></i> 职业声望
               </a>
             
           </div>
@@ -577,8 +497,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/29/research/" rel="prev" title="关于“研究”">
-                关于“研究” <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/22/Books/Book_Stratification10lec/" rel="prev" title="《社会分层十讲》（第二版）">
+                《社会分层十讲》（第二版） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -723,7 +643,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Word-Embeddings-Quantify-100-Years-of-Gender-and-Ethnic-Stereotypes"><span class="nav-number">1.</span> <span class="nav-text">Word Embeddings Quantify 100 Years of Gender and Ethnic Stereotypes</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Embedding-Framework-Overview-and-Validations"><span class="nav-number">1.1.</span> <span class="nav-text">Embedding Framework Overview and Validations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary-of-Data-and-Methods"><span class="nav-number">1.1.1.</span> <span class="nav-text">Summary of Data and Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Validation-of-the-Embedding-Bias"><span class="nav-number">1.1.2.</span> <span class="nav-text">Validation of the Embedding Bias</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quantifying-Gender-Stereotypes"><span class="nav-number">1.2.</span> <span class="nav-text">Quantifying Gender Stereotypes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Occupational-Stereotypes-Beyond-Census-Data"><span class="nav-number">1.2.1.</span> <span class="nav-text">Occupational Stereotypes Beyond Census Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Quantifying-Changing-Attitudes-with-Adjective-Embeddings"><span class="nav-number">1.2.2.</span> <span class="nav-text">Quantifying Changing Attitudes with Adjective Embeddings</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quantifying-Ethnic-Stereotypes"><span class="nav-number">1.3.</span> <span class="nav-text">Quantifying Ethnic Stereotypes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Trends-in-Asian-Stereotypes"><span class="nav-number">1.3.1.</span> <span class="nav-text">Trends in Asian Stereotypes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Trends-in-Other-Ethnic-and-Cultural-Stereotypes"><span class="nav-number">1.3.2.</span> <span class="nav-text">Trends in Other Ethnic and Cultural Stereotypes</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Discussion"><span class="nav-number">1.4.</span> <span class="nav-text">Discussion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Materials-and-Methods"><span class="nav-number">1.5.</span> <span class="nav-text">Materials and Methods</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#The-Geometry-of-Culture-Analyzing-Meaning-through-Word-Embeddings"><span class="nav-number">2.</span> <span class="nav-text">The Geometry of Culture Analyzing Meaning through Word Embeddings</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">2.1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Formal-text-analysis-in-the-study-of-culture"><span class="nav-number">2.2.</span> <span class="nav-text">Formal text analysis in the study of culture</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Word-embedding-models-and-complex-semantic-relationships"><span class="nav-number">2.3.</span> <span class="nav-text">Word embedding models and complex semantic relationships</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cultural-Dimensions-of-word-embeddings"><span class="nav-number">2.4.</span> <span class="nav-text">Cultural Dimensions of word embeddings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Word-embeddings-and-cultural-theory"><span class="nav-number">2.5.</span> <span class="nav-text">Word embeddings and cultural theory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-amp-Methods"><span class="nav-number">2.6.</span> <span class="nav-text">Data &amp; Methods</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Survey-of-Cultural-Associations"><span class="nav-number">2.6.1.</span> <span class="nav-text">Survey of Cultural Associations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Word-embedding-data"><span class="nav-number">2.6.2.</span> <span class="nav-text">Word embedding data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Statistical-Significance-of-Distances-and-Associations"><span class="nav-number">2.6.3.</span> <span class="nav-text">Statistical Significance of Distances and Associations</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Results"><span class="nav-number">2.7.</span> <span class="nav-text">Results</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Discussion-1"><span class="nav-number">2.8.</span> <span class="nav-text">Discussion</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Skill-Discrepancies-Between-Resarch-Education-and-Jobs-Reveal-the-Critical-Need-to-Supply-Soft-Skills-for-the-Data-Economy"><span class="nav-number">3.</span> <span class="nav-text">Skill Discrepancies Between Resarch, Education, and Jobs Reveal the Critical Need to Supply Soft Skills for the Data Economy</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Man-is-to-Computer-Programmer-as-Woman-is-to-Homemaker-Debiasing-Word-Embeddings"><span class="nav-number">4.</span> <span class="nav-text">Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Word2vec的核心架构及其应用"><span class="nav-number">5.</span> <span class="nav-text">Word2vec的核心架构及其应用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#神经网络概率语言模型的发展"><span class="nav-number">5.1.</span> <span class="nav-text">神经网络概率语言模型的发展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Word2vec模型的核心架构"><span class="nav-number">5.2.</span> <span class="nav-text">Word2vec模型的核心架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CBOW模型"><span class="nav-number">5.2.1.</span> <span class="nav-text">CBOW模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Skip-gram模型"><span class="nav-number">5.2.2.</span> <span class="nav-text">Skip-gram模型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">6.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-简介"><span class="nav-number">2.</span> <span class="nav-text">第一章 简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一处墨迹"><span class="nav-number">2.1.</span> <span class="nav-text">一处墨迹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#欢迎来到数字时代"><span class="nav-number">2.2.</span> <span class="nav-text">欢迎来到数字时代</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#研究设计"><span class="nav-number">2.3.</span> <span class="nav-text">研究设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本书的主题"><span class="nav-number">2.4.</span> <span class="nav-text">本书的主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本书梗概"><span class="nav-number">2.5.</span> <span class="nav-text">本书梗概</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章-观察行为"><span class="nav-number">3.</span> <span class="nav-text">第二章 观察行为</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">3.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大数据"><span class="nav-number">3.2.</span> <span class="nav-text">大数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大数据的十个共同特征"><span class="nav-number">3.3.</span> <span class="nav-text">大数据的十个共同特征</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#研究策略"><span class="nav-number">3.4.</span> <span class="nav-text">研究策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论"><span class="nav-number">3.5.</span> <span class="nav-text">结论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-提问"><span class="nav-number">4.</span> <span class="nav-text">第三章 提问</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介-1"><span class="nav-number">4.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提问与观察"><span class="nav-number">4.2.</span> <span class="nav-text">提问与观察</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调查误差总框架"><span class="nav-number">4.3.</span> <span class="nav-text">调查误差总框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向谁提问"><span class="nav-number">4.4.</span> <span class="nav-text">向谁提问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#提问的新方法"><span class="nav-number">4.5.</span> <span class="nav-text">提问的新方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与大数据资源相结合的调查"><span class="nav-number">4.6.</span> <span class="nav-text">与大数据资源相结合的调查</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论-1"><span class="nav-number">4.7.</span> <span class="nav-text">结论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-开展实验"><span class="nav-number">5.</span> <span class="nav-text">第四章 开展实验</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介-2"><span class="nav-number">5.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是实验"><span class="nav-number">5.2.</span> <span class="nav-text">什么是实验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验的两个维度：实验室-实地以及模拟-数字"><span class="nav-number">5.3.</span> <span class="nav-text">实验的两个维度：实验室-实地以及模拟-数字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#超越简单实验"><span class="nav-number">5.4.</span> <span class="nav-text">超越简单实验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使实验成为现实"><span class="nav-number">5.5.</span> <span class="nav-text">使实验成为现实</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建议"><span class="nav-number">5.6.</span> <span class="nav-text">建议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论-2"><span class="nav-number">5.7.</span> <span class="nav-text">结论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第五章-进行大规模协作"><span class="nav-number">6.</span> <span class="nav-text">第五章 进行大规模协作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介-3"><span class="nav-number">6.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人本计算"><span class="nav-number">6.2.</span> <span class="nav-text">人本计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公开征集"><span class="nav-number">6.3.</span> <span class="nav-text">公开征集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式数据采集"><span class="nav-number">6.4.</span> <span class="nav-text">分布式数据采集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计你自己的大规模协作项目"><span class="nav-number">6.5.</span> <span class="nav-text">设计你自己的大规模协作项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论-3"><span class="nav-number">6.6.</span> <span class="nav-text">结论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第六章-道德伦理"><span class="nav-number">7.</span> <span class="nav-text">第六章 道德伦理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介-4"><span class="nav-number">7.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三个事例"><span class="nav-number">7.2.</span> <span class="nav-text">三个事例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数字时代的不同"><span class="nav-number">7.3.</span> <span class="nav-text">数字时代的不同</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四项原则"><span class="nav-number">7.4.</span> <span class="nav-text">四项原则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两种道德框架"><span class="nav-number">7.5.</span> <span class="nav-text">两种道德框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#困难面"><span class="nav-number">7.6.</span> <span class="nav-text">困难面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实用技巧"><span class="nav-number">7.7.</span> <span class="nav-text">实用技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论-4"><span class="nav-number">7.8.</span> <span class="nav-text">结论</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第七章-未来"><span class="nav-number">8.</span> <span class="nav-text">第七章 未来</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#展望"><span class="nav-number">8.1.</span> <span class="nav-text">展望</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#未来主题"><span class="nav-number">8.2.</span> <span class="nav-text">未来主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回到开始"><span class="nav-number">8.3.</span> <span class="nav-text">回到开始</span></a></li></ol></li></ol></div>
             
 
           </div>

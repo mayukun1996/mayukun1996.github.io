@@ -77,7 +77,7 @@
 
 
 
-  <meta name="keywords" content="笔记,社会学,">
+  <meta name="keywords" content="笔记,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="译者卷首语篇一：作为隐喻的疾病篇二：艾滋病及其隐喻">
-<meta name="keywords" content="笔记,社会学">
+<meta name="description" content="小样本OLS大样本OLS">
+<meta name="keywords" content="笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《疾病的隐喻》">
-<meta property="og:url" content="http://mayukun1996.github.io/2019/05/17/读书笔记/Book_Illness-as-Metaphor/index.html">
+<meta property="og:title" content="OLS">
+<meta property="og:url" content="http://mayukun1996.github.io/2019/05/16/Instruments/Statistics/OLS/index.html">
 <meta property="og:site_name" content="马昱堃">
-<meta property="og:description" content="译者卷首语篇一：作为隐喻的疾病篇二：艾滋病及其隐喻">
+<meta property="og:description" content="小样本OLS大样本OLS">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-26T13:59:13.522Z">
+<meta property="og:updated_time" content="2019-06-05T11:20:43.959Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《疾病的隐喻》">
-<meta name="twitter:description" content="译者卷首语篇一：作为隐喻的疾病篇二：艾滋病及其隐喻">
+<meta name="twitter:title" content="OLS">
+<meta name="twitter:description" content="小样本OLS大样本OLS">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://mayukun1996.github.io/2019/05/17/读书笔记/Book_Illness-as-Metaphor/">
+  <link rel="canonical" href="http://mayukun1996.github.io/2019/05/16/Instruments/Statistics/OLS/">
 
 
 
 
 
-  <title>《疾病的隐喻》 | 马昱堃</title>
+  <title>OLS | 马昱堃</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://mayukun1996.github.io/2019/05/17/读书笔记/Book_Illness-as-Metaphor/">
+    <link itemprop="mainEntityOfPage" href="http://mayukun1996.github.io/2019/05/16/Instruments/Statistics/OLS/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="马昱堃">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">《疾病的隐喻》</h1>
+          <h1 class="post-title" itemprop="name headline">OLS</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-17T11:00:00+08:00">
-                2019-05-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-16T11:00:00+08:00">
+                2019-05-16
               </time>
             
 
@@ -356,8 +356,19 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/读书笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">读书笔记</span>
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/工具/统计/" itemprop="url" rel="index">
+                    <span itemprop="name">统计</span>
                   </a>
                 </span>
 
@@ -392,7 +403,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.8k
+                  687
                 </span>
               
 
@@ -408,7 +419,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  9
+                  2
                 </span>
               
             </div>
@@ -429,87 +440,34 @@
       
 
       
-        <p><a href="#译者卷首语">译者卷首语</a><br><a href="#篇一：作为隐喻的疾病">篇一：作为隐喻的疾病</a><br><a href="#篇二：艾滋病及其隐喻">篇二：艾滋病及其隐喻</a></p>
+        <p><a href="#小样本OLS">小样本OLS</a><br><a href="#大样本OLS">大样本OLS</a></p>
 <a id="more"></a>
+<h2 id="小样本OLS"><a href="#小样本OLS" class="headerlink" title="小样本OLS"></a>小样本OLS</h2><h3 id="假定1：线性假定"><a href="#假定1：线性假定" class="headerlink" title="假定1：线性假定"></a>假定1：线性假定</h3><p>总体模型为：</p>
+<p>$$<br>y_i=\beta_1x_{i1}+\beta_2x_{i2}+\cdots+\beta_kx_{ik}+\varepsilon_i\quad(i=1,\dots,n)<br>$$</p>
+<!-- more -->
+<h3 id="假定2：严格外生性"><a href="#假定2：严格外生性" class="headerlink" title="假定2：严格外生性"></a>假定2：严格外生性</h3><p>$$<br>E(\varepsilon_i|\boldsymbol X)=E(\varepsilon_i|\boldsymbol x_1,\dots,\boldsymbol x_n)=0\quad(i=1,\dots,n)<br>$$</p>
+<h3 id="假定3：不存在严格多重共线性"><a href="#假定3：不存在严格多重共线性" class="headerlink" title="假定3：不存在严格多重共线性"></a>假定3：不存在严格多重共线性</h3><p>变量个数小于等于样本个数。</p>
+<h3 id="假定4：球形扰动项"><a href="#假定4：球形扰动项" class="headerlink" title="假定4：球形扰动项"></a>假定4：球形扰动项</h3><p>同方差假定。</p>
+<h3 id="假定5：误差的正态性假定"><a href="#假定5：误差的正态性假定" class="headerlink" title="假定5：误差的正态性假定"></a>假定5：误差的正态性假定</h3><p><strong>用于t检验</strong><br>给定$\boldsymbol X$的情况下，$\boldsymbol \varepsilon | \boldsymbol X$的条件分布为正态。</p>
 <hr>
-<h1 id="译者卷首语"><a href="#译者卷首语" class="headerlink" title="译者卷首语"></a>译者卷首语</h1><p>苏珊·桑塔格的这本小书里面包含两篇短文，她因为自身缓过癌症而亲身体会到了疾病与附加在疾病之上的道德判断对她造成的双重痛苦，并认为第二种痛苦的伤害更深。<!--more--></p>
-<p>她遵循福柯<strong>知识考古学</strong>的方法对疾病之上附加的道德意义进行考察，聚焦于“疾病被当作修辞手法或隐喻加以使用的情形”，并认为“疾病并非隐喻，而看待疾病的最真诚的方式——同时也是患者对待疾病的最健康的方式——是尽可能消除或抵制隐喻性思考”。</p>
-<h1 id="篇一：作为隐喻的疾病"><a href="#篇一：作为隐喻的疾病" class="headerlink" title="篇一：作为隐喻的疾病"></a>篇一：作为隐喻的疾病</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><blockquote>
-<p>结核病在十九世纪所激发出来的和癌症在当今所激发出来的那些幻象，是对一个医学假定自己能够包治百病的时代里出现的一种被认为难以治愈、神秘莫测的疾病——即一种人们缺乏了解的疾病——的反应。<sup><a href="#参考文献">1</a></sup></p>
-</blockquote>
-<p>这就是疾病的神秘化，现代医学越是以权威的姿态宣布已经攻克的医学难题，没有攻克的未知领域越容易被神秘主义盘踞。</p>
-<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>可以看到疾病（结核病、癌症）作为一个名词，首先在词源上就和当时历史中人们对待这种“异常”的态度相关，能够体现人们态度的词汇有形容词和动词。形容词反映了人们对待疾病的认识与判断，动词则反映了人们对待疾病的方式。形容词可能有“坏”、“不好”、“恶心”等，动词可能有“摘除”、“切除”等。</p>
-<blockquote>
-<p>结核病是一种时间病；它加速了生命，照亮了生命，使生命超凡脱俗……癌症……是有终点的；…… 在癌症的早期修辞性使用中，癌症被当做“懒散”或“懒惰”的隐喻。<sup><a href="#参考文献">2</a></sup></p>
-</blockquote>
-<p>——这就表明，随着时间的推进，疾病的隐喻会发生变化。造成这种变化的原因一方面是医学对疾病的认识本身不断深入，另一方面也和社会制度和社会结构的变化相关。很有可能和现代性本身的进程也相关，虽然我一向认为现代性是一个简单化的解释标签。</p>
-<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p>结核病和癌症的隐喻历史发展过程中，曾经都被理解为<strong>热情病</strong>。不同的是，结核病曾经被认为是热情过剩造成的，而癌症则是因为热情匮乏。结核病也曾被解释成失意带来的恶果。</p>
-<p>可以看到，在这一部分的写作中，作者引用了非常多的小说文本，这些文本当中对疾病的描述和患病之人的状态反映的就是人们对于疾病的态度，也即赋予疾病的隐喻。这些隐喻并不都是非常直接地被人们所认识，有时也是通过间接的方式。不论是颂扬还是贬损，人们都或直接或间接地把一些正面或负面的评价词汇赋予疾病。</p>
-<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><blockquote>
-<p>的确，把结核病浪漫化，是把自我提升到形象高度的那种颇有现代特色的做法的第一个广为流传的范例。<sup><a href="#参考文献">3</a></sup><br>浪漫派把疾病当作自己优哉游哉的生活和逃避资产阶级义务的托辞，为的是只为自己的艺术活着。<sup><a href="#参考文献">4</a></sup></p>
-</blockquote>
-<h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><p>疾病在古代会被认为是一种对恶行的惩罚。在现代，即便人们不把疾病与“对邪恶的惩罚”相关联，人们也会将之视为一种道德败坏的反映。</p>
-<blockquote>
-<p>即便该流行病不被认为是上天对某个群体的审判，但只要从结果一路追溯到源头，它势必就变成了上天对该群体的一种审判，似乎它启动了道德和风尚的不可阻挡的崩溃。<sup><a href="#参考文献">5</a></sup><br>对那些不被这么感伤地加以描绘的人物来说，疾病被看作是为他们提供了一个最终行善的机会。至少，疾病的不幸能够擦亮人的眼睛，使他看清一生中的种种自欺和人格的失败。<sup><a href="#参考文献">6</a><sup></sup></sup></p>
-</blockquote>
-<h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2><p>患者被认为对自身患有的疾病负责任。</p>
-<h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2><blockquote>
-<p>越来越多的文学作品和研究著作都在支持这种有关癌症的情感病因的理论……宣布癌症与痛苦情感之间存在着具有科学依据的关联……然而，同样可能的是，在同等数目的<strong>未</strong>患癌症的人中，大部分人也会称自己情绪低落，曾遭受过精神创伤：这被称为“人类状况”。<sup><a href="#参考文献">7</a></sup>  </p>
-</blockquote>
-<p>疾病开始变成是一种与人类心理有关的症状，任何生理性的疾病只要被视为是“心理性”的，它就变得可以战胜，这是一种扩大心理疾病范畴的倾向。扩大心理疾病范畴依赖于两种假说：  </p>
-<ul>
-<li>每一种对社会常规的偏离都可以被看作是一种疾病；</li>
-<li>每一种疾病都可以从心理上看待</li>
-</ul>
-<blockquote>
-<p>这两种假说互为补充。第一种假说似乎在消除内疚感，第二种假说却又恢复了内疚感。<sup><a href="#参考文献">8</a></sup></p>
-</blockquote>
-<h2 id="8"><a href="#8" class="headerlink" title="8"></a>8</h2><blockquote>
-<p>没有比赋予疾病以某种意义根据惩罚性的了——被赋予的意义无一例外地是道德方面的意义。任何一种病因不明、医治无效的重疾，都充斥着意义。<br>首先，内心最深处所恐惧的各种东西全都与疾病划上了等号。疾病本身变成了隐喻。<br>其次，藉疾病之名（即把疾病当作隐喻使用），这种恐惧被移置到其他事物上。疾病于是变成了形容词。<sup><a href="#参考文献">9</a></sup></p>
-</blockquote>
-<p>疾病不可避免地与它的症状相关联，而症状会影响人的行为，行为又会被赋予（道德上的）意义，由此，疾病便不可避免地卷入了意义赋予的过程当中。</p>
-<blockquote>
-<p>一种疾病只有通过种种不同的病因才能够作出解释，这种观点正好体现了看待那些尚不清楚病因的疾病的思考方式的特征。正是那些并认为具有多重病因的（这就是说，神秘的）疾病，具有被当作隐喻使用的最广泛的可能性，它们被用来描绘那些从社会意义和道德意义上感到不正确的事物。<sup><a href="#参考文献">10</a></sup></p>
-</blockquote>
-<p>这句话似乎暗示，一旦一种疾病的病因找到了科学上的解释，尤其是外部原因（如细菌病毒）导致的疾病，那么这种疾病可能就会丧失隐喻化的可能性。病因越是确定，隐喻的成分就越低。但并不是所有的疾病都是这样，像梅毒这样的疾病，即便病因是外部的，但它也仍然和患者自身的行为相关，人们会认为患者患病的原因是自己不检点的生活方式。</p>
-<p>人们用来描述疾病的语言也来自于当时社会盛行的制度。  </p>
-<blockquote>
-<p>十九世纪产生的那些有关结核病的幻象，反映出早期资本主义对于积累的态度。<br>用来描述癌症的语言让人联想到一种不同的经济灾难：不受节制的、畸形的、混乱的增长导致的经济灾难。<br>结核病被描绘成了这么一些意象，它们囊括了十九世纪经济人的种种负面行为：消耗，浪费，以及挥霍活力。发达资本主义却要求扩张、投机、创造新的需求——它是一种依赖于欲望的非理性耽溺的经济。癌症被描绘成了这么一些意象，它们囊括了二十世纪经济人的种种负面行为：畸形增长以及能量压抑，后者是指拒绝消费或花费。<sup><a href="#参考文献">11</a></sup></p>
-</blockquote>
-<p>再往后，癌症这类疾病逐渐与军事语言勾连在一起，癌细胞在体内的分裂可以被描述为“开疆扩土”、“侵略”等。</p>
-<blockquote>
-<p>过去，结核病被认为与污浊有关，而现在，癌症被认为是整个世界的污染导致的一种疾病。结核病曾被看作是“白瘟疫”。现在，由于人们对环境污染的敏感，他们开始认为，存在着一种癌症“流行病”，或者是癌症“瘟疫”。<sup><a href="#参考文献">12</a></sup></p>
-</blockquote>
-<h2 id="9"><a href="#9" class="headerlink" title="9"></a>9</h2><p>疾病的隐喻通常还深刻反映在政治当中。</p>
-<blockquote>
-<p>如果把城邦政体比作有机体是行得通的话，那把国家的失序比作疾病，也行得通……疾病源自失衡。治疗的目标是恢复正常的均衡——以政治学术语说，是恢复正常的等级制。<sup><a href="#参考文献">13</a></sup></p>
-</blockquote>
-<blockquote>
-<p>在现代政治话语中，疾病隐喻的夸张透露出一种惩罚性的观念：这并不是说疾病是一种惩罚，而是疾病被当作了邪恶的标志，某种将被惩罚的东西的标志。<sup><a href="#参考文献">14</a></sup></p>
-</blockquote>
-<blockquote>
-<p>当然，有可能，在今后的时间里，有关癌症的那种话语会发生变化。当癌症最终被弄清，当治愈率大幅升高，癌症隐喻就必定发生重大改变……随着治疗语言由侵略战争的军事隐喻变成描述身体“自然防卫”的隐喻，癌症将部分地非神秘化；至此，才可能把别的事物比作癌症，而其意不再是提供某种具有宿命色彩的诊断，也不再是呼吁人们采取一切措施打击某个致命的、阴险的敌人……我们关于癌症的看法，以及我们加诸癌症之上的那些隐喻，不过反映了我们这种文化的巨大缺陷：反映了我们对死亡的阴郁态度，反映了我们有关情感的焦虑，反映了我们对真正的“增长问题”的鲁莽的、草率的反应，反映了我们在构造一个适当节制消费的发达工业社会时的无力，也反映了我们对历史进程与日俱增的暴力倾向的并非无根无据的恐惧。<sup><a href="#参考文献">15</a></sup></p>
-</blockquote>
-<h1 id="篇二：艾滋病及其隐喻"><a href="#篇二：艾滋病及其隐喻" class="headerlink" title="篇二：艾滋病及其隐喻"></a>篇二：艾滋病及其隐喻</h1><hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ol>
-<li>苏珊·桑塔格.疾病的隐喻[M].上海：上海世纪出版集团译文出版社.2003:6-7</li>
-<li>同上书:14</li>
-<li>同上书:27-28</li>
-<li>同上书:32</li>
-<li>同上书:38</li>
-<li>同上书:39-40</li>
-<li>同上书:47</li>
-<li>同上书:52</li>
-<li>同上书:53</li>
-<li>同上书:55</li>
-<li>同上书:56-58</li>
-<li>同上书:64-65</li>
-<li>同上书:68</li>
-<li>同上书:72</li>
-<li>同上书:76-77</li>
+<h2 id="大样本OLS"><a href="#大样本OLS" class="headerlink" title="大样本OLS"></a>大样本OLS</h2><p>使用大样本理论的原因：</p>
+<ol>
+<li>小样本理论假设过强。</li>
+<li>小样本的情况下，需要研究<strong>统计量</strong>的精确分布；在大样本下，只需要研究渐近分布。</li>
+<li>样本容量至少$n\geq30$，最好$n\geq100$。</li>
+<li>主要是针对时间序列不同时期随机变量的相关性做修正。</li>
 </ol>
-<hr>
-<p>作者：苏珊·桑塔格【美】（Susan Sontag）<br>原名：<em>Illness as Metaphor and AIDS and Its Metaphors</em> (1977, 1978)<br>译者：程巍<br>出版社：上海世纪出版集团译文出版社（上海）<br>出版年份：2003</p>
+<h3 id="假定1：线性假定-1"><a href="#假定1：线性假定-1" class="headerlink" title="假定1：线性假定"></a>假定1：线性假定</h3><p>这与小样本相同。</p>
+<h3 id="假定2：渐近独立的平稳过程"><a href="#假定2：渐近独立的平稳过程" class="headerlink" title="假定2：渐近独立的平稳过程"></a>假定2：渐近独立的平稳过程</h3><p>$(\boldsymbol K+1)$维随机过程$\lbrace y_i,\boldsymbol x_i \rbrace$为渐近独立的平稳过程。</p>
+<h4 id="平稳过程："><a href="#平稳过程：" class="headerlink" title="平稳过程："></a>平稳过程：</h4><p><strong>严格平稳过程</strong>（stictly stationary process），简称平稳过程，是针对随机过程$\lbrace x_t \rbrace_{t=1}^\infty$而言。可以理解为：将$\lbrace x_{t_1},x_{t_2},\dots,x_{t_m} \rbrace$中的每个变量的时见下标全部平移$k$期，不会改变其分布。</p>
+<h4 id="渐近独立（ergodic）："><a href="#渐近独立（ergodic）：" class="headerlink" title="渐近独立（ergodic）："></a>渐近独立（ergodic）：</h4><p>可以理解为逐渐接近相互独立。在一个随机过程内，短期之内，不同期数之间不会相互独立，但长期过程中，前期与后期之间没有长期路径依赖，也就是接近独立。<br>渐近独立意味着只要两个随机变量期数相距足够远，则可以近似认为它们相互独立。</p>
+<h3 id="假定3：前定解释变量"><a href="#假定3：前定解释变量" class="headerlink" title="假定3：前定解释变量"></a>假定3：前定解释变量</h3><p>所有解释变量均为<strong>前定</strong>（predetermined），即它们与同期扰动项正交，即$E(x_{ik}\varepsilon_i)=0(\forall i,k)$。</p>
+<h3 id="假定4：秩条件"><a href="#假定4：秩条件" class="headerlink" title="假定4：秩条件"></a>假定4：秩条件</h3><p>$K\times K$矩阵$E(\boldsymbol{x_ix_i’})$的逆矩阵存在。</p>
+<h3 id="假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵"><a href="#假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵" class="headerlink" title="假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵"></a>假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵</h3><p>定义如下列向量：</p>
+<p>$$<br>\boldsymbol g_i\equiv \boldsymbol x_i\varepsilon_i =<br>\left(<br>\begin{matrix}<br>x_{i1} \\<br>\vdots \\<br>x_{i\boldsymbol K}<br>\end{matrix}<br>\right)<br>\boldsymbol \varepsilon_i<br>$$</p>
+<h4 id="鞅（martingale）："><a href="#鞅（martingale）：" class="headerlink" title="鞅（martingale）："></a>鞅（martingale）：</h4><p>如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=x_{i-1},\forall i\geq2$，则称其为“<strong>鞅</strong>”。</p>
+<h4 id="鞅差分序列（Martingale-Difference-Sequence-MDS）："><a href="#鞅差分序列（Martingale-Difference-Sequence-MDS）：" class="headerlink" title="鞅差分序列（Martingale Difference Sequence, MDS）："></a>鞅差分序列（Martingale Difference Sequence, MDS）：</h4><p>如果随机过程$\lbrace x_i \rbrace_{i=1}^\infty$满足$E(x_i|x_{i-1},\dots,x_{1})=0,\forall i\geq2$，则称其为“<strong>鞅差分序列</strong>”。<br>这意味着$x_i$均值独立于它的过去所有值。</p>
+<p>协方差矩阵存在可逆矩阵,公式为：<br>$$<br>\boldsymbol{S}\equiv E(\boldsymbol{g_ig_i’})=E(\varepsilon^2_i\boldsymbol{x_ix_i’})<br>$$</p>
 
       
     </div>
@@ -530,7 +488,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://mayukun1996.github.io/2019/05/17/读书笔记/Book_Illness-as-Metaphor/" title="《疾病的隐喻》">http://mayukun1996.github.io/2019/05/17/读书笔记/Book_Illness-as-Metaphor/</a>
+    <a href="http://mayukun1996.github.io/2019/05/16/Instruments/Statistics/OLS/" title="OLS">http://mayukun1996.github.io/2019/05/16/Instruments/Statistics/OLS/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -547,8 +505,6 @@
           
             <a href="/tags/笔记/" rel="tag"># 笔记</a>
           
-            <a href="/tags/社会学/" rel="tag"># 社会学</a>
-          
         </div>
       
 
@@ -560,8 +516,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/16/OLS/" rel="next" title="OLS">
-                <i class="fa fa-chevron-left"></i> OLS
+              <a href="/2019/05/13/Diaries/start/" rel="next" title="初始">
+                <i class="fa fa-chevron-left"></i> 初始
               </a>
             
           </div>
@@ -570,8 +526,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/19/plotnine-hanz-code/" rel="prev" title="Python之plotnine中ggplot中文乱码问题">
-                Python之plotnine中ggplot中文乱码问题 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/17/Books/Book_Illness-as-Metaphor/" rel="prev" title="《疾病的隐喻》">
+                《疾病的隐喻》 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -716,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#译者卷首语"><span class="nav-number">1.</span> <span class="nav-text">译者卷首语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#篇一：作为隐喻的疾病"><span class="nav-number">2.</span> <span class="nav-text">篇一：作为隐喻的疾病</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">2.1.</span> <span class="nav-text">1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2"><span class="nav-number">2.2.</span> <span class="nav-text">2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3"><span class="nav-number">2.3.</span> <span class="nav-text">3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4"><span class="nav-number">2.4.</span> <span class="nav-text">4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5"><span class="nav-number">2.5.</span> <span class="nav-text">5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6"><span class="nav-number">2.6.</span> <span class="nav-text">6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7"><span class="nav-number">2.7.</span> <span class="nav-text">7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8"><span class="nav-number">2.8.</span> <span class="nav-text">8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9"><span class="nav-number">2.9.</span> <span class="nav-text">9</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#篇二：艾滋病及其隐喻"><span class="nav-number">3.</span> <span class="nav-text">篇二：艾滋病及其隐喻</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">3.1.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#小样本OLS"><span class="nav-number">1.</span> <span class="nav-text">小样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定"><span class="nav-number">1.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：严格外生性"><span class="nav-number">1.2.</span> <span class="nav-text">假定2：严格外生性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：不存在严格多重共线性"><span class="nav-number">1.3.</span> <span class="nav-text">假定3：不存在严格多重共线性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：球形扰动项"><span class="nav-number">1.4.</span> <span class="nav-text">假定4：球形扰动项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：误差的正态性假定"><span class="nav-number">1.5.</span> <span class="nav-text">假定5：误差的正态性假定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大样本OLS"><span class="nav-number">2.</span> <span class="nav-text">大样本OLS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假定1：线性假定-1"><span class="nav-number">2.1.</span> <span class="nav-text">假定1：线性假定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定2：渐近独立的平稳过程"><span class="nav-number">2.2.</span> <span class="nav-text">假定2：渐近独立的平稳过程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#平稳过程："><span class="nav-number">2.2.1.</span> <span class="nav-text">平稳过程：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#渐近独立（ergodic）："><span class="nav-number">2.2.2.</span> <span class="nav-text">渐近独立（ergodic）：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定3：前定解释变量"><span class="nav-number">2.3.</span> <span class="nav-text">假定3：前定解释变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定4：秩条件"><span class="nav-number">2.4.</span> <span class="nav-text">假定4：秩条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#假定5：-boldsymbol-g-i-为鞅差分序列，且其协方差矩阵为非退化矩阵"><span class="nav-number">2.5.</span> <span class="nav-text">假定5：$\boldsymbol{g_i}$为鞅差分序列，且其协方差矩阵为非退化矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#鞅（martingale）："><span class="nav-number">2.5.1.</span> <span class="nav-text">鞅（martingale）：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#鞅差分序列（Martingale-Difference-Sequence-MDS）："><span class="nav-number">2.5.2.</span> <span class="nav-text">鞅差分序列（Martingale Difference Sequence, MDS）：</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
