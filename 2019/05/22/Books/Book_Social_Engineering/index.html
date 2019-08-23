@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+<script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script>
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="KJQAvEyMLh62LprwnEMgjjbVaOfYqbKT9MaM30ks6vk">
+
+
+
+  <meta name="msvalidate.01" content="059F63321B781B8C318FCA5606AC1BC4">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="笔记,导论,计算社会科学,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="第1章：社会工程学初探为何本书很重要本书框架 知己知彼，百战不殆。  本书内容社会工程人员的箴言：“我所能做的一切均基于所收集的信息。” 社会工程概述社会工程的真正定义是：一种操纵他人采取特定行动的行为，该行动不一定符合“目标人”的最佳利益，其结果包括获取信息、取得访问权限或让目标采取特定的行动。 数据入侵带来的损失 社会工程及其定位419骗局又称尼日利亚骗局。 利用受害者贪婪的心理。 稀缺的力量">
+<meta name="keywords" content="笔记,导论,计算社会科学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《社会工程：安全体系中的人性漏洞》">
+<meta property="og:url" content="http://mayukun1996.github.io/2019/05/22/Books/Book_Social_Engineering/index.html">
+<meta property="og:site_name" content="马昱堃">
+<meta property="og:description" content="第1章：社会工程学初探为何本书很重要本书框架 知己知彼，百战不殆。  本书内容社会工程人员的箴言：“我所能做的一切均基于所收集的信息。” 社会工程概述社会工程的真正定义是：一种操纵他人采取特定行动的行为，该行动不一定符合“目标人”的最佳利益，其结果包括获取信息、取得访问权限或让目标采取特定的行动。 数据入侵带来的损失 社会工程及其定位419骗局又称尼日利亚骗局。 利用受害者贪婪的心理。 稀缺的力量">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-23T06:06:59.642Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《社会工程：安全体系中的人性漏洞》">
+<meta name="twitter:description" content="第1章：社会工程学初探为何本书很重要本书框架 知己知彼，百战不殆。  本书内容社会工程人员的箴言：“我所能做的一切均基于所收集的信息。” 社会工程概述社会工程的真正定义是：一种操纵他人采取特定行动的行为，该行动不一定符合“目标人”的最佳利益，其结果包括获取信息、取得访问权限或让目标采取特定的行动。 数据入侵带来的损失 社会工程及其定位419骗局又称尼日利亚骗局。 利用受害者贪婪的心理。 稀缺的力量">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://mayukun1996.github.io/2019/05/22/Books/Book_Social_Engineering/">
+
+
+
+
+
+  <title>《社会工程：安全体系中的人性漏洞》 | 马昱堃</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">马昱堃</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://mayukun1996.github.io/2019/05/22/Books/Book_Social_Engineering/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="马昱堃">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/Owl.JPG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="马昱堃">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">《社会工程：安全体系中的人性漏洞》</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-22T21:40:59+08:00">
+                2019-05-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/读书笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">读书笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  21.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  74
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="第1章：社会工程学初探"><a href="#第1章：社会工程学初探" class="headerlink" title="第1章：社会工程学初探"></a>第1章：社会工程学初探</h1><h2 id="为何本书很重要"><a href="#为何本书很重要" class="headerlink" title="为何本书很重要"></a>为何本书很重要</h2><h3 id="本书框架"><a href="#本书框架" class="headerlink" title="本书框架"></a>本书框架</h3><blockquote>
+<p>知己知彼，百战不殆。</p>
+</blockquote>
+<h3 id="本书内容"><a href="#本书内容" class="headerlink" title="本书内容"></a>本书内容</h3><p>社会工程人员的箴言：“我所能做的一切均基于所收集的信息。”</p>
+<h2 id="社会工程概述"><a href="#社会工程概述" class="headerlink" title="社会工程概述"></a>社会工程概述</h2><p>社会工程的真正定义是：一种操纵他人采取特定行动的行为，该行动不一定符合“目标人”的最佳利益，其结果包括获取信息、取得访问权限或让目标采取特定的行动。</p>
+<p><a href="www.darkreading.com/database_security/security/attacks/showArticle.jhtml?articleID=226200272">数据入侵带来的损失</a></p>
+<h3 id="社会工程及其定位"><a href="#社会工程及其定位" class="headerlink" title="社会工程及其定位"></a>社会工程及其定位</h3><h4 id="419骗局"><a href="#419骗局" class="headerlink" title="419骗局"></a>419骗局</h4><p>又称<a href="https://www.social-engineer.org/wiki/archives/ConMen/ConMen-Scam-NigerianFee.html" target="_blank" rel="noopener">尼日利亚骗局</a>。</p>
+<p>利用受害者贪婪的心理。</p>
+<h4 id="稀缺的力量"><a href="#稀缺的力量" class="headerlink" title="稀缺的力量"></a>稀缺的力量</h4><p>利用<a href="https://www.social-engineer.org/wiki/archives/Governments/Governments-FoodElectionWeapon.html" target="_blank" rel="noopener">稀缺的力量</a>。</p>
+<h4 id="员工窃贼"><a href="#员工窃贼" class="headerlink" title="员工窃贼"></a>员工窃贼</h4><ul>
+<li><a href="https://www.social-engineer.org/wiki/archives/DisgruntledEmployees/DisgruntledEmployees-EmployeeTheft.html" target="_blank" rel="noopener">调查报告1，员工卖数据</a></li>
+<li><a href="https://www.social-engineer.org/wiki/archives/DisgruntledEmployees/DisgruntledEmployees-MorganStanley.html" target="_blank" rel="noopener">调查报告2，员工把数据卖给竞争对手</a></li>
+</ul>
+<p>两个问题：</p>
+<ul>
+<li>社会工程人员有多少种？</li>
+<li>他们是否可以被分类？</li>
+</ul>
+<h4 id="黑市和斯普林特大师"><a href="#黑市和斯普林特大师" class="headerlink" title="黑市和斯普林特大师"></a>黑市和斯普林特大师</h4><p>类似于罪犯的网络拍卖市场，主要用于交易个人信息。FBI探员潜入这个组织3年，伪装自己。</p>
+<h3 id="社会工程人员的类型"><a href="#社会工程人员的类型" class="headerlink" title="社会工程人员的类型"></a>社会工程人员的类型</h3><ul>
+<li>黑客：软件攻击越来越难，但硬件及社会工程仍然可用</li>
+<li>渗透测试者：可以被称为“白客”</li>
+<li>间谍：社会工程的专家</li>
+<li>身份窃贼</li>
+<li>不满的员工</li>
+<li>高明的骗子</li>
+<li>高端猎头</li>
+<li>销售人员</li>
+<li>政府</li>
+<li>医生、心理医生和律师</li>
+</ul>
+<h3 id="社会工程的框架及其使用方法"><a href="#社会工程的框架及其使用方法" class="headerlink" title="社会工程的框架及其使用方法"></a>社会工程的框架及其使用方法</h3><p>该框架可以在<a href="http://www.social-engineer.org/framework上查看。" target="_blank" rel="noopener">www.social-engineer.org/framework上查看。</a></p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><hr>
+<h1 id="第2章：信息收集"><a href="#第2章：信息收集" class="headerlink" title="第2章：信息收集"></a>第2章：信息收集</h1><p>本章需要回答的问题：</p>
+<ul>
+<li>怎样收集信息？</li>
+<li>社会工程人员收集信息可以利用的资源有哪些？</li>
+<li>如何利用收集到的信息进一步描述目标？</li>
+<li>如何对这些信息进行定位、存储及分类，才能够使之最易于使用？</li>
+</ul>
+<h2 id="收集信息"><a href="#收集信息" class="headerlink" title="收集信息"></a>收集信息</h2><p>收集信息时不要总想着怎么组织和运用这些数据，创建一个文件或信息收集服务来收集信息才是当务之急。</p>
+<p>BackTrack是信息搜集专用软件。</p>
+<h3 id="使用BasKet"><a href="#使用BasKet" class="headerlink" title="使用BasKet"></a>使用BasKet</h3><p>来源：basket.kde.org</p>
+<h3 id="使用Dradis"><a href="#使用Dradis" class="headerlink" title="使用Dradis"></a>使用Dradis</h3><p>来源：dradisframework.org</p>
+<h3 id="像社会工程人员一样思考"><a href="#像社会工程人员一样思考" class="headerlink" title="像社会工程人员一样思考"></a>像社会工程人员一样思考</h3><p>谨慎对待垃圾：<a href="http://www.social-engineer.org/wiki/archives/BlogPosts/LookWhatIFound.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/BlogPosts/LookWhatIFound.html</a></p>
+<p>作者通过简单的寒暄就能顺藤摸瓜找出很多信息。此外，看到陌生U盘，最好不要在重要电脑上插入。</p>
+<h2 id="信息源"><a href="#信息源" class="headerlink" title="信息源"></a>信息源</h2><h3 id="从网站上收集信息"><a href="#从网站上收集信息" class="headerlink" title="从网站上收集信息"></a>从网站上收集信息</h3><ol>
+<li>搜索引擎。Johnny Long的<em>Google Hacking for Penetration Testers</em>，记录很多谷歌中的巨量信息。使用特殊搜索语法：<a href="http://www.googleguide.com/advanced_operators.html" target="_blank" rel="noopener">www.googleguide.com/advanced_operators.html</a></li>
+<li>Whois域名信息查询。<a href="http://www.whois.net" target="_blank" rel="noopener">www.whois.net</a></li>
+<li>公共服务器。提供很多网站没有的信息，比如操作系统、安装的应用程序和IP地址。IP地址可以说明服务器是在本地还是租的。</li>
+<li>社交媒体。社交网站上上传的照片可能会暴露位置。<a href="http://www.social-engineer.org/wiki/archives/BlogPosts/TwitterHomeRobbery.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/BlogPosts/TwitterHomeRobbery.html</a></li>
+<li>个人网站、博客等</li>
+<li>公开报告</li>
+<li>背景查询：<a href="http://www.USSearch.com；www.intelius.com" target="_blank" rel="noopener">www.USSearch.com；www.intelius.com</a></li>
+</ol>
+<h3 id="运用观察的力量"><a href="#运用观察的力量" class="headerlink" title="运用观察的力量"></a>运用观察的力量</h3><h3 id="垃圾堆里找信息"><a href="#垃圾堆里找信息" class="headerlink" title="垃圾堆里找信息"></a>垃圾堆里找信息</h3><h3 id="运用分析软件"><a href="#运用分析软件" class="headerlink" title="运用分析软件"></a>运用分析软件</h3><h2 id="交流模型"><a href="#交流模型" class="headerlink" title="交流模型"></a>交流模型</h2><p>交流：信息经过打包，由发送者通过传输媒介送达接收者，接收者解密收到的信息并给发送者送去反馈。</p>
+<p>一些交流原则：</p>
+<ul>
+<li>不要理所当然地认为接收者和你的情况完全一样；</li>
+<li>不要理所当然地认为接收者将按照你的方式阐释信息；</li>
+<li>交流不是一个绝对的、一成不变的事情；</li>
+<li>如果有多人参与交流，应始终假设每个人的情况各不相同。</li>
+</ul>
+<h3 id="交流模型及其根源"><a href="#交流模型及其根源" class="headerlink" title="交流模型及其根源"></a>交流模型及其根源</h3><p>香农-韦弗模型。1947年由克劳德·香农（Claude Shannon）和沃伦·韦弗（Warren Weaver）提出。构建这个模型的基础：</p>
+<ul>
+<li>一个创造信息的信息源</li>
+<li>一个把信息编码为信号的发送方</li>
+<li>一个适合传送信号的信道</li>
+<li>一个从信号中解码（重构）出信息的接收方</li>
+<li>一个信息发送的目的地</li>
+</ul>
+<p>基于上述设定，他们总结出通信中存在的3个层面的问题：</p>
+<ul>
+<li>技术问题——信息传送的准确性如何？</li>
+<li>语义问题——信息表达的精确性如何？</li>
+<li>效率问题——接收到的信息对行为影响的有效性如何？（社会工程中最后一点很重要，必须牢记。社会工程人员的目的就是创造出一个自己想要的行为。）</li>
+</ul>
+<p>大约15年后（1962），大卫·贝罗（David Berlo）扩充了香农-韦弗的线性通信模型，发明出了“发送者-信息-信道-接收者”（SMCR）通信模型。可以认为通信是信息传播的过程，该过程由三个层次的规则控制。</p>
+<ul>
+<li>符号和标识的形式属性</li>
+<li>符号/表情及其使用者之间的关系</li>
+<li>符号和标识间的联系及其含义</li>
+</ul>
+<blockquote>
+<p>请记住，社会工程人员必须是交流的大师，必须能够有效地进入且留在一个人私密的精神空间，并保证不冒犯目标或令目标反感。</p>
+</blockquote>
+<h3 id="制定交流模型"><a href="#制定交流模型" class="headerlink" title="制定交流模型"></a>制定交流模型</h3><p>交流模型的基本要素：</p>
+<ul>
+<li>信息源：社会工程人员就是要传递的信息或交流的源</li>
+<li>信道：传达方式</li>
+<li>信息：传达的内容</li>
+<li>接收方：目标</li>
+<li>反馈：你希望对方在有效信息传递出去之后的回应</li>
+</ul>
+<h2 id="交流模型的力量"><a href="#交流模型的力量" class="headerlink" title="交流模型的力量"></a>交流模型的力量</h2><hr>
+<h1 id="第3章：诱导"><a href="#第3章：诱导" class="headerlink" title="第3章：诱导"></a>第3章：诱导</h1><blockquote>
+<p>不战而屈人之兵，善之善者也。——孙子</p>
+</blockquote>
+<h2 id="诱导的含义"><a href="#诱导的含义" class="headerlink" title="诱导的含义"></a>诱导的含义</h2><p>诱导的意思是引出、套出或者得出一个逻辑上的结论。大部分情况下，目标都不知道何时泄露了信息。如果被怀疑动机不纯，则可以“不过随便问个问题”为由假装生气、蒙混过关。在美国国家安全局的培训材料中，对诱导的定义如下：在貌似正常和平凡的对话中精妙地获取信息。诱导效果好的原因如下：</p>
+<ul>
+<li>大部分人希望看上去比较有礼貌，尤其是对陌生人；</li>
+<li>专业人士希望自己看起来见多识广、很有才气；</li>
+<li>如果得到赞赏，大部分人通常会越说越起劲并泄露更多的秘密；</li>
+<li>大部分人不会为了撒谎而撒谎；</li>
+<li>大部分人对貌似关心自己的人会比较友善。</li>
+</ul>
+<h2 id="诱导的目的"><a href="#诱导的目的" class="headerlink" title="诱导的目的"></a>诱导的目的</h2><p>掌握交谈的艺术需要三个主要步骤：</p>
+<ol>
+<li>表现得自然。</li>
+<li>拥有足够的知识。必须了解与对象交谈时所涉及领域的知识。最要紧的是<strong>你不可能装成自己不可能成为的人</strong>。</li>
+<li>切忌贪婪。如果你一心想要获得自己需要的信息，很快就会被目标看穿。通常情况下，给对方一些感兴趣的东西会引起对方的交换情结，这样对方会觉得有义务给你一些回报。在交谈中这一点也很重要。</li>
+<li>注意自己的气质。气质能够通过打扮、表情、姿态体现出来。</li>
+</ol>
+<h3 id="铺垫"><a href="#铺垫" class="headerlink" title="铺垫"></a>铺垫</h3><p>广告常常使用这种方法，将一些铺垫植入消费者的观念之中。</p>
+<h3 id="成为成功的诱导者"><a href="#成为成功的诱导者" class="headerlink" title="成为成功的诱导者"></a>成为成功的诱导者</h3><p>取得诱导成功的关键要素：</p>
+<ul>
+<li>不惧与他人交谈，并处于非“常规”场景中。</li>
+<li>真心关心他人，即使是陌生人。乐于并享受倾听。</li>
+<li>只有在有了真正的解决方案时才提供建议或帮助。</li>
+<li>在他人说出自己的问题时，不做主观判断。</li>
+</ul>
+<p>诱导成功的关键元素：<a href="http://www.social-engineer.org/wiki/archives/BlogPosts/ocso-elicitation-brochure.pdf" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/BlogPosts/ocso-elicitation-brochure.pdf</a></p>
+<h4 id="1-唤醒他人的自我"><a href="#1-唤醒他人的自我" class="headerlink" title="1.唤醒他人的自我"></a>1.唤醒他人的自我</h4><ul>
+<li>攻击者：“你的工作一定很重要，某某认为你很厉害。”  </li>
+<li>目标：“谢谢，谬赞了，但是我的工作并不那么重要，也就是……”</li>
+</ul>
+<p>这种方式简单有效，但是要注意如果滥用这一强大的工具，或者不是出自真心，则会让目标失去热情。唤醒他人的自我需要微妙的处理。精心的吹捧会促使他人说出一些从未透露过的信息。</p>
+<h4 id="2-表达共同的兴趣"><a href="#2-表达共同的兴趣" class="headerlink" title="2.表达共同的兴趣"></a>2.表达共同的兴趣</h4><ul>
+<li>攻击者：“哇哦，你有ISO 9001规范数据库的背景？那么你该看看我们开发的辅助认证的报告引擎模型，我可以发给你一个副本。”  </li>
+<li>目标：“太好了。我们正琢磨着在系统中添加一个报告引擎呢。”</li>
+</ul>
+<p>可以迅速拓展关系，让攻击者完全掌握形势。如果能建立更深的信任，就能够使目标建立进一步交流的责任感。</p>
+<h4 id="3-故意说谎"><a href="#3-故意说谎" class="headerlink" title="3.故意说谎"></a>3.故意说谎</h4><p>不经意间说错一些事情似乎会适得其反，但处理得好的话却是一件利器。</p>
+<ul>
+<li>攻击者：“所有人都知道XYZ公司这方面的软件销售得最多。”  </li>
+<li>目标：“事实可不是这样。我们公司从1998年就开始销售类似的产品，通常我们的销售记录超过他们23%以上。”</li>
+</ul>
+<p>有效使用这种表达方式会诱导目标说出真实的数据。大部分人在听到错误表述时会有矫正的欲望，似乎他们的正确性受到了挑战。告诉他人、显示自己的博闻强识、不能容忍错误表达等欲望似乎是人类的天性。</p>
+<p>可以用这种方法让目标说出全部细节，也能在一群人中立刻发现谁对这一主题最为了解。</p>
+<h4 id="4-主动提供信息"><a href="#4-主动提供信息" class="headerlink" title="4.主动提供信息"></a>4.主动提供信息</h4><p>在交流中主动提供信息会迫使目标提供具有同样价值的信息。</p>
+<ul>
+<li>“听说Rose的事情吗？我听说她被辞退了，而且现在找工作也很难。”</li>
+<li>“啊！没听说呢。真不幸。我听说乔在办离婚，好像房子也保不住了。”</li>
+</ul>
+<p>人们喜欢分享类似的新闻，可以利用这一倾向，为谈话设定基调或氛围，从而构建出责任感。</p>
+<h4 id="5-假装高深"><a href="#5-假装高深" class="headerlink" title="5.假装高深"></a>5.假装高深</h4><p>如果对方具有某一方面的知识，和他讨论相关问题并无不当。攻击者可以审慎地利用这点，首先展示一些信息，假装知道一些内情，然后使用诱导技术展开话题。过程中可以把别人的观点当成自己的说出来，进一步强化自己的专家假象。</p>
+<h4 id="6-利用酒精的影响"><a href="#6-利用酒精的影响" class="headerlink" title="6.利用酒精的影响"></a>6.利用酒精的影响</h4><blockquote>
+<p>在挖掘秘密方面没有比酒精更有效的东西，这一点很悲哀，但却是事实。</p>
+</blockquote>
+<h3 id="提问的学问"><a href="#提问的学问" class="headerlink" title="提问的学问"></a>提问的学问</h3><p>你的目的是得到一些看似无用的琐碎信息，然后使用他们构建出你所寻求的答案的全貌，或者通过它们一步步取得答案。</p>
+<h4 id="1-开放式问题"><a href="#1-开放式问题" class="headerlink" title="1.开放式问题"></a>1.开放式问题</h4><p>不能仅用是或否来回答的问题，可以打开对方的联想。</p>
+<ul>
+<li>封闭式问题：今天外面相当冷啊，是吧？</li>
+<li>开放式问题：你觉得今天的天气如何？</li>
+</ul>
+<p>开放式问题的另一个强大之处是多使用<strong>为什么（why）</strong>和<strong>怎样（how）</strong>。</p>
+<p>有些人会抵触开放式问题，所以使用<strong>金字塔方法</strong>会好一些。先从范围较窄的问题开始询问，随着谈话的进行会聊到更宽泛的问题。可以从询问青少年开始训练。</p>
+<h4 id="2-封闭式问题"><a href="#2-封闭式问题" class="headerlink" title="2.封闭式问题"></a>2.封闭式问题</h4><p>封闭式问题经常会限制回答的范围，通常不超过两种可能。</p>
+<ul>
+<li>开放式问题：你和经历的关系如何？</li>
+<li>封闭式问题：你和经理的关系好吗？</li>
+</ul>
+<p>封闭式问题的目的不是要得到详细信息，而是要对目标进行引导。</p>
+<h4 id="3-引导性问题"><a href="#3-引导性问题" class="headerlink" title="3.引导性问题"></a>3.引导性问题</h4><p>结合了开放式问题和封闭式问题的特性，是具有答案暗示的开放式问题。例如：</p>
+<ul>
+<li>6月14日晚上11点45分左右，你和Smith先生一起在ABC酒店，是吗？</li>
+</ul>
+<p>这种类型的问题会引导对方，并且为其提供表达自己观点的机会，但是其发挥的空间很狭窄。同时引导性问题暗示目标你对问题的答案已经有所了解。</p>
+<p>引导性问题的答案经常为“是”或“否”，但是与封闭式问题有所不同，因为问题中植入了更多的信息，所以社会工程人员也能获得更多信息。引导性问题陈述了部分事实，然后询问目标是否同意。</p>
+<p>记忆是可以被重构的，通过引导性问题来操纵人们的记忆是可能的。</p>
+<ul>
+<li>“你有没有看到一个泰迪熊？”——没有暗示房间里有一个泰迪熊，回答者根据自己的判断。</li>
+<li>“你看到泰迪熊了吗？”——暗示了房间中有泰迪熊。</li>
+</ul>
+<h4 id="4-假设性问题"><a href="#4-假设性问题" class="headerlink" title="4.假设性问题"></a>4.假设性问题</h4><p>假设性问题就是字面意义：你回假设对象已经拥有特定的知识。通过假设性问题，社会工程人员能够确定目标是否拥有他想要的信息。</p>
+<ul>
+<li>“Smith先生住在哪里？”——通过这一问题，可以知道目标和对方是否认识及熟悉程度。</li>
+</ul>
+<p>注意：不要让目标了解事情的全貌。如果目标了解了整个意图，社会工程人员会丧失对环境的部分控制能力。社会工程人员同样不能用假设性问题指责目标的失误，这样会疏远对方。</p>
+<h2 id="精通诱导"><a href="#精通诱导" class="headerlink" title="精通诱导"></a>精通诱导</h2><p>记住以下几点：</p>
+<ul>
+<li>问题太多会吓跑对方。对话是一种有来有往的交互，你想要问，但也要告诉对方一些信息，让对方感到自然。</li>
+<li>问题太少会让对方不自在。不要假设目标善于交谈，会长篇大论、滔滔不绝。你必须研究谈论的问题，让对话有趣。</li>
+<li>一次只问一个问题。第5章会涉及思维缓冲区溢出，但是这里不是要使对方溢出，而是收集信息，构建答案的轮廓。不能显得太急切，也不能兴味索然。</li>
+</ul>
+<p>一个有效的比喻：将谈话想象成一个漏斗，上面是最大的、最“中性”的部分，底部是最窄的、最直接的部分。开始时问一些相对中性的问题，通过这些问题收集一些情报。在对话中要你来我往，然后问一些开放式问题。如有需要，使用几个封闭式问题引导目标到感兴趣的部分。如果情况允许，进入漏斗底部，询问那些最直接的问题。</p>
+<h2 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h2><hr>
+<h1 id="第4章：伪装：如何成为任何人"><a href="#第4章：伪装：如何成为任何人" class="headerlink" title="第4章：伪装：如何成为任何人"></a>第4章：伪装：如何成为任何人</h1><blockquote>
+<p>以背景故事、衣着、仪表、个性和态度来塑造角色以完成社会工程审计工作……伪装不是扮演某个角色或者出演部分剧情，不是撒谎后不停地圆谎，而是真的成为那个人。你的一丝一毫都是正在扮演的那个人。走路的方式、说话的方式、肢体语言都与那个人一样。</p>
+</blockquote>
+<h2 id="什么是伪装"><a href="#什么是伪装" class="headerlink" title="什么是伪装"></a>什么是伪装</h2><p>伪装的定义是创造虚拟的场景以劝说目标受害者泄露信息或者做出某种行为。所有伪装都有一个共同的特点：研究。<strong>娴熟的信息收集技术是伪装成功的关键</strong>。</p>
+<p>电台主持人必须精于伪装，社会工程电台播客采访汤姆·米施克（Tom Mischke）：<a href="http://www.social-engineer.org/episode-002-pretexting-not-just-for-social-engineers" target="_blank" rel="noopener">www.social-engineer.org/episode-002-pretexting-not-just-for-social-engineers</a></p>
+<p>好的伪装只能通过不断练习实现。</p>
+<p>谨记：<strong>伪装的质量与所搜集的信息质量有直接关系</strong>。</p>
+<h2 id="伪装的原则和计划阶段"><a href="#伪装的原则和计划阶段" class="headerlink" title="伪装的原则和计划阶段"></a>伪装的原则和计划阶段</h2><h3 id="1-调查越充分，成功的几率就越大"><a href="#1-调查越充分，成功的几率就越大" class="headerlink" title="1.调查越充分，成功的几率就越大"></a>1.调查越充分，成功的几率就越大</h3><p>细节决定成败，没有不相关的信息。寻找故事、物品或者个人特点，利用目标个人的性格或者情感依托更好。</p>
+<h3 id="2-植入个人爱好会提高成功率"><a href="#2-植入个人爱好会提高成功率" class="headerlink" title="2.植入个人爱好会提高成功率"></a>2.植入个人爱好会提高成功率</h3><p>个人爱好是一个人向他人传达自己特点的必要途径。</p>
+<blockquote>
+<p>你的自信心始终与任务和自身处境密切相关。不同情况下，我们的自信心是不一样的。</p>
+</blockquote>
+<p>自信可以建立信任和默契，而且让人感觉很放松。</p>
+<p>1957年，Leon Festinger提出认知失调理论，有两个因素影响不协调程度：</p>
+<ul>
+<li>不协调的信念的数量</li>
+<li>每个信念的重要性<br>三种消除不协调的方法：</li>
+<li>降低不协调信念的重要性</li>
+<li>增加更多的协调信念以超过那些不协调信念</li>
+<li>改变那些不协调的信念以使它们协调</li>
+</ul>
+<h3 id="3-练习方言或者表达方式"><a href="#3-练习方言或者表达方式" class="headerlink" title="3.练习方言或者表达方式"></a>3.练习方言或者表达方式</h3><p>用低成本的方式养成一点方言即可，来自《舞台方言（<em>Dialects for the Stage</em>）》【Evangeline Machlin】。</p>
+<ul>
+<li>找到你想学的方言的例句听。</li>
+<li>努力跟着录音带说，学里面人的发音。</li>
+<li>在感到自信以后，用该方言说话并录下，以便在事后听的时候纠正发音。</li>
+<li>营造一个场景并和伙伴进行练习。</li>
+<li>在公众场合用该方言说话，看看别人是否觉得可信。</li>
+</ul>
+<p>即便不能掌握另一种方言，学会工作领域的专业表达方式也可以使情况有所改观。在公共场合听两个人交谈是一个好主意。仔细听人们交谈时所用的短语或关键词。当你听到他们在一些对话中运用的词汇时，可以考虑把它们纳入到你的伪装中，使其更可信。<strong>同样需要勤加练习。</strong></p>
+<h3 id="4-使用电话不会减少社会工程人员投入的精力"><a href="#4-使用电话不会减少社会工程人员投入的精力" class="headerlink" title="4.使用电话不会减少社会工程人员投入的精力"></a>4.使用电话不会减少社会工程人员投入的精力</h3><p>电话背景声音网站：<a href="http://www.thrivingoffice.com" target="_blank" rel="noopener">www.thrivingoffice.com</a></p>
+<p>改变来点现实的号码：<a href="http://www.spoofcard.com" target="_blank" rel="noopener">www.spoofcard.com</a></p>
+<h3 id="5-伪装越简单，成功率越高"><a href="#5-伪装越简单，成功率越高" class="headerlink" title="5.伪装越简单，成功率越高"></a>5.伪装越简单，成功率越高</h3><p>伪装应该尽可能自然、顺畅，应该容易被记住。</p>
+<h3 id="6-伪装必须显得自然"><a href="#6-伪装必须显得自然" class="headerlink" title="6.伪装必须显得自然"></a>6.伪装必须显得自然</h3><p>可以使用大纲模式，而不是剧本模式。大纲模式相当于半结构式，有更多的临场发挥空间。</p>
+<p>下面几条是让伪装更加自然的办法：</p>
+<ul>
+<li>不要考虑自己的感受。比如，在伪装时常常会感受到焦虑、紧张，这种情绪容易破坏伪装。</li>
+<li>不要把事情太当真。这条实际上说的是心放宽。不要死扣一个小错误，把小错误看得太重往往会影响到大局。换句话说，要学会笑对自己的错误，迅速地调整自己迎接新的世界。</li>
+<li>学会找到相关信息。<ul>
+<li>“摆脱思维的束缚，融入这个世界”。始终留意身边出现的信息和状况，包括目标的肢体语言、说的话、微表情等。</li>
+<li>记住说话者能够看出什么时候你没有在认真听他说话。</li>
+<li>一定要注意听目标所说的话。尤其是注意听到细节。</li>
+</ul>
+</li>
+<li>争取多积累经验。多加练习。</li>
+</ul>
+<h3 id="7-为目标提供逻辑结论或下一步安排"><a href="#7-为目标提供逻辑结论或下一步安排" class="headerlink" title="7.为目标提供逻辑结论或下一步安排"></a>7.为目标提供逻辑结论或下一步安排</h3><blockquote>
+<p>无论你相信与否，事实上人们都希望被告知下一步该做什么。</p>
+</blockquote>
+<p>无论是什么情况，都应给目标一个结论或不会令其怀疑的下一步安排。提出的要求应该和自己伪装的身份相匹配。显然，这些都是社会学角色理论里面涉及到的知识。</p>
+<h2 id="成功的伪装"><a href="#成功的伪装" class="headerlink" title="成功的伪装"></a>成功的伪装</h2><h3 id="案例1：斯坦利·马克·瑞夫金"><a href="#案例1：斯坦利·马克·瑞夫金" class="headerlink" title="案例1：斯坦利·马克·瑞夫金"></a>案例1：斯坦利·马克·瑞夫金</h3><p>案例信息：<a href="http://www.social-engineer.org/wiki/archives/Hachers/hachers-Mark-Rifkin-Social-Engineer-furtherInfo.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/Hachers/hachers-Mark-Rifkin-Social-Engineer-furtherInfo.html</a></p>
+<p>这是一个银行抢劫案。银行的电汇系统需要密码，且每天要强制修改。瑞夫金通过伪装进入了贴有安全密码的绝密房间，并在事后拨通了电话，伪装成该银行的国际分部人员，报出当天密码，要求给特定账户转账。他需要做到以下几点：</p>
+<ul>
+<li>为了能够在密码房间里不引起怀疑，他需要足够镇定和自信。</li>
+<li>提出汇款要求，他需要编一个足够令人信服的故事，而且需要考虑足够多的细节来自圆其说。</li>
+<li>面对可能出现的问题，他要表现得足够自然。</li>
+<li>为了不引起银行员工的怀疑，他说话要足够熟练和流利。</li>
+</ul>
+<p>之后，由于他被熟人认出来，从而被警方抓获。马克的计划是，把偷出来的钱变成不可追溯的钻石。为了实现这一目标，他首先需要成为一名银行雇员以拿到钱，然后变成一个钻石收购商将这些现金“洗掉”，最后通过把钻石卖掉，获得可以使用的、无迹可寻的、干净的现金。</p>
+<h3 id="案例2：惠普"><a href="#案例2：惠普" class="headerlink" title="案例2：惠普"></a>案例2：惠普</h3><p>2006年新闻周刊发表的文章：<a href="http://www.social-engineer.org/resources/book/HP_pretext.html" target="_blank" rel="noopener">www.social-engineer.org/resources/book/HP_pretext.html</a></p>
+<p>故事梗概：惠普公司的董事长Patricia Dunn女士雇用了一个专业的安全团队，这个团队又雇用了私家侦探，私家侦探利用“伪装”技术获取了通话记录。这些聘来的专业人士实际上伪装成了惠普的董事会成员及新闻记者。这一切都是为了找出惠普队伍中可能的泄密者。</p>
+<p>2006年的《电话记录隐私权保护法》：frwebgate.access.gpo.go/cgi-bin/getdoc.cgi?dbname=109_cong_bills&amp;docid=f:h4709enr.txt.pdf</p>
+<p>惠普提交给其律师和内部法律人员的一份机密文件：<a href="http://www.social-engineer.org/resources/book/20061004hewlett6.pdf" target="_blank" rel="noopener">www.social-engineer.org/resources/book/20061004hewlett6.pdf</a></p>
+<p>他们的部分伪装策略：</p>
+<ul>
+<li>将自己伪装成电信运营公司以非法地获取通话记录</li>
+<li>使用被调查者的身份来获取他们的私人通话记录</li>
+<li>利用非法获得的姓名、社会保险号和其他信息建立在线账户，从而获得他们的通话记录</li>
+</ul>
+<p>在伪装的过程中，必须有明确的概要并且规划出哪些法律漏洞可以被利用，而哪些底线是绝不能触碰的。</p>
+<h3 id="遵纪守法"><a href="#遵纪守法" class="headerlink" title="遵纪守法"></a>遵纪守法</h3><p>要对法律中明确规定的违法行为有清晰的了解。</p>
+<h3 id="其他伪装工具"><a href="#其他伪装工具" class="headerlink" title="其他伪装工具"></a>其他伪装工具</h3><p>名片的重要性。</p>
+<h2 id="小结-2"><a href="#小结-2" class="headerlink" title="小结"></a>小结</h2><hr>
+<h1 id="第5章：心理战术：社会工程心理学"><a href="#第5章：心理战术：社会工程心理学" class="headerlink" title="第5章：心理战术：社会工程心理学"></a>第5章：心理战术：社会工程心理学</h1><blockquote>
+<p>我们看待事物的方式而不是事物本身，决定着一切。——荣格</p>
+</blockquote>
+<h2 id="思维模式"><a href="#思维模式" class="headerlink" title="思维模式"></a>思维模式</h2><p>2001年8月FBI司法公告：<a href="http://www.social-engineer.org/wiki/archives/ModesOfThinking/MOT_FBI_3of5.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/ModesOfThinking/MOT_FBI_3of5.html</a></p>
+<h3 id="感官"><a href="#感官" class="headerlink" title="感官"></a>感官</h3><p>视觉、听觉、触觉、嗅觉和味觉</p>
+<p>要找到对方的主导感官。</p>
+<h3 id="3种主要的思维模式"><a href="#3种主要的思维模式" class="headerlink" title="3种主要的思维模式"></a>3种主要的思维模式</h3><p>与思维模式相联系的只有三种感官：</p>
+<ul>
+<li>看到，视觉思维者</li>
+<li>听到，听觉思维者</li>
+<li>摸到，动觉思维者</li>
+</ul>
+<p>巴甫洛夫的狗：<a href="http://www.ivanpavlov.com" target="_blank" rel="noopener">www.ivanpavlov.com</a></p>
+<p>巴普洛夫的狗实验说明，次感元的范围变化引起了身体的直接变化。</p>
+<h4 id="1-视觉"><a href="#1-视觉" class="headerlink" title="1.视觉"></a>1.视觉</h4><p>大多数人通常是视觉思维者，这种人通常记得的是事物的面貌。他们能够清晰地描述过去的事件，甚至能构建未来事件的图像。当面对一些事物的时候，他们需要看到一些东西才能做决定。<strong>很多时候，视觉思维者会依据在视觉上吸引他们的东西，而不是对他们来说真正“更好”的东西来做出决定</strong>。</p>
+<p>视觉思维者在谈话时经常使用的特定的词汇，例如：</p>
+<ul>
+<li>“我明白你的意思”</li>
+<li>“我看那挺好”</li>
+<li>“我大概有点印象了”</li>
+</ul>
+<p>对于视觉思维者来说，主导感官的工作范围具有一定的特征，通常这些也称为次感元。例如：</p>
+<ul>
+<li>光线：明或暗</li>
+<li>尺寸：大或小</li>
+<li>颜色：黑白或彩色</li>
+<li>运动：快或慢</li>
+<li>焦点：清晰或模糊</li>
+</ul>
+<p>尝试在没有视觉输入的情况下与视觉思维者进行争论、协商，向其推销、操纵或者影响他，基本上会毫无效果，至少会非常困难，因为视觉思维者需要视觉输入才能做出决定。</p>
+<h4 id="2-听觉"><a href="#2-听觉" class="headerlink" title="2.听觉"></a>2.听觉</h4><p>相比于用眼睛看，听觉思维者告知他们事情时，他们能够获取更多的信息。因为听觉思维者总是能记住事物发声的方式，或者说声音能够唤起他们的记忆，所以他们经常使用这样的表述：</p>
+<ul>
+<li>“宏亮并且清楚……”</li>
+<li>“这件事情告诉我……”</li>
+<li>“听起来不错”</li>
+</ul>
+<p>听觉主导感官的次感元范围如下：</p>
+<ul>
+<li>音量：大或小</li>
+<li>音调：高或低</li>
+<li>音准：高或低</li>
+<li>节拍：快或慢</li>
+<li>距离：远或近</li>
+</ul>
+<p>在面对听觉思维者时，一定要注意自己的措辞。他们听到的词语表达将决定事情的成败。</p>
+<h4 id="3-动觉"><a href="#3-动觉" class="headerlink" title="3.动觉"></a>3.动觉</h4><p>动觉思维者特别在意感受。他们能够记住事件给自己带来的感受。通常会用自己的双手去感知事物。“动觉”与触觉、本能以及身体的本体感觉有关，简单点说，就是身体在空间中所处的位置，以及实物让他感受到的自我意识。动觉思维者使用如下表述方式：</p>
+<ul>
+<li>“我能抓住那个想法的要点”</li>
+<li>“那个是如何抓住你的？”</li>
+<li>“我会联系你的”</li>
+<li>“我刚想联系来着”</li>
+<li>“这感觉怎么样？”</li>
+</ul>
+<p>动觉思维者的次感元范围如下：</p>
+<ul>
+<li>强度：强或弱</li>
+<li>面积：大或小</li>
+<li>质地：粗糙或光滑</li>
+<li>温度：热或冷</li>
+<li>重量：轻或重</li>
+</ul>
+<h4 id="4-辨别目标的主导感官"><a href="#4-辨别目标的主导感官" class="headerlink" title="4.辨别目标的主导感官"></a>4.辨别目标的主导感官</h4><p>首先尝试自我介绍，然后开始简短的交流，在此过程中留意对方所说的话。</p>
+<p>多观察，而不是提问。看看对方主要用什么感官来外界进行交互。</p>
+<h4 id="5-为何了解思维模式如此重要"><a href="#5-为何了解思维模式如此重要" class="headerlink" title="5.为何了解思维模式如此重要"></a>5.为何了解思维模式如此重要</h4><p>灵活运用，通过各种不同的刺激来试探对方的主导感官。处在主导感官之中，对方会很容易觉得舒适。</p>
+<h2 id="微表情"><a href="#微表情" class="headerlink" title="微表情"></a>微表情</h2><p>宏表情：面部长时间持续的表情。这种面部表情更易于传达情绪。与微表情类似，宏表情也是由情绪控制的，但是并非自然流露，经常能够伪装。</p>
+<p>微表情是情绪的自然反应，不大容易控制。情绪触发面部特定肌肉的反应，形成特定的面部表情。很多时候，这些表情的持续时间不过1/25秒，几乎不可能被人为控制。</p>
+<p>情感不是由文化决定的，而是在不同文化和物种间普遍存在的。</p>
+<p>1990年，艾克曼“基本情绪（Basic Emotions）”：<a href="http://www.paulekman.com/wp-content/uploads/2009/02/Basic-Emotions.pdf" target="_blank" rel="noopener">www.paulekman.com/wp-content/uploads/2009/02/Basic-Emotions.pdf</a></p>
+<p>参考书目：</p>
+<ul>
+<li>《情绪的解析（Emotions Revealed）》</li>
+<li>《解密脸部：从脸部线索识别情绪的指导（Unmasking the Face）》</li>
+</ul>
+<h3 id="愤怒"><a href="#愤怒" class="headerlink" title="愤怒"></a>愤怒</h3><p>愤怒和其他表情相比，通常比较容易识别。人在生气的时候会紧抿双唇、眉头紧锁，最为明显的特征：双眼圆瞪。</p>
+<p>通过以下步骤感受愤怒微表情：</p>
+<ol>
+<li>把眉毛往下拉，使其并拢到一块。仿佛是要使眉毛能够触碰到鼻子。</li>
+<li>当眉毛下压的时候，尝试在眉毛不动的情况下，使劲睁大眼睛。</li>
+<li>紧闭双唇。不要撅起来，只是让上下唇紧紧的抿在一起。</li>
+<li>瞪眼</li>
+</ol>
+<p><strong>如果制造出面部表情可以引发一种情绪，那肯定意味着面部移动可以影响我们感受到的情绪，甚至可能感染周边的人。</strong></p>
+<p>当能够成功做出并解码微表情，你便能够理解引发这种表情的情绪。这样你就能够明白对象的精神状态。</p>
+<h3 id="厌恶"><a href="#厌恶" class="headerlink" title="厌恶"></a>厌恶</h3><p>厌恶通常是对你确实不喜欢的东西产生的一种强烈的反应。这种“东西”不仅限于物理实体，有时候也可能是一种信念或者感觉。</p>
+<p>厌恶通常表现为上唇上启、露出牙齿，鼻子皱成一团。有时随着鼻子皱起，双颊会上移，感觉想阻隔难闻的气体进入鼻腔或者阻断恶心的想法进入自己的私人空间。</p>
+<p>从社会工程的角度来看，这种情绪可能会导致失败，然而这些反应可以帮助你判断自己是否已达到目的或者是否已经引起目标的反感和排斥。</p>
+<p>一般情况下，不论是什么原因导致你的目标产生了这种表情，都宣告了你的失败。</p>
+<p>在伪装时，必须认真考虑你的外表。一旦发现目标脸上出现厌恶这种强烈的负面情绪，较好的方式是赶紧放弃，礼貌地为自己开脱后，考虑一种新的伪装或者另辟蹊径。</p>
+<h3 id="轻蔑"><a href="#轻蔑" class="headerlink" title="轻蔑"></a>轻蔑</h3><p>轻蔑与厌恶经常容易混淆，但轻蔑只是针对人或者人的行为，而不是针对味觉、嗅觉或者触觉。换句话说，轻蔑只针对人，而不针对物体。</p>
+<p>轻蔑的表情一般伴随着皱起的鼻子和上启的上唇，但只会出现在脸的一侧，而在厌恶的表情中，整个鼻子都会皱起，整个上嘴唇都会上启。</p>
+<p>轻蔑在社会工程中也是需要避免的一种情绪。</p>
+<h3 id="恐惧"><a href="#恐惧" class="headerlink" title="恐惧"></a>恐惧</h3><p>恐惧和惊讶会经常容易被混淆，因为这两种情绪引起的面部肌肉运动非常相似。</p>
+<p>尝试以下步骤感受恐惧微表情：</p>
+<ol>
+<li>使劲上抬眉毛</li>
+<li>缓缓张开嘴巴，向后咧开嘴角</li>
+<li>如果可以的话，在眉毛上扬的过程中努力使它们皱在一起</li>
+</ol>
+<p>从社会工程的角度来说，恐惧经常被用来诱使目标对象做特定的反应和动作。具有恶意动机的社会工程人员通常会对毫无戒备心的用户运用这种伎俩，从而诱使他们点击特定的图标或者泄露有价值的信息。</p>
+<p>通过不断强化目标的担忧和紧张，使对方达到恐惧的状态，从而实现自己的目的。</p>
+<p><strong>恐惧是一种强大的推进器，可以使你或者目标对象做出异于平常的事情。</strong></p>
+<h3 id="惊讶"><a href="#惊讶" class="headerlink" title="惊讶"></a>惊讶</h3><p>惊讶与恐惧看起来很相似，但是二者还是有不同：例如嘴唇移动的方向和眼镜反应的内容。</p>
+<p>尝试通过以下步骤感受惊讶：</p>
+<ol>
+<li>抬起眉毛，不是充满恐惧而是抱着想尽量睁大眼睛的目的去做。</li>
+<li>轻轻地张开下颚。</li>
+<li>练熟这个表情之后，试着加快速度。</li>
+</ol>
+<p>做这个动作的时候会吸气。</p>
+<p>如果是积极的惊讶，通常会引发一丝微笑或快乐的表情。社会工程人员有时会利用惊讶来打开目标对象的心门，比方说，机智的对答或不经意间的玩笑可能会使目标马上放松警惕，降低其心理防线。</p>
+<h3 id="悲伤"><a href="#悲伤" class="headerlink" title="悲伤"></a>悲伤</h3><p>悲伤是一种强烈而极端的情感。我们看到他人悲伤，很容易心生怜悯，感同身受。通过以下步骤感受悲伤：</p>
+<ol>
+<li>轻轻地张开嘴巴</li>
+<li>下咧嘴唇</li>
+<li>保持嘴唇不动，同时上抬你的双颊，感觉自己眯着眼睛</li>
+<li>保持表情不动，眼睛往下看，让上眼睑无力地下垂</li>
+</ol>
+<p>悲伤的另一个特征使它成为一个其妙的情感，即它并不需要显现出极度的痛苦或悲伤。悲伤可以表现得非常微妙，可以用局部的面部表情来传达。人们可能会试图用虚假的微笑或者“坚忍的眼神”隐藏悲伤——凝视正前方，面容呆滞，但你可以看出他们正试图控制内心的真实感觉。</p>
+<p>除了双唇（下咧），眼睛是传达悲伤的另一个关键信号源。这种表情有时难以发现，甚至会被误认为是疲劳或者其他情绪，不过通过观察他的行为举止和肢体语言可以找到一些线索。</p>
+<p>营造悲伤的气氛也是社会工程常用的手段之一，因为它可以激发人们采取某些行动，从而捐款或者提供信息。</p>
+<h3 id="快乐"><a href="#快乐" class="headerlink" title="快乐"></a>快乐</h3><p>识别真假笑容是帮助我们更好地读懂人类表情的重要方面。</p>
+<p>当一个人真实地微笑时，会触发颧大肌和眼轮匝肌（眼周的肌肉），而眼轮匝肌的运动是自发的，不受外力触发。</p>
+<p>真实的笑容是由眯着的眼睛、上扬的双颊和拉起的下眼睑构成的。</p>
+<p>不管伪装成什么角色，社会工程人员开启对话的第一步通常是一个微笑。我们的大脑在接受到这个视觉输入后会快速地进行分析并得出结论，对这个微笑真伪的判断直接影响后续的交流。</p>
+<h3 id="训练自己识别微表情"><a href="#训练自己识别微表情" class="headerlink" title="训练自己识别微表情"></a>训练自己识别微表情</h3><p>针对微表情的专业训练：<a href="http://www.paulekman.com" target="_blank" rel="noopener">www.paulekman.com</a></p>
+<p>演员常用的一种技巧是尝试从过去的记忆和经历中成功找到和想要表达的情绪一样的事件。</p>
+<h3 id="社会工程人员如何运用微表情"><a href="#社会工程人员如何运用微表情" class="headerlink" title="社会工程人员如何运用微表情"></a>社会工程人员如何运用微表情</h3><p>运用方法：</p>
+<ul>
+<li>使用微表情去诱导或者诱发某种情绪；</li>
+<li>使用微表情识别欺骗</li>
+</ul>
+<h4 id="诱导对方产生某种情绪"><a href="#诱导对方产生某种情绪" class="headerlink" title="诱导对方产生某种情绪"></a>诱导对方产生某种情绪</h4><p>人们可以通过一些情绪上的微妙暗示操纵他人达到特定的情绪状态。这实际上是通过微表情使得对方产生共情，从而将对方拉入一个自己创造出来的情绪状态中。</p>
+<p>防御恶意微表情的使用，则是加强良好的安全意识培训。即使对方设计出来的请求让你很有欲望去帮助、拯救或照顾，也要确保首先贯彻安全策略。</p>
+<h4 id="识别欺骗"><a href="#识别欺骗" class="headerlink" title="识别欺骗"></a>识别欺骗</h4><p>若是使用微表情去识别欺骗，就需要分析以下四种反应。</p>
+<ol>
+<li>矛盾。具体来说，矛盾指的是“前言不搭后语”。在评估是否将矛盾作为说谎的线索时，对这种无意的“谎言”进行考虑显得尤为重要。一旦发现矛盾的情况，你所要做的应该是挖掘更多的信息。就矛盾之处进行询问，观察他的微表情变化。</li>
+<li>犹豫。如果问对方一个本应即刻回答的问题，而他却犹豫不决，可能是他在利用迟疑的这段时间来编造答案。另一种需要注意的众所周知的忧郁战术就是对方重复你所提出的问题。</li>
+<li>行为的变化。比如表情的变化、坐姿的变化等。</li>
+<li>手势。许多专业人士认为，人在撒谎时会频繁地触摸或者摩擦自己的脸。<a href="www.examiner.com/mental-health-in-new-orleans/detecting-deception-using-body-language-and-verbal-cues-to-detect-lies">从心理学角度看，这二者有一定联系</a>。交谈过程中，留心观察手势的幅度、频率以及时长的变化很重要。</li>
+</ol>
+<h2 id="神经语言程序学（NLP）"><a href="#神经语言程序学（NLP）" class="headerlink" title="神经语言程序学（NLP）"></a>神经语言程序学（NLP）</h2><p>神经语言程序学（NLP）研究的是人类思考和体验世界的结构。</p>
+<h3 id="神经语言程序学的历史"><a href="#神经语言程序学的历史" class="headerlink" title="神经语言程序学的历史"></a>神经语言程序学的历史</h3><p>起源于20世纪70年代，由Richard Bandler和John Grinder在Gregory Bateson的指导下提出。</p>
+<h3 id="神经语言程序学的准则"><a href="#神经语言程序学的准则" class="headerlink" title="神经语言程序学的准则"></a>神经语言程序学的准则</h3><h4 id="1-NLP新准则"><a href="#1-NLP新准则" class="headerlink" title="1.NLP新准则"></a>1.NLP新准则</h4><p>新准则聚焦于<strong>状态、意识和无意识之间的关系及知觉过滤</strong>等关键概念，所有这些都指向人们的思维状态及其对那些状态的感知。</p>
+<p>新准则的参考书目：《路途海龟：天才的条件》（<em>Turtles All the Way Down</em>）。</p>
+<h4 id="2-新准则的脚本"><a href="#2-新准则的脚本" class="headerlink" title="2.新准则的脚本"></a>2.新准则的脚本</h4><p>作者推荐的参考书：《NLP技术大全：神经语言程序学的200+模式与策略》（<em>The Big Book of NLP Techniques: 200+ Patterns &amp; Strategies of Neuro Linguistic Programming</em>）。</p>
+<p>一个例子是，通过让人们谈论自己的梦想以提高销售额的大纲。一旦让人们谈论起具体的目标或愿望，你就可以将产品或服务定位成实现该目标的一个必要条件。</p>
+<h3 id="社会工程人员如何应用NLP"><a href="#社会工程人员如何应用NLP" class="headerlink" title="社会工程人员如何应用NLP"></a>社会工程人员如何应用NLP</h3><p>很多NLP脚本和原则往往倾向于催眠和类似的方法。</p>
+<h4 id="1-NLP之于语音语调"><a href="#1-NLP之于语音语调" class="headerlink" title="1.NLP之于语音语调"></a>1.NLP之于语音语调</h4><p>NLP提倡使用嵌入式命令影响目标以某种方式进行思考或采取某种行动。此外，通过变换语调强调句子中的某些词语，使得人们的潜意识将重点放在那些词语上。</p>
+<h4 id="2-NLP之于句型结构"><a href="#2-NLP之于句型结构" class="headerlink" title="2.NLP之于句型结构"></a>2.NLP之于句型结构</h4><p>成功的社会工程中运用语音技术的一些技巧：</p>
+<ul>
+<li>实践。必须不断练习这种说话方式。</li>
+<li>周密的语句结构。不要指望一句话就能起作用。</li>
+<li>保持现实。运用这些技巧的目的是让目标进入某种思维框架。</li>
+</ul>
+<h4 id="3-在社会工程中使用终极声音"><a href="#3-在社会工程中使用终极声音" class="headerlink" title="3.在社会工程中使用终极声音"></a>3.在社会工程中使用终极声音</h4><p>NLP网站：<a href="http://www.planetnlp.com" target="_blank" rel="noopener">www.planetnlp.com</a></p>
+<ol>
+<li>让你的声音具有动感。将手放在鼻子上说“鼻子”。将注意力集中在鼻子上重复说“鼻子”，直到能感觉到鼻子在振动。对其他部位做同样的练习。</li>
+<li>发挥你的极限。练习气息的使用。比如，从一个高音符“ar”开始，保持嘴巴张开，让音符持续降低，直到你的呼吸耗尽。重复十遍。使用其他元音重复。</li>
+<li>共鸣。</li>
+</ol>
+<p>在合唱团待过以后，上面的技巧会更容易理解。就是如何控制和发声有关的肌肉，使得声音能够由内而外地被注入情感。</p>
+<p>最后，社会工程人员在学习NLP时需要关注3件事情：</p>
+<ul>
+<li><strong>音调</strong>。音调以及将重音放在某些特定的词语上能够改变整个句子的含义。通过使用音调和重音，可以在目标的潜意识思维中嵌入命令，使得目标对建议采取更加开放的态度。</li>
+<li><strong>审慎地选择用词</strong>。学习选择能够产生最大影响的词语。对于想要目标积极思考的问题选择积极的词语，对于那些不需要目标想太多的事情选择消极的词语。</li>
+<li><strong>创建一个可用于当面或电话社会工程审计的命令语句列表</strong>。将这些命令语句写出来并不断练习。</li>
+</ul>
+<h2 id="采访和审讯"><a href="#采访和审讯" class="headerlink" title="采访和审讯"></a>采访和审讯</h2><p>首先弄清楚采访与审讯的差异</p>
+<table>
+<thead>
+<tr>
+<th>采访</th>
+<th>审讯</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>目标对象说话，你倾听</td>
+<td>你述说被审讯者之前的陈述</td>
+</tr>
+<tr>
+<td>目标对象引导谈话的方向，你重申他的叙述并倾听，同时运用NLP技术</td>
+<td>你主导审讯的方向，运用NLP技术</td>
+</tr>
+<tr>
+<td>无控告</td>
+<td>有指控</td>
+</tr>
+<tr>
+<td>性质温和</td>
+<td>性质强硬</td>
+</tr>
+<tr>
+<td>目标对象处，目标处于放松的状态</td>
+<td>审讯室，被审者很紧张</td>
+</tr>
+<tr>
+<td>你收集信息（人物、事件、事件、地点、原因及方式）</td>
+<td>如果你透漏一点特定信息，会得到更为详尽的细节</td>
+</tr>
+<tr>
+<td>调研初期</td>
+<td>最终提问环节</td>
+</tr>
+</tbody>
+</table>
+<p>采访和审讯的主要区别在于，采访中目标在身体和心理上都处于舒适的状态，而审讯的目的则是通过审讯的场所和所提问题让目标感到不适来向其施压。</p>
+<h3 id="专业的审讯技巧"><a href="#专业的审讯技巧" class="headerlink" title="专业的审讯技巧"></a>专业的审讯技巧</h3><p>不要单单留意一个动作，要留意一连串的动作。当采访或审问开始时，需要留意目标任务在下列各方面所产生的变化。</p>
+<ul>
+<li>身体姿势。直立、瘫倒、倾斜</li>
+<li>脸色。苍白、白、红、变化</li>
+<li>头的位置。昂首、倾斜、往前/往后</li>
+<li>眼睛。方向、睁开的状态</li>
+<li>手/脚。动作、位置、颜色</li>
+<li>口/唇。位置、颜色、张开/闭合</li>
+<li>主要感觉。视觉、听觉、活力、感觉</li>
+<li>声音。音高、速率、变化</li>
+<li>词语。短、长、音节的数量、功能障碍、停顿</li>
+</ul>
+<p>一些审讯过程中的技巧：</p>
+<h4 id="1-正面交锋"><a href="#1-正面交锋" class="headerlink" title="1.正面交锋"></a>1.正面交锋</h4><p>在执法过程中，正面交锋并不意味着任何积极和良好的信息。相反，它意味着警官告诉嫌疑人他就是那个犯下罪行的人。</p>
+<h4 id="2-主题延伸"><a href="#2-主题延伸" class="headerlink" title="2.主题延伸"></a>2.主题延伸</h4><p>在警察审问时，主题延伸指的是审讯者假定一个故事场景来推断为何嫌疑人会实施犯罪。在审讯期间那个故事会多次传递给嫌疑人。当警官陈述故事时，他或他的拍档会观察嫌疑人的肢体语言和微表情，看是否有任何线索可以表明案发经过和刚刚的叙述有吻合的地方。</p>
+<p>社会工程人员的主题延伸，可以理解为你展示的辅助性证据直接支持所描述的主题。无论是通过电话还是面对面，在接触目标的时候都会涉及某种伪装。这个伪装当然会支持你描述的故事情节或主题。</p>
+<h4 id="3-应对拒绝和反对"><a href="#3-应对拒绝和反对" class="headerlink" title="3.应对拒绝和反对"></a>3.应对拒绝和反对</h4><p>无论目标抛出什么话来搪塞，你必须有应对计划，以克服和处理这种“拒绝访问”。作者给出了下面一个先发制人的例子：</p>
+<blockquote>
+<p>从事销售工作的时候，我曾与Tony一起挨家推销，他的本事是敲开门后介绍自己，紧接着就说：“我知道你可能要说不感兴趣，但在此之前，请先回答我一个问题，即你的5分钟值500美元吗？”这时候，人们不太可能说：“我不感兴趣。”</p>
+</blockquote>
+<p>但是，对于社会工程人员来说，运行克服反对的方法要复杂得多。你要预想可能会出现什么反对情况，仔细组织你的主题、故事、着装、人物，从而预先消除那些反对。然而当反对声出现时，还必须有一个很好的回应。</p>
+<h4 id="4-保持目标注意力集中"><a href="#4-保持目标注意力集中" class="headerlink" title="4.保持目标注意力集中"></a>4.保持目标注意力集中</h4><p>如果前期的社会工程工作很顺利，你和对象开始面对面接触时，目标可能开始考虑如果不允许你进入、拿走文件或者满足你的其他要求会产生什么样的后果。你需要克服内在的恐惧，镇定自若地按照预定的目标驱动对方。</p>
+<h4 id="5-展示其他途径"><a href="#5-展示其他途径" class="headerlink" title="5.展示其他途径"></a>5.展示其他途径</h4><p>第一方案不一定会奏效，所以提前准备好能够达到近似效果的替代方案不失为一个好主意。</p>
+<p>专业审讯者使用的不同方法：</p>
+<ul>
+<li><strong>直截了当式</strong>。在使用这种方法时，审讯者要装出信心满满的样子。审讯者的态度和方式彻底排除了犯罪嫌疑人无辜的可能性。再没有任何威胁的情况下，审讯者通过告诉嫌疑人“任何人都有可能这样做”来解除对方的防备。社会工程人员可以根据伪装的不同运用这种方法，比如伪装成管理者等。</li>
+<li><strong>间接式</strong>。嫌疑人详细述说案发时他正在做的事，审讯者寻找遗漏、矛盾和失实的地方。审讯者的工作是让犯罪嫌疑人知道最好的方法就是说实话。社会工程过程中的应用可以是这样，不带任何身份色彩地接近目标，但是通过诱导或者精心设计的问题从目标那里套取信息。让目标对象成为谈话的主角，你可能会从中得到一些信息。</li>
+<li><strong>博取同情式</strong>。审讯者压低声音、小声地说话，给人留下善于理解他人的印象。他靠近嫌疑人坐下，也许还会将手放在嫌疑人的肩膀上或拍拍他的手臂。适时的身体接触也很有效。社会工程人员可以像审讯者那样使用这种方式。</li>
+<li><strong>情绪激发式</strong>。这种方式主要作用于嫌疑人的道德或情绪层面。在审问策略方面，可以这样问：“你的妻子或孩子对此会怎么想呢？”这种围绕情绪展开的想法会使他情绪低落、让他紧张，随着这些情绪的显现，审讯者便可以加以利用。社会工程人员可以使用这种方式，从而抓住对方暴露出来的弱点。</li>
+<li><strong>合乎逻辑式</strong>。这种不太情绪的做法直接呈现强有力的犯罪证据。审讯者要像商务谈判一样挺直腰杆、一脸严肃地端坐在嫌犯面前，充满信心。</li>
+<li><strong>咄咄逼人式</strong>。对于审讯者来说，信息收集和权利侵犯仅一步之遥，二者之间的界限不能逾越。可以提高音量，做出咄咄逼人的神情和动作，但绝对不能侵犯嫌疑人的公民权利。</li>
+<li><strong>组合式</strong>。审讯者可以将两种方法相结合以达到最好的效果，这取决于犯罪嫌疑人的个性。</li>
+<li><strong>处之泰然式</strong>。这种做法非常有趣，因为审讯者的行为让嫌犯感觉案子已经结了，他认罪与否已无关紧要。在这种情况下，审讯者会尝试操纵嫌疑人说出他所知道的案发经过。</li>
+<li><strong>保全面子式</strong>。审讯者可以将罪行合理化，给嫌疑人一个机会及理由供认事实，保全他的面子。不过，审讯者不应把理由设计得太好，以至于犯罪嫌疑人在法庭上用它来为自己辩护。社会工程人员也可以利用这种方式。审讯者不希望给对方太好的借口，但社会工程人员可以。最好这个理由能够好到让目标不假思索就知道这只是一个为了配合你的借口。一种方法是说有更高级别的人叫你过来。</li>
+<li><strong>自尊心膨胀式</strong>。这种方式的关键是令对方感到自豪。想要它凑效，你需要找到嫌疑人的一项非常自豪的成就。吹嘘他的长相、机智或整个犯罪的精妙过程可能会使他的自尊心急剧膨胀，诱使他急切地认罪，以表明他就是那么聪明。在社会工程过程中，社会工程人员经常使用这种方法。通过鼓吹目标对象的成就，得到他们的最高机密。</li>
+<li><strong>夸张式</strong>。如果审讯者夸大犯罪事实，犯罪嫌疑人可能会承认案发的真实情况。举例而言，如果审讯者想把强奸罪扣到一个小偷的头上时，可以这样说：“要不然你为什么会在半夜闯入他人卧室？”这种问法往往会令犯罪嫌疑人承认只是想偷窃，并非是要强奸。</li>
+<li><strong>循序渐进式</strong>。嫌疑人很少会立即承认自己的所有罪行。试着让他逐步承认，例如他当时在现场、拥有涉案的武器或拥有类似的车，随着事实的积累最终形成完整的供词。</li>
+</ul>
+<h4 id="6-最终目标"><a href="#6-最终目标" class="headerlink" title="6.最终目标"></a>6.最终目标</h4><p>回答下面这些问题：</p>
+<ul>
+<li>人物。要审问或面对的人是谁？他扮演什么样的角色？列出姓名、职务以及其他有关审问的信息。</li>
+<li>事件。已经做了哪些询问准备工作？审问的目标是什么？必须有一个明确的目标。</li>
+<li>时间。询问安排在什么时间段？白天或晚上的什么时候？工作环境中的什么因素让你决定采取行动的时间？打听到什么聚会信息了吗？大部分员工此时都在休假吗？是午餐时间，还是在保安人员换班期间？</li>
+<li>地点。询问的地点在哪里？要到目标对象所在的地方吗？跟踪他去健身房、当地的酒吧或托儿所？从目标处获取所需信息的最佳场所是哪里？</li>
+<li>原因。虽然人们经常听到孩子们问为什么，但这里还是必须得问。询问的目的是什么？要目标说出某样东西的下落？让他泄露一些不该泄露的信息？为了进入一个房间或访问某个服务器？</li>
+<li>方式。审问时使用什么方法？NLP？嵌入式指令？人性缓冲区溢出？还是微表情？</li>
+</ul>
+<h3 id="手势"><a href="#手势" class="headerlink" title="手势"></a>手势</h3><p>手势根据文化会有不同的含义。但是可以使用一些手势策略。</p>
+<ol>
+<li>锚定。用特定的手势与某一种类似表述形成关联。</li>
+<li>镜像。尝试匹配目标的个性化手势。目标对象在看到熟悉的手势时，会有一种自在的感觉。要模仿他，但不要完全相同。</li>
+</ol>
+<h3 id="双臂和手的摆放"><a href="#双臂和手的摆放" class="headerlink" title="双臂和手的摆放"></a>双臂和手的摆放</h3><p>在审问期间，动作的增多或者“坐立不安”能够显示其压力越来越大，标志着审问正在产生预期的效果。注意一下几个标志：</p>
+<ul>
+<li>当一个人处于放松状态时，肘部一般会没有拘束地放在身体两侧。当感到威胁或害怕时，身体的自然反应是肘部向胸腔收进。从本质上讲，在受到威胁时，这一反应为内部器官提供了一层保护。</li>
+<li>手势也往往会透露更多信息。目标对象可能会用手势描述出一些不会说出的东西。</li>
+</ul>
+<p>其他值得注意的手势也包括以下几种。</p>
+<ul>
+<li>一个张开的手掌可能表明诚意。</li>
+<li>指尖搭在一起，表明这个人认为自己很权威。</li>
+<li>敲击或击打手指可能表示焦虑。</li>
+<li>摸脸可能是思考的迹象，触摸头发可能显示不安，触摸耳朵可能表明犹豫不决。</li>
+</ul>
+<p>一方面，注意这些手势可以为你揭示目标的很多内心活动。另一方面，如果这是你的伪装，这些动作有助于你饰演其中的一个角色。</p>
+<p>以下是一些关于手势的关键点：</p>
+<ul>
+<li>不要刻意去记手势，而是要记住其附加的信息。如果人们经常说“哇，那家伙做的手势真多”，你就需要少做些手势了。重要的是信息，而不是手势。</li>
+<li>避免单调。即使是运用手势，你也可能让人感到平淡、无聊和重复，此时手势可能让目标对你产生消极的看法。</li>
+<li>注意不要表现出焦虑，如敲击手指或者作出剧烈的动作。这些动作告诉目标你很紧张，会分散听者的注意力。</li>
+<li>手势过多也不行，过多的手势也会令听者分心。</li>
+</ul>
+<p>要综合使用面部表情、手势和姿势。它们必须融合在一起，达到一种平衡，以支持你的伪装。</p>
+<h3 id="聆听：通往成功之门"><a href="#聆听：通往成功之门" class="headerlink" title="聆听：通往成功之门"></a>聆听：通往成功之门</h3><p>人们通常认为，决定社会工程人员取得多大成功的通常是目标所说的很细微的东西。这个领域可以极大地提高你的聆听技能，不仅仅是听到说话的内容，而且包括说话的方式、时间及所蕴含的情感。所有这些因素都可以帮助你感知述说者所传递的信息。</p>
+<p>任何发生交谈的时刻，都可能是聆听的重要时刻。比如，如果听到员工之间在抱怨上司，就能够从中听到诸如姓名、职位、主管、部门以及工作状态等信息。</p>
+<p>一些有用的聆听步骤：</p>
+<ol>
+<li>集中注意力。高度关注目标对象。不要做别的小动作。在对方说话时看着对方，将注意力集中在对方所说的内容。要充满好奇地去听、去看，不能让人感觉害怕，觉得你是在“刨根问底”。<strong>尽量不要提前思考</strong>，不要急着去策划下一步反应。如果你在计划下一步反应或者想着辩驳，就不能集中注意力了，可能错过一些重要的东西或者给目标留下你并不是真的关心的印象。尽量不要被环境因素所影响，如噪声。密切关注说话者的其他语言，如肢体语言、面部表情等。</li>
+<li>提供你在聆听的证据。表现出真诚并且用肢体语言和面部表情来表明这一点。不时地点点头，不用太频繁，但是要足以让对方知道你在听。不要忘记十分重要的微笑。要在合适的时候加入一些微笑。</li>
+<li>提供有价值的反馈。个人信仰和经验的差异会过滤掉一些信息。确保问的是相关的问题。你的问题必须表现出你在积极地聆听，并且有很强的欲望去获取更深入的理解。时不时重述或者概括你所听到的东西很管用。</li>
+<li>不要打断对方。通常，打断会切断对方的思路，或显得不够尊重。但是有些时候打断同样也是一种策略。</li>
+<li>适当地反应。这是区分聆听技巧好坏的分水岭。</li>
+</ol>
+<p>在聆听过程中，另一个需要考虑的因素是你的个人情感。在社会工程需要聆听的场景中，你必须极力压制那些内心的成见，以免影响你取得成果。</p>
+<p>同样，要记住对信息而不是对人作出反应。如果你不赞同一个人的信仰或立场，给他足够的面子，可以使对方感觉跟你相处非常舒服。甚至在不赞同时，你可以聊聊别的来转移注意力。（这里甚至和《非暴力沟通》有呼应）</p>
+<p>例子：</p>
+<ul>
+<li>目标：“这个工作糟透了。工作时间安排得很糟糕，而且工资也很少。”</li>
+<li>你：“听起来你已经受不了这里的工作了。”</li>
+</ul>
+<p>这种技术叫做<strong>反射式响应</strong>，有几项基本原则：</p>
+<ul>
+<li>积极聆听。</li>
+<li>当需要做出回应时，注意自己的情绪。了解目标说话时候你自己的感觉有助于你给出适当的反应。</li>
+<li>重复内容，但不能鹦鹉学舌，而是用你自己的语言。</li>
+<li>可以用一些含糊的语句来作出反应，比如“听起来像”、“似乎”或“好像”。这些语句缓和了你想要传达的信息。如果需要证明的话，下次在和同事、老板、父母或者其他人发生争执时说“你因为……生我的气”，记下他们的反应，然后换种方式说“似乎你是因为……而生我的气”。</li>
+</ul>
+<p>当学着去更好地聆听并且使之成为天性的一部分时，你将提高对听到的信息进行反应的能力。社会工程的目标是收集信息，进入那些不允许你进入的地方或者获取无权得到的信息，或者促使目标做出常理下不会做的行为。心里总是想着自己必须非常擅长操纵他人，往往会阻止你学习并练习重要的聆听技巧。</p>
+<h2 id="即刻达成共识"><a href="#即刻达成共识" class="headerlink" title="即刻达成共识"></a>即刻达成共识</h2><h3 id="真正地想要了解他人"><a href="#真正地想要了解他人" class="headerlink" title="真正地想要了解他人"></a>真正地想要了解他人</h3><p>想成为一名优秀的社会工程人员并灵活运用共识，人对你很重要。你必须喜欢别人并且乐于和他们接触。你必须想要了解别人。人们可以识破虚假的微笑和关心。建立对目标的真正兴趣可以使你更容易建立共识。</p>
+<h3 id="注意自身形象"><a href="#注意自身形象" class="headerlink" title="注意自身形象"></a>注意自身形象</h3><blockquote>
+<p>如果一个人自己都感觉不舒服，那么别人对他也不会感觉很舒服。</p>
+</blockquote>
+<p>留心你的伪装和目标。如果伪装成门卫，要确保你的举止、着装、神态及措辞和该职位的人一致。如果伪装成商务经理，要确保你的言行和着装得体。</p>
+<h3 id="善于聆听"><a href="#善于聆听" class="headerlink" title="善于聆听"></a>善于聆听</h3><p>如前所述。</p>
+<h3 id="留心自己对他人的影响"><a href="#留心自己对他人的影响" class="headerlink" title="留心自己对他人的影响"></a>留心自己对他人的影响</h3><p>接触目标之前，要检查自己的仪表和其他可能影响对方的个人因素。是否需要一块能够清新口气的薄荷糖？确保脸上和牙齿上没有食物残渣。</p>
+<p>“7-38-55定律”：人们对你的印象只有7%取决于谈话的内容，更多的是取决于肢体语言和语调。</p>
+<h3 id="尽量少谈论自己"><a href="#尽量少谈论自己" class="headerlink" title="尽量少谈论自己"></a>尽量少谈论自己</h3><p>让其他人谈他自己，知道他觉得够了。人们在可以谈论自己的时候会感觉很棒。</p>
+<h3 id="谨记：同情心是达成共识的关键"><a href="#谨记：同情心是达成共识的关键" class="headerlink" title="谨记：同情心是达成共识的关键"></a>谨记：同情心是达成共识的关键</h3><p>同情（更准确说是共情）：对他人的感受、想法或态度的理性认同或者感同身受的体验。</p>
+<p>表达同情的时候不要显得盛气凌人，这点很重要。如果表达同情时显得很傲慢自大，可能会让目标觉得你在以恩人自居。</p>
+<h3 id="扩大知识领域"><a href="#扩大知识领域" class="headerlink" title="扩大知识领域"></a>扩大知识领域</h3><p>社会工程人员应保持阅读和学习的状态。</p>
+<h3 id="挖掘你的好奇心"><a href="#挖掘你的好奇心" class="headerlink" title="挖掘你的好奇心"></a>挖掘你的好奇心</h3><p>人们在对某些事情抱有思维定势时往往会变得有些自以为是。自以为是或者武断的态度可以改变一个人对所述事情的反应。</p>
+<p>好奇心可以防止你作出草率的决定。保持心胸开阔，探究并接受别人在某一话题上的想法，即使这些想法与你的想法有所不同。</p>
+<h3 id="设法满足他人的需求"><a href="#设法满足他人的需求" class="headerlink" title="设法满足他人的需求"></a>设法满足他人的需求</h3><p><strong>此观点是这些原则的重中之重，也是本书最有力的观点之一</strong>。</p>
+<p>4种人类的基本心理需求：</p>
+<ul>
+<li>归属/联系/爱</li>
+<li>权力/地位/能力</li>
+<li>自由/责任</li>
+<li>娱乐/学习</li>
+</ul>
+<p>通过谈话使对方找到实现自己需求的方式，从而即刻达成共识。如果能够创造一个环境来满足对方的需求，你便可以创建牢不可破的关系。</p>
+<p>满足对方的需求可以大大增加建立共识的机会。不要让对方觉得你别有用心，而是真心诚意地去帮助他。</p>
+<p>作者在社会工程里举出的事例是：满足对方的欲望。比如性欲、情感关怀。如果能够和目标建立非常深厚的情感纽带，达成目的的效果是非常有效的。如果出于恶意，则是毁灭性的。</p>
+<p>伪装不仅仅是表演一个角色，对目标来说你就是一个活生生的人，所以你要成为那个伪装的角色。恰当的伪装对于建立正确的共识非常必要。</p>
+<h3 id="使用其他建立共识的技巧"><a href="#使用其他建立共识的技巧" class="headerlink" title="使用其他建立共识的技巧"></a>使用其他建立共识的技巧</h3><ol>
+<li>呼吸平率保持一致。留心目标的呼方式并进行模仿，但是不要盲目重复。</li>
+<li>语音、语调保持一致。出资之外，也可以留心听关键短语。</li>
+<li>肢体语言保持一致。人们喜欢那些跟自己相像的人，这是天性，会让他们感到舒服。</li>
+</ol>
+<h3 id="测试“共识”"><a href="#测试“共识”" class="headerlink" title="测试“共识”"></a>测试“共识”</h3><p>可以通过一些动作来测试你们的共识，比如抓抓头或摸摸耳朵。如果在接下来的一两分钟内目标做出了相似的动作，你们可能已经建立了稳固的共识。</p>
+<h2 id="人类思维缓冲区溢出"><a href="#人类思维缓冲区溢出" class="headerlink" title="人类思维缓冲区溢出"></a>人类思维缓冲区溢出</h2><p>人类的思维也可以被看作是一系列运行的“软件”。随着时间的积累，渐渐地你会形成自己特有的“软件包”，建立自己的指令集、缓冲区和内存长度。</p>
+<p>缓冲区是一个空间区域，其中可以发生一些事或用来存储数据。缓冲区溢出就是，输入的信息过多，现有的缓冲区存储不了这么多信息。</p>
+<p>人类思维缓冲区溢出基本也是同样的道理。我们的目的是识别出运行的“程序”，并向程序插入代码，是你能够植入命令，从根本上控制思维导向。</p>
+<h3 id="设定最基本的原则"><a href="#设定最基本的原则" class="headerlink" title="设定最基本的原则"></a>设定最基本的原则</h3><p>人在一分钟内能够说出的词语是有限的，但是同样的时间里思考的速度会很快。因此大多数人在听你说话时大脑会快速思考。所以通过提升语速来使听者脑补缓冲区溢出几乎是不可能的。</p>
+<p>人们所做出的大部分决定都是下意识的，如怎样开车上班、冲咖啡、刷牙及穿衣等等。</p>
+<p>弄清楚人类工作及思考的方式是创建缓冲区溢出的最快方法，或者说是创建人类思维固有程序溢出的最快方法。</p>
+<h3 id="人性操作系统的模糊测试"><a href="#人性操作系统的模糊测试" class="headerlink" title="人性操作系统的模糊测试"></a>人性操作系统的模糊测试</h3><p>模糊测试（fuzzing）方法能够用来寻找可以重写的软件错误，使得恶意黑客获得实际的控制权。和程序的模糊测试一样，你必须明白人类思维对特定类型的数据是如何反应的。通过观察人们在面对不同决定和数据时的反应，就能够知道他们运行的“程序”如何。人类思维中的有些行为准则是与生俱来的，每个人都会遵守。</p>
+<p>比如，先给目标一点甜头尝尝，接下来再提请求就不大可能吃闭门羹。这是预期定律的一种体现。这种方法最基本的一点便是穿透“防火墙”（理性状态），直入“系统最低层”（下意识状态）。</p>
+<h3 id="嵌入式指令的规则"><a href="#嵌入式指令的规则" class="headerlink" title="嵌入式指令的规则"></a>嵌入式指令的规则</h3><p>一些行之有效的嵌入式指令基本原则如下：</p>
+<ul>
+<li>指令要短，3-4个字即可；</li>
+<li>些许强调会更加有效；</li>
+<li>蕴含在普通的语句中最有效；</li>
+<li>配以适当的面部表情和肢体语言。</li>
+</ul>
+<p>市场营销中对嵌入式指令的运用很流行：</p>
+<ul>
+<li>“秒杀！”</li>
+<li>“限时特卖！”</li>
+<li>“即刻关注！”</li>
+</ul>
+<p>社会工程人员也会在表述时加上类似填充的语句，让后面植入的命令不至于显得太突兀。举例如下。</p>
+<ul>
+<li>“当你……”</li>
+<li>“当你……时的感觉是怎样的？”</li>
+<li>“有个人能够……”</li>
+<li>“既然你……”</li>
+</ul>
+<p>以上这些表述均能创建一种情绪或思维，允许你在潜意识中植入代码。</p>
+<p>关于嵌入式指令的例子有不限于如下几个。</p>
+<ul>
+<li>巧用引用或故事。大脑在处理故事与处理其他信息方面有着巨大的差异。秘密就在于潜意识的思维将故事作为直接指令来处理。演讲者以故事和引用的方式去传达信息会更为有效。多读、多用引用，然后将指令嵌入其中，是对该技术的一种极致应用。</li>
+<li>善用否定。善用否定利用的是人们的逆反心理。当阻止目标过多关注一件事时，往往也能在其中嵌入指令。比如，再告诉你“不要花太多时间练习嵌入式指令”时，就嵌入了“练习使用嵌入式命令”这一指令。如果告诉某人一件事不重要或不相关时，他会下意识地格外关注，这样他就能够确定这到底是否相关。</li>
+<li>使听众想象。当你问听众“……会怎么做”、“当……时，你有何感想”这样的问题时，该方法就会凑效，因为对方必须经过联想才能回答。在读懂这个句子时，你在潜意识里已经勾勒出了句中描绘的情形。潜意识会直接处理该句子，而不会去管上下文到底在说些什么。</li>
+</ul>
+<p>在嵌入指令时，语气一定要正常。</p>
+<h2 id="小结-3"><a href="#小结-3" class="headerlink" title="小结"></a>小结</h2><p>人类思维缓冲区溢出=预期定律+思维铺垫+嵌入式代码</p>
+<hr>
+<h1 id="第6章：影响：说服的力量"><a href="#第6章：影响：说服的力量" class="headerlink" title="第6章：影响：说服的力量"></a>第6章：影响：说服的力量</h1><blockquote>
+<p>晓之以理，不如示之以利。——本杰明·富兰克林</p>
+</blockquote>
+<p>影响和说服更像是以科学为支撑的艺术，其中包括了情感和信仰因素。影响和说服的艺术就是让他人想要以你所期许的方式去行动、反应、思考或建立信仰的过程。</p>
+<p>真正的影响是精妙而顺畅的，大部分时候被影响的人会毫无察觉。</p>
+<h2 id="影响和说服的5项基本原则"><a href="#影响和说服的5项基本原则" class="headerlink" title="影响和说服的5项基本原则"></a>影响和说服的5项基本原则</h2><p>说服的五项基本原则：</p>
+<ul>
+<li>目标明确；</li>
+<li>构建共识；</li>
+<li>洞悉环境；</li>
+<li>灵活应变；</li>
+<li>内省。</li>
+</ul>
+<h3 id="心中有明确的目标"><a href="#心中有明确的目标" class="headerlink" title="心中有明确的目标"></a>心中有明确的目标</h3><p>我们不仅要在心中有明确的目标，甚至要写下来。首先需要问自己：“通过这次活动或者交流我想要得到什么？”</p>
+<p>如果你的目标是赚一百万元，并且专注于赚钱的具体步骤，那么你的目的、知识和行动就会提高你达成目标的可能性。</p>
+<p>在设定目标之后，必须问自己：“我怎么知道目标已经实现了？”</p>
+<ul>
+<li>你想要什么？</li>
+<li>如何知道目标已实现？</li>
+</ul>
+<p>所以不仅仅要确立目标，还要确立目标实现的标准。</p>
+<h3 id="共识、共识、共识（更像是共情）"><a href="#共识、共识、共识（更像是共情）" class="headerlink" title="共识、共识、共识（更像是共情）"></a>共识、共识、共识（更像是共情）</h3><p>参见第5章关于共识的内容。</p>
+<p>达成共识的意思是吸引目标及其潜意识的注意，在他的潜意识中构建信任。要构建共识，首先需要从目标的心理状态入手，即尝试了解他们的心情。无论他们处于什么样的状态，只要你感知到了，就从那里入手。</p>
+<p>你不能完全按照自己的思路走。不要总想着通过逻辑来创建共识。要使他人想要做一件事，需要从感情和逻辑两方面入手，很多时候还需要理解和谦逊。虽然讲逻辑非常重要，但是必须要认识到一点：人在大多数情况下是很难讲逻辑的，逻辑意味着一种规范，它带有强制性力量。但是人们都有逆反心理，即便你的逻辑是对的，他也未必屈从于此。</p>
+<p>作者的一个老师说：“友善害人于无形。”通过友善与共识影响他人的一种方法是提出问题，然后让他们选择你想要的结果。</p>
+<p>核心的一条：你要让对方<strong>想要</strong>按照你说的做，而不是让对方<strong>要</strong>按照你说的做。</p>
+<h3 id="保持自身和环境一致"><a href="#保持自身和环境一致" class="headerlink" title="保持自身和环境一致"></a>保持自身和环境一致</h3><p>对自身和周边环境保持警觉或者说感觉敏锐，是一种洞察目标和自身状况的能力，它会告诉你是否在朝着正确的方向前行。在尝试影响他人时，尽量减少内心活动。</p>
+<h3 id="不要疯狂，要灵活应变"><a href="#不要疯狂，要灵活应变" class="headerlink" title="不要疯狂，要灵活应变"></a>不要疯狂，要灵活应变</h3><p>这里说的疯狂是指，不断重复做同样的事，期待不同的结果。（似乎科学家反而会选择这样做）</p>
+<h3 id="内省"><a href="#内省" class="headerlink" title="内省"></a>内省</h3><p>这里的意思是，感知自己的情感。</p>
+<h2 id="影响战术"><a href="#影响战术" class="headerlink" title="影响战术"></a>影响战术</h2><h3 id="回报"><a href="#回报" class="headerlink" title="回报"></a>回报</h3><p>回报的规则包括两个相关的最小要求：</p>
+<ol>
+<li>人们会帮助那些帮助过他们的人；</li>
+<li>人们不会伤害那些曾经帮助过他们的人。</li>
+</ol>
+<p>回报的循环过程：</p>
+<ol>
+<li>送出某样东西。必须送出有价值的东西。</li>
+<li>制造受惠的感觉。礼物的价值越高或者越意外，受惠的感觉越强烈。接受者必须认可礼物的价值才行。</li>
+<li>提出请求。作为社会工程人员，寻找适当的小机会送出一些信息，会凸显你在接收者眼中的价值。</li>
+</ol>
+<h3 id="义务"><a href="#义务" class="headerlink" title="义务"></a>义务</h3><p>“己所不欲勿施于人”是创造“义务”的一个重要原则。</p>
+<h3 id="让步"><a href="#让步" class="headerlink" title="让步"></a>让步</h3><p>也就是承认或者认可，或者屈从。关于让步的基本原则：</p>
+<ul>
+<li>表明你让步。</li>
+<li>要求和定义回报</li>
+<li>视情况做出让步</li>
+<li>分批做出让步</li>
+</ul>
+<h3 id="稀缺"><a href="#稀缺" class="headerlink" title="稀缺"></a>稀缺</h3><p>稀缺会被当做一种策略来使用。</p>
+<p>稀缺制造出一种欲望，而欲望导致人们做出一些事后可能会后悔的决定。</p>
+<p>想要稀缺发挥作用，要么这种稀缺就是真的，要么就是坚持稀缺的观点，让它看起来是真的。</p>
+<h3 id="权威"><a href="#权威" class="headerlink" title="权威"></a>权威</h3><p>作者使用的是韦伯的论述。</p>
+<ol>
+<li>法律权威。来源于法律规范的合法性。</li>
+<li>组织权威。高层管理比低层员工有权威。</li>
+<li>社会权威。</li>
+</ol>
+<h3 id="承诺和一致性"><a href="#承诺和一致性" class="headerlink" title="承诺和一致性"></a>承诺和一致性</h3><p>这是说，让对方给出承诺；且自己不要轻易给出承诺。</p>
+<h3 id="喜欢"><a href="#喜欢" class="headerlink" title="喜欢"></a>喜欢</h3><p>人们喜欢那些喜欢自己的人。</p>
+<p>对想要影响的人，你必须深入了解、真诚关注。</p>
+<p>Jonathan Frenzen和Harry Davis：Purchasing Behavior in Embedded Markets——<a href="http://www.jstor.org/pss/2626820" target="_blank" rel="noopener">www.jstor.org/pss/2626820</a></p>
+<p>人们会倾向于接受朋友给出的“糟糕的建议”，而不会采纳不喜欢的人的“好建议”。</p>
+<p>在社会工程过程中不仅需要赢得目标的喜欢和信任，同时必须对他们真正感兴趣。</p>
+<p>最后一个重要方面是吸引力。人们倾向于“喜欢”那些有吸引力的人。</p>
+<h3 id="共识或社会认同"><a href="#共识或社会认同" class="headerlink" title="共识或社会认同"></a>共识或社会认同</h3><p>群体规范和群体行为会影响个体行为。社会认同在以下两种情况下最具影响力：</p>
+<ul>
+<li>不确定：人们不确定并且形势不明的情况下，更可能观察他人的行为，并认为这种行为是正确的。</li>
+<li>相似性：人们更倾向于跟随与自己类似的人的引导。</li>
+</ul>
+<p>影响和说服的艺术是让他人以<strong>你希望</strong>的方式<strong>想要</strong>去做、行动、思考或相信的过程。为目标创造动机是一种强大的力量。</p>
+<p>永远都不要太自以为是，认为自己已经具备了读懂他人心思的能力。</p>
+<p>很多技巧都需要真正的对人们感兴趣、关心他们并抱有同情心。</p>
+<h2 id="改动现实：框架（更像是思维定势）"><a href="#改动现实：框架（更像是思维定势）" class="headerlink" title="改动现实：框架（更像是思维定势）"></a>改动现实：框架（更像是思维定势）</h2><p>框架被定义为生活中的信息和经历，能够在人们必须做出决定的时候改变其反应方式。从非社会工程人员的角度看，框架就是你和他人的个人经历，这些经历会影响你的意识，从而改变你做决定的方式。</p>
+<p>一个框架的例子：</p>
+<blockquote>
+<p>食品店在碎牛肉的包装上贴的标签往往是“75%瘦肉”，而不是“25%肥肉”。这两个标签意思完全相同，但前者听上去更有益于健康，所以对买家会更有吸引力。</p>
+</blockquote>
+<h3 id="政治活动"><a href="#政治活动" class="headerlink" title="政治活动"></a>政治活动</h3><p>用更容易让民众接受的方式对目的进行重述。</p>
+<h3 id="在日常生活中使用框架"><a href="#在日常生活中使用框架" class="headerlink" title="在日常生活中使用框架"></a>在日常生活中使用框架</h3><p>参考框架是一组看法、条件或假设，它们决定了人们如何接近、认知或理解某一事物。（这些内容在《高效能人士的7个习惯》中也有对应）</p>
+<p>任何可以用来改变人们的认知或者人们做决定的方式的东西都可以成为框架（frame）。</p>
+<p>我们的大脑天生不喜欢混乱或混沌。当混乱的事物出现时，大脑会尝试找出其中的规律。</p>
+<p>很多时候框架是难以察觉的。公司在市场营销中应用这一点，希望潜意识信息能够改变目标对其产品的认知。他们常常会使用微妙的框架方法植入信息。比如FedEx的标识中藏有一个箭头、亚马逊的标识中有一个微笑。</p>
+<p>框架不一定要使用图形，重要的是<strong>目标感知</strong>的价值。目标对一件事物的认知会提高或降低它的价值。比如，当走进高价位服饰店的时候，每件衣服都摆放得井然有序、整整齐齐，看起来非常完美。这是你的认知就是每件衣物的价值都与其所标注的高价相当。然而，如果你将其中的领带、衬衫或其他衣物从架子上拿下来，放在折扣店中，会觉得这些物品的价值大打折扣。</p>
+<p>人们用一种品牌的名称来形容或描述某一种动作，也是一个例子。</p>
+<h3 id="框架联盟的4种类型"><a href="#框架联盟的4种类型" class="headerlink" title="框架联盟的4种类型"></a>框架联盟的4种类型</h3><p>David Snow和Robert Benford合作写了一篇论文：Clarifying the Relationship Between Framing and Ideology in the Study of Social Movements。他们认为，当个人的框架由于一致或互补而形成关联时，<strong>框架联盟</strong>就会出现，产生<strong>框架的共振</strong>，这是对群体进行框架转变的关键。</p>
+<p>影响框架努力成果的4个条件：</p>
+<ul>
+<li><p><strong>框架努力成果的鲁棒性、完备性和彻底性</strong>。他们找出了三个核心框架任务，对这些任务的关注程度将决定每个参与者投入的程度。三个步骤是：</p>
+<ul>
+<li>诊断框架的问题；</li>
+<li>分析并找出解决方案；</li>
+<li>如果成功了，号召行动。  </li>
+</ul>
+<p>投入框架的努力越多，人们受框架影响从而采取行动的可能性就越大。</p>
+</li>
+<li><p><strong>提议的框架和大众信仰系统之间的关系</strong>。如果框架与人们的核心信仰或者信仰系统的价值没有任何联系，则人们会忽视该框架或提议的框架。</p>
+</li>
+<li><strong>框架与参与者现实情况的关联</strong>。框架必须与目标本人相关。</li>
+<li><strong>反对的循环；对当前社会变迁的持续关注，以及框架在当前时代出现的时间点</strong>。世界上正在发生的事情会影响社会框架。</li>
+</ul>
+<p><strong>框架从来都不是从头构建出来的。框架总是根据已有文化符号提出的，涉及个人信仰和经验的核心</strong>。四种不同的框架联盟：</p>
+<ol>
+<li>框架桥接：就某一主题而言思想上一致但结构上互不关联的两个或多个框架的联结。<br>桥接并不是诱使他人相信你的框架，而是在深入了解了他们的框架之后，发现了两者之间的联系，然后可以利用这一联系将目标带入你的框架。</li>
+<li>框架放大：对一个与某议题、问题或者一组事件有关的解释性框架进行阐述及激励。<br>这种类型的联盟是最基本的，它涉及强调某一事件比其他事件更加重要。</li>
+<li>框架扩展：通过将提议的框架边界扩展到一群人的观点、兴趣，特别是情绪，将参与者引入其中。</li>
+<li>框架转换：通过提出新的论点说明为什么他们的框架更好。</li>
+</ol>
+<h3 id="社会工程人员如何利用框架战术"><a href="#社会工程人员如何利用框架战术" class="headerlink" title="社会工程人员如何利用框架战术"></a>社会工程人员如何利用框架战术</h3><ul>
+<li>规则1：你说的每件事都会唤起一个框架</li>
+<li>规则2：框架中定义的词句会唤起思维框架</li>
+<li>规则3：否定框架<br>告诉目标要小心、当心或者提防某事，会自动将其引入你想要的框架。</li>
+<li>规则4：让目标思考框架会强化框架</li>
+</ul>
+<h2 id="操纵：控制你的目标"><a href="#操纵：控制你的目标" class="headerlink" title="操纵：控制你的目标"></a>操纵：控制你的目标</h2><p>操纵有六种方法：</p>
+<ol>
+<li>提高目标的暗示感受性<br>可以理解为对暗示的敏感性。</li>
+<li>获取目标环境的控制权</li>
+<li>制造怀疑</li>
+<li>制造无能为力的感觉</li>
+<li>让目标产生强烈的情绪反应</li>
+<li>严重威胁</li>
+</ol>
+<h3 id="召回还是不召回"><a href="#召回还是不召回" class="headerlink" title="召回还是不召回"></a>召回还是不召回</h3><h3 id="焦虑的最终治愈"><a href="#焦虑的最终治愈" class="headerlink" title="焦虑的最终治愈"></a>焦虑的最终治愈</h3><h3 id="你不能让我买那个"><a href="#你不能让我买那个" class="headerlink" title="你不能让我买那个"></a>你不能让我买那个</h3><p>产品陈列示意图或者货架图，告诉零售商怎样基于产品的颜色、尺寸和其他标准来展示产品，以刺激顾客购买和消费的欲望。</p>
+<p>通过视觉：</p>
+<ul>
+<li>通过排列<ul>
+<li><strong>水平放置物品</strong></li>
+<li><strong>垂直放置物品</strong></li>
+<li><strong>块放置</strong></li>
+</ul>
+</li>
+<li>通过颜色（也要考虑文化）<ul>
+<li>白色：纯洁、明亮、干净、安全、卫生、中立、善良、忠诚。</li>
+<li>黑色：权力、高雅、神秘、力量、权威、深度、稳定、平静、宁静、强化其他色彩。</li>
+<li>红色：兴奋、喜悦、喜庆、行动、能量、健康、速度、激情、欲望、爱。<br><strong>需要审慎使用</strong>：力量、冲动、武力、征服、威胁、暴力、复仇。刺激情绪、加快呼吸心跳、升高血压。</li>
+<li>橙色：温暖、热情、吸引、决心、力量、忍耐。鼓舞、活力、刺激食欲。<br><strong>需要审慎使用</strong>：不安全感、无知、迟缓。</li>
+<li>金色：明亮、智慧、财富、威望。</li>
+<li>黄色：能量、乐观、喜悦、高兴、忠诚、精神饱满。<br><strong>需要审慎使用</strong>：能够影响一个人的记忆，使用太多会使目标注意力不集中。</li>
+<li>绿色：大自然、生命、和谐、丰饶、雄心、保护、和平。使人感觉平静、安全。<br><strong>需要审慎使用</strong>：贪婪、内疚、妒忌、混乱。</li>
+<li>蓝色：天空、海洋。智慧、直觉、真理、宁静、健康、力量、知识。让人镇定、冷静，减慢新陈代谢。是眼睛最容易适应的颜色。<br><strong>需要审慎使用</strong>：不要让目标觉得寒冷或者沮丧。</li>
+<li>紫色：皇家、高贵、奢侈、创意、神秘。</li>
+<li>棕色：地球、可靠、易接近、惯例、秩序。给人牢固或相关的感觉。</li>
+</ul>
+</li>
+</ul>
+<p>通过嗅觉：</p>
+<ul>
+<li>在空气中喷洒特别设计的香味</li>
+</ul>
+<h3 id="令目标积极地响应"><a href="#令目标积极地响应" class="headerlink" title="令目标积极地响应"></a>令目标积极地响应</h3><p>使用条件反射。</p>
+<p>案例：每次说到积极的话题，都会让笔盖发出声音。</p>
+<h3 id="操纵激励"><a href="#操纵激励" class="headerlink" title="操纵激励"></a>操纵激励</h3><ol>
+<li>金钱激励</li>
+<li>意识激励</li>
+<li>社会激励</li>
+</ol>
+<h2 id="社会工程中的操纵"><a href="#社会工程中的操纵" class="headerlink" title="社会工程中的操纵"></a>社会工程中的操纵</h2><h3 id="提高目标的暗示感受性"><a href="#提高目标的暗示感受性" class="headerlink" title="提高目标的暗示感受性"></a>提高目标的暗示感受性</h3><h3 id="控制目标的环境"><a href="#控制目标的环境" class="headerlink" title="控制目标的环境"></a>控制目标的环境</h3><p>常常在互联网上使用。</p>
+<h3 id="迫使目标重新评估"><a href="#迫使目标重新评估" class="headerlink" title="迫使目标重新评估"></a>迫使目标重新评估</h3><h3 id="让目标感到无能为力"><a href="#让目标感到无能为力" class="headerlink" title="让目标感到无能为力"></a>让目标感到无能为力</h3><h3 id="给予非肉体惩罚"><a href="#给予非肉体惩罚" class="headerlink" title="给予非肉体惩罚"></a>给予非肉体惩罚</h3><h3 id="威胁目标"><a href="#威胁目标" class="headerlink" title="威胁目标"></a>威胁目标</h3><h3 id="使用积极的操纵"><a href="#使用积极的操纵" class="headerlink" title="使用积极的操纵"></a>使用积极的操纵</h3><ol>
+<li>不要让目标的表现影响你的情绪</li>
+<li>寻找积极的话题</li>
+<li>假定，假定，假定<br>假定目标会依照你想要的方式行动，假定他会回答你想知道的问题，假定他会同意你的所有要求，假定你要问的问题以及要做的陈述。<br>假定你想要的会发生大有好处，因为它会影响你的精神面貌。你必须从精神面貌上表现出你会得到想要的。</li>
+<li>尝试不同的开头</li>
+<li>使用过去时：强调事情发生在过去。</li>
+<li>探讨并摧毁</li>
+</ol>
+<h2 id="小结-4"><a href="#小结-4" class="headerlink" title="小结"></a>小结</h2><hr>
+<h1 id="第7章：社会工程工具"><a href="#第7章：社会工程工具" class="headerlink" title="第7章：社会工程工具"></a>第7章：社会工程工具</h1><blockquote>
+<p>人是使用工具的动物，没有工具，一事无成；有了工具，无所不能。——Thomas Carlyle</p>
+</blockquote>
+<h2 id="物理工具"><a href="#物理工具" class="headerlink" title="物理工具"></a>物理工具</h2><h3 id="开锁器"><a href="#开锁器" class="headerlink" title="开锁器"></a>开锁器</h3><ol>
+<li>实际应用</li>
+<li>打开磁性锁和电子锁</li>
+<li>各种各样的开锁工具<ol>
+<li>推刀</li>
+<li>撞匙</li>
+<li>挂锁垫片</li>
+</ol>
+</li>
+</ol>
+<h3 id="摄像机和录音设备"><a href="#摄像机和录音设备" class="headerlink" title="摄像机和录音设备"></a>摄像机和录音设备</h3><ol>
+<li>摄像机：可以隐藏在笔尖、时钟、泰迪熊玩具、假的螺帽和烟雾报警器中。</li>
+<li>使用工具</li>
+</ol>
+<h3 id="使用GPS跟踪器（当然这一部分所列设备也可能会过时）"><a href="#使用GPS跟踪器（当然这一部分所列设备也可能会过时）" class="headerlink" title="使用GPS跟踪器（当然这一部分所列设备也可能会过时）"></a>使用GPS跟踪器（当然这一部分所列设备也可能会过时）</h3><ol>
+<li>SpyHawk超级GPS跟踪器</li>
+<li>SpyHawk跟踪器的使用</li>
+<li>GPS跟踪器数据分析</li>
+</ol>
+<h2 id="在线信息收集工具"><a href="#在线信息收集工具" class="headerlink" title="在线信息收集工具"></a>在线信息收集工具</h2><h3 id="Maltego"><a href="#Maltego" class="headerlink" title="Maltego"></a>Maltego</h3><p><a href="http://www.paterva.com" target="_blank" rel="noopener">www.paterva.com</a></p>
+<p>这个工具能完成自动化收集信息的任务。</p>
+<h3 id="社会工程人员工具包（可能也是过时的）"><a href="#社会工程人员工具包（可能也是过时的）" class="headerlink" title="社会工程人员工具包（可能也是过时的）"></a>社会工程人员工具包（可能也是过时的）</h3><p>Social Engineer Toolkit, SET。在python中运行的工具包。</p>
+<ol>
+<li><p>安装<br>安装python和Metasploit框架。在命令行中输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">svn co http://svn.secmaniac.com/social_engineering_toolkit set/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行SET<br>在set目录下输入./set，就会启动set初始菜单。<br>访问：<a href="http://www.social-engineer.org/framework/Computer_Based_Social_Engineering_Tools:_Social_Engineer_Toolkit_%28SET%29" target="_blank" rel="noopener">www.social-engineer.org/framework/Computer_Based_Social_Engineering_Tools:_Social_Engineer_Toolkit_%28SET%29</a><br>下面是SET中最常用两个功能：</p>
+<ol>
+<li>鱼叉式网络钓鱼<br>网络钓鱼：恶意诈骗犯如何通过定向设计的电子邮件“广泛撒网”，吸引人们访问特定的网站、打开恶意文件或者输入个人敏感信息，为以后的攻击做准备。<br>使用SET进行鱼叉式网络钓鱼攻击，选择选项1，之后，会看到以下几个选项：<ul>
+<li>执行群发邮件攻击</li>
+<li>创建一个文件格式负载</li>
+<li>创建一个社会工程模板</li>
+</ul>
+</li>
+<li>Web攻击</li>
+<li>SET的其他特性</li>
+</ol>
+</li>
+</ol>
+<h3 id="基于电话的工具"><a href="#基于电话的工具" class="headerlink" title="基于电话的工具"></a>基于电话的工具</h3><ol>
+<li>篡改来电显示</li>
+<li><a href="www.spoofcard.com">SpoofCard</a></li>
+<li><a href="www.spoofapp.com">SpoofApp</a></li>
+<li><a href="www.social-engineer.org/wiki/archives/CallerIDspoofing/CallerID-SpoofingWithAsterisk.html">Asterisk</a></li>
+<li>使用脚本</li>
+</ol>
+<h3 id="密码分析工具"><a href="#密码分析工具" class="headerlink" title="密码分析工具"></a>密码分析工具</h3><p>高风险点：</p>
+<ul>
+<li>使用相同的密码</li>
+<li>加入个人信息的密码</li>
+</ul>
+<p>帮助分析用户可能选择的密码：</p>
+<ol>
+<li>通用用户密码分析工具（Common User Password Profiler, CUPP）<br>一种包含在BackTrack渗透测试工具</li>
+<li>CeWL<br>可以通过给定的URL进行指定深度的搜索，并可扩展到外部链接。<br><a href="http://www.digininja.org/projects/cewl.php" target="_blank" rel="noopener">www.digininja.org/projects/cewl.php</a>  </li>
+</ol>
+<h2 id="小结-5"><a href="#小结-5" class="headerlink" title="小结"></a>小结</h2><hr>
+<h1 id="第8章：案例研究：剖析社会工程人员"><a href="#第8章：案例研究：剖析社会工程人员" class="headerlink" title="第8章：案例研究：剖析社会工程人员"></a>第8章：案例研究：剖析社会工程人员</h1><h2 id="米特尼克案例1：攻击DMV"><a href="#米特尼克案例1：攻击DMV" class="headerlink" title="米特尼克案例1：攻击DMV"></a>米特尼克案例1：攻击DMV</h2><p>DMV，非公开的机动车辆管理局</p>
+<h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>获取人们的驾照号。</p>
+<h3 id="故事"><a href="#故事" class="headerlink" title="故事"></a>故事</h3><ol>
+<li>获取非公开的DMV电话号码</li>
+<li>入侵州电话系统</li>
+<li>获取密码</li>
+</ol>
+<h3 id="社会工程框架的运用"><a href="#社会工程框架的运用" class="headerlink" title="社会工程框架的运用"></a>社会工程框架的运用</h3><h2 id="米特尼克案例2：攻击美国社会保障局"><a href="#米特尼克案例2：攻击美国社会保障局" class="headerlink" title="米特尼克案例2：攻击美国社会保障局"></a>米特尼克案例2：攻击美国社会保障局</h2><h3 id="目标-1"><a href="#目标-1" class="headerlink" title="目标"></a>目标</h3><h3 id="故事-1"><a href="#故事-1" class="headerlink" title="故事"></a>故事</h3><h3 id="社会工程框架的运用-1"><a href="#社会工程框架的运用-1" class="headerlink" title="社会工程框架的运用"></a>社会工程框架的运用</h3><h2 id="海德纳吉案例1：自负的CEO"><a href="#海德纳吉案例1：自负的CEO" class="headerlink" title="海德纳吉案例1：自负的CEO"></a>海德纳吉案例1：自负的CEO</h2><h3 id="目标-2"><a href="#目标-2" class="headerlink" title="目标"></a>目标</h3><h3 id="故事-2"><a href="#故事-2" class="headerlink" title="故事"></a>故事</h3><h3 id="社会工程框架的运用-2"><a href="#社会工程框架的运用-2" class="headerlink" title="社会工程框架的运用"></a>社会工程框架的运用</h3><h2 id="海德纳吉案例2：主题乐园丑闻"><a href="#海德纳吉案例2：主题乐园丑闻" class="headerlink" title="海德纳吉案例2：主题乐园丑闻"></a>海德纳吉案例2：主题乐园丑闻</h2><h3 id="目标-3"><a href="#目标-3" class="headerlink" title="目标"></a>目标</h3><h3 id="故事-3"><a href="#故事-3" class="headerlink" title="故事"></a>故事</h3><h3 id="社会工程框架的运用-3"><a href="#社会工程框架的运用-3" class="headerlink" title="社会工程框架的运用"></a>社会工程框架的运用</h3><h2 id="最高机密案例1：不可能的使命"><a href="#最高机密案例1：不可能的使命" class="headerlink" title="最高机密案例1：不可能的使命"></a>最高机密案例1：不可能的使命</h2><h3 id="目标-4"><a href="#目标-4" class="headerlink" title="目标"></a>目标</h3><h3 id="故事-4"><a href="#故事-4" class="headerlink" title="故事"></a>故事</h3><h3 id="社会工程框架的运用-4"><a href="#社会工程框架的运用-4" class="headerlink" title="社会工程框架的运用"></a>社会工程框架的运用</h3><h2 id="最高机密案例2：对黑客的社会工程"><a href="#最高机密案例2：对黑客的社会工程" class="headerlink" title="最高机密案例2：对黑客的社会工程"></a>最高机密案例2：对黑客的社会工程</h2><h3 id="目标-5"><a href="#目标-5" class="headerlink" title="目标"></a>目标</h3><h3 id="故事-5"><a href="#故事-5" class="headerlink" title="故事"></a>故事</h3><h3 id="社会工程框架的运用-5"><a href="#社会工程框架的运用-5" class="headerlink" title="社会工程框架的运用"></a>社会工程框架的运用</h3><h2 id="案例学习的重要性"><a href="#案例学习的重要性" class="headerlink" title="案例学习的重要性"></a>案例学习的重要性</h2><h2 id="小结-6"><a href="#小结-6" class="headerlink" title="小结"></a>小结</h2><hr>
+<h1 id="第9章：预防和补救"><a href="#第9章：预防和补救" class="headerlink" title="第9章：预防和补救"></a>第9章：预防和补救</h1><h2 id="学会识别社会工程攻击"><a href="#学会识别社会工程攻击" class="headerlink" title="学会识别社会工程攻击"></a>学会识别社会工程攻击</h2><h2 id="创建具有个人安全意识的文化"><a href="#创建具有个人安全意识的文化" class="headerlink" title="创建具有个人安全意识的文化"></a>创建具有个人安全意识的文化</h2><h2 id="充分认识信息的价值"><a href="#充分认识信息的价值" class="headerlink" title="充分认识信息的价值"></a>充分认识信息的价值</h2><h2 id="及时更新软件"><a href="#及时更新软件" class="headerlink" title="及时更新软件"></a>及时更新软件</h2><h2 id="编制参考指南"><a href="#编制参考指南" class="headerlink" title="编制参考指南"></a>编制参考指南</h2><p>这一条类似于创建一个过滤器。</p>
+<h2 id="学习社会工程审计案例"><a href="#学习社会工程审计案例" class="headerlink" title="学习社会工程审计案例"></a>学习社会工程审计案例</h2><h3 id="理解什么是社会安全审计"><a href="#理解什么是社会安全审计" class="headerlink" title="理解什么是社会安全审计"></a>理解什么是社会安全审计</h3><p>社会工程审计：雇用专业安全人员模仿恶意社会工程人员所使用的攻击方式对企业中的人、规章以及物理环境所进行的安全测试。</p>
+<p>恶意工程人员和专业安全审计人员主要有三点不同：</p>
+<ul>
+<li>通常，专业的安全审计人员会遵循道德与法律上的约束。</li>
+<li>专业安全审计人员的目的是帮助客户，而不是窃取客户资料、使客户陷入窘境或者伤害客户。</li>
+<li>专业的安全审计有一定的范围限制。</li>
+</ul>
+<h3 id="设立审计目标"><a href="#设立审计目标" class="headerlink" title="设立审计目标"></a>设立审计目标</h3><p>在社会工程安全审计中被入侵的公司通常认为解雇那个在攻击中上当的员工就能修正问题，但客户没有意识到的是，<strong>审计过后，在审计中犯过错的员工很可能会成为大楼中安全意识最高的人</strong>。</p>
+<p>关键方面：</p>
+<ul>
+<li>判断员工是否会点击或打开来自陌生人邮件中的链接或文件</li>
+<li>判断员工是否会登录某个网站，输入个人或业务相关信息</li>
+<li>判断通过电话、在工作场所、个人场所或面对面的交流可以从员工口中获取多少信息</li>
+<li>判断办公环境中的锁、摄像头、传感器和门卫的安全等级</li>
+<li>确定社会工程人员是否有能力构建一个恶意U盘或DVD，并诱导员工把它用在他的工作电脑上</li>
+</ul>
+<h3 id="审计中的可为与不可为"><a href="#审计中的可为与不可为" class="headerlink" title="审计中的可为与不可为"></a>审计中的可为与不可为</h3><h3 id="挑选最好的审计人员"><a href="#挑选最好的审计人员" class="headerlink" title="挑选最好的审计人员"></a>挑选最好的审计人员</h3><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="社会工程并非总是消极的"><a href="#社会工程并非总是消极的" class="headerlink" title="社会工程并非总是消极的"></a>社会工程并非总是消极的</h3><h3 id="收集与组织信息的重要性"><a href="#收集与组织信息的重要性" class="headerlink" title="收集与组织信息的重要性"></a>收集与组织信息的重要性</h3><h3 id="谨慎用词"><a href="#谨慎用词" class="headerlink" title="谨慎用词"></a>谨慎用词</h3><h3 id="巧妙伪装"><a href="#巧妙伪装" class="headerlink" title="巧妙伪装"></a>巧妙伪装</h3><h3 id="练习解读表情"><a href="#练习解读表情" class="headerlink" title="练习解读表情"></a>练习解读表情</h3><h3 id="操纵与影响"><a href="#操纵与影响" class="headerlink" title="操纵与影响"></a>操纵与影响</h3><h3 id="警惕恶意策略"><a href="#警惕恶意策略" class="headerlink" title="警惕恶意策略"></a>警惕恶意策略</h3><h3 id="利用你的恐惧"><a href="#利用你的恐惧" class="headerlink" title="利用你的恐惧"></a>利用你的恐惧</h3><h2 id="小结-7"><a href="#小结-7" class="headerlink" title="小结"></a>小结</h2><hr>
+<h1 id="一些网站"><a href="#一些网站" class="headerlink" title="一些网站"></a>一些网站</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
+<li>社会工程组织：<a href="http://www.social-engineer.org" target="_blank" rel="noopener">www.social-engineer.org</a></li>
+<li>网络攻防安全：<a href="http://www.offensive-security.com" target="_blank" rel="noopener">www.offensive-security.com</a></li>
+</ul>
+<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><ul>
+<li>社会工程框架：<a href="http://www.social-engineer.org/framework" target="_blank" rel="noopener">www.social-engineer.org/framework</a></li>
+<li>国防文档因为丢掉垃圾中泄露：<a href="http://www.social-engineer.org/resources/book/TopSecretStolen.html" target="_blank" rel="noopener">www.social-engineer.org/resources/book/TopSecretStolen.html</a></li>
+<li>赛门铁克公司数据丢失防护部门：go.symantec.com/vontu</li>
+<li>第4页调查报告：financialservices.house.gov/media/pdf/062403ja.pdf</li>
+<li>黑暗阅读网站：<a href="http://www.darkreading.com" target="_blank" rel="noopener">www.darkreading.com</a><ul>
+<li>报告：<a href="http://www.darkreading.com/database_security/security/attacks/showArticle.jhtml?articleID=226200272" target="_blank" rel="noopener">www.darkreading.com/database_security/security/attacks/showArticle.jhtml?articleID=226200272</a></li>
+</ul>
+</li>
+<li>419骗局：<a href="http://www.social-engineer.org/wiki/archives/ConMen/ConMen-Scam=NigerianFee.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/ConMen/ConMen-Scam=NigerianFee.html</a></li>
+<li>稀缺的力量：<a href="http://www.social-engineer.org/wiki/archives/Governments/Governments-FoodElectionWeapon.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/Governments/Governments-FoodElectionWeapon.html</a></li>
+<li>员工窃贼：<ul>
+<li><a href="http://www.social-engineer.org/wiki/archives/DisgruntledEmployees/DisgruntledEmployees-EmployeeTheft.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/DisgruntledEmployees/DisgruntledEmployees-EmployeeTheft.html</a></li>
+<li><a href="http://www.social-engineer.org/wiki/archives/DisgruntledEmployees/DisgruntledEmployees-MorganStanley.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/DisgruntledEmployees/DisgruntledEmployees-MorganStanley.html</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><ul>
+<li>BasKet软件下载：basket.kde.org</li>
+<li>Dradis软件下载：dradisframework.org</li>
+<li>误丢贵重信息：<a href="http://www.social-engineer.org/wiki/archives/BlogPosts/LookWhatIFound.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/BlogPosts/LookWhatIFound.html</a></li>
+<li>谷歌搜索语法：<a href="http://www.googleguide.com/advanced_operators.html" target="_blank" rel="noopener">www.googleguide.com/advanced_operators.html</a></li>
+<li>Whois域名信息查询：<a href="http://www.whois.net" target="_blank" rel="noopener">www.whois.net</a></li>
+<li>端口扫描违法相关：<a href="http://www.law.co.il/media/computer-law/mizrachi_en.pdf" target="_blank" rel="noopener">www.law.co.il/media/computer-law/mizrachi_en.pdf</a></li>
+<li>网络安全违法：<a href="http://www.securityfocus.com/news/126" target="_blank" rel="noopener">www.securityfocus.com/news/126</a></li>
+<li>粗心泄露账户信息：<a href="http://www.icanstalku.com" target="_blank" rel="noopener">www.icanstalku.com</a><ul>
+<li>例子：<a href="http://www.social-engineer.org/wiki/archives/BlogPosts/TwitterHomeRobbery.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/BlogPosts/TwitterHomeRobbery.html</a></li>
+</ul>
+</li>
+<li>背景查询<ul>
+<li><a href="http://www.USSearch.com" target="_blank" rel="noopener">www.USSearch.com</a></li>
+<li><a href="http://www.intelius.com" target="_blank" rel="noopener">www.intelius.com</a></li>
+</ul>
+</li>
+<li>设计图泄露：<a href="http://www.social-engineer.org/resources/book/TopSecretStolen.html" target="_blank" rel="noopener">www.social-engineer.org/resources/book/TopSecretStolen.html</a></li>
+</ul>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><ul>
+<li>诱导手册：<a href="http://www.social-engineer.org/wiki/archives/BlogPosts/ocso-elicitation-brochure.pdf" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/BlogPosts/ocso-elicitation-brochure.pdf</a></li>
+</ul>
+<h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><ul>
+<li>电台主持的伪装：<a href="http://www.social-engineer.org/episode-002-pretexting-not-just-for-social-engineers" target="_blank" rel="noopener">www.social-engineer.org/episode-002-pretexting-not-just-for-social-engineers</a></li>
+<li>电话背景声音网站：<a href="http://www.thrivingoffice.com" target="_blank" rel="noopener">www.thrivingoffice.com</a></li>
+<li>改变来电显示号码网站：<a href="http://www.spoofcard.com" target="_blank" rel="noopener">www.spoofcard.com</a></li>
+<li>斯坦利·马克·瑞夫金案例信息：<a href="http://www.social-engineer.org/wiki/archives/Hachers/hachers-Mark-Rifkin-Social-Engineer-furtherInfo.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/Hachers/hachers-Mark-Rifkin-Social-Engineer-furtherInfo.html</a></li>
+<li>2006年新闻周刊发表的文章：<a href="http://www.social-engineer.org/resources/book/HP_pretext.html" target="_blank" rel="noopener">www.social-engineer.org/resources/book/HP_pretext.html</a></li>
+<li>2006年的《电话记录隐私权保护法》：frwebgate.access.gpo.go/cgi-bin/getdoc.cgi?dbname=109_cong_bills&amp;docid=f:h4709enr.txt.pdf</li>
+<li>惠普提交给其律师和内部法律人员的一份机密文件：<a href="http://www.social-engineer.org/resources/book/20061004hewlett6.pdf" target="_blank" rel="noopener">www.social-engineer.org/resources/book/20061004hewlett6.pdf</a></li>
+</ul>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><ul>
+<li>2001年8月FBI司法公告：<a href="http://www.social-engineer.org/wiki/archives/ModesOfThinking/MOT_FBI_3of5.html" target="_blank" rel="noopener">www.social-engineer.org/wiki/archives/ModesOfThinking/MOT_FBI_3of5.html</a></li>
+<li>巴甫洛夫的狗：<a href="http://www.ivanpavlov.com" target="_blank" rel="noopener">www.ivanpavlov.com</a></li>
+<li>1990年，艾克曼“基本情绪（Basic Emotions）”：<a href="http://www.paulekman.com/wp-content/uploads/2009/02/Basic-Emotions.pdf" target="_blank" rel="noopener">www.paulekman.com/wp-content/uploads/2009/02/Basic-Emotions.pdf</a></li>
+<li>针对微表情的专业训练：<a href="http://www.paulekman.com" target="_blank" rel="noopener">www.paulekman.com</a></li>
+<li>从心理学角度看，这二者有一定联系：<a href="http://www.examiner.com/mental-health-in-new-orleans/detecting-deception-using-body-language-and-verbal-cues-to-detect-lies" target="_blank" rel="noopener">www.examiner.com/mental-health-in-new-orleans/detecting-deception-using-body-language-and-verbal-cues-to-detect-lies</a></li>
+<li>NLP网站：<a href="http://www.planetnlp.com" target="_blank" rel="noopener">www.planetnlp.com</a></li>
+</ul>
+<hr>
+<p>作者：克里斯托弗·海德纳吉【美】（Christopher Hadnagy）<br>原名：<em>Social Engineering: the Art of Human Hacking</em> (2011)<br>译者：陆道宏、杜娟、邱璟<br>出版社：人民邮电出版社（北京）<br>出版年份：2013</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    马昱堃
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://mayukun1996.github.io/2019/05/22/Books/Book_Social_Engineering/" title="《社会工程：安全体系中的人性漏洞》">http://mayukun1996.github.io/2019/05/22/Books/Book_Social_Engineering/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+            <a href="/tags/导论/" rel="tag"># 导论</a>
+          
+            <a href="/tags/计算社会科学/" rel="tag"># 计算社会科学</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/19/Instruments/Python/plotnine-hanz-code/" rel="next" title="Python之plotnine中ggplot中文乱码问题">
+                <i class="fa fa-chevron-left"></i> Python之plotnine中ggplot中文乱码问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/27/Paper/Paper_W2VAppInSociology/" rel="prev" title="词嵌入在社科中的应用">
+                词嵌入在社科中的应用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NTg4MC8yMjM5MQ=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/Owl.JPG" alt="马昱堃">
+            
+              <p class="site-author-name" itemprop="name">马昱堃</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:mayukun96@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第1章：社会工程学初探"><span class="nav-text">第1章：社会工程学初探</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为何本书很重要"><span class="nav-text">为何本书很重要</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本书框架"><span class="nav-text">本书框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本书内容"><span class="nav-text">本书内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#社会工程概述"><span class="nav-text">社会工程概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程及其定位"><span class="nav-text">社会工程及其定位</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#419骗局"><span class="nav-text">419骗局</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#稀缺的力量"><span class="nav-text">稀缺的力量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#员工窃贼"><span class="nav-text">员工窃贼</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#黑市和斯普林特大师"><span class="nav-text">黑市和斯普林特大师</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程人员的类型"><span class="nav-text">社会工程人员的类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程的框架及其使用方法"><span class="nav-text">社会工程的框架及其使用方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第2章：信息收集"><span class="nav-text">第2章：信息收集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#收集信息"><span class="nav-text">收集信息</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用BasKet"><span class="nav-text">使用BasKet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Dradis"><span class="nav-text">使用Dradis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#像社会工程人员一样思考"><span class="nav-text">像社会工程人员一样思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信息源"><span class="nav-text">信息源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#从网站上收集信息"><span class="nav-text">从网站上收集信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运用观察的力量"><span class="nav-text">运用观察的力量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#垃圾堆里找信息"><span class="nav-text">垃圾堆里找信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运用分析软件"><span class="nav-text">运用分析软件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#交流模型"><span class="nav-text">交流模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#交流模型及其根源"><span class="nav-text">交流模型及其根源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#制定交流模型"><span class="nav-text">制定交流模型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#交流模型的力量"><span class="nav-text">交流模型的力量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第3章：诱导"><span class="nav-text">第3章：诱导</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#诱导的含义"><span class="nav-text">诱导的含义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#诱导的目的"><span class="nav-text">诱导的目的</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#铺垫"><span class="nav-text">铺垫</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成为成功的诱导者"><span class="nav-text">成为成功的诱导者</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-唤醒他人的自我"><span class="nav-text">1.唤醒他人的自我</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-表达共同的兴趣"><span class="nav-text">2.表达共同的兴趣</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-故意说谎"><span class="nav-text">3.故意说谎</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-主动提供信息"><span class="nav-text">4.主动提供信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-假装高深"><span class="nav-text">5.假装高深</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-利用酒精的影响"><span class="nav-text">6.利用酒精的影响</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提问的学问"><span class="nav-text">提问的学问</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-开放式问题"><span class="nav-text">1.开放式问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-封闭式问题"><span class="nav-text">2.封闭式问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-引导性问题"><span class="nav-text">3.引导性问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-假设性问题"><span class="nav-text">4.假设性问题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#精通诱导"><span class="nav-text">精通诱导</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结-1"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第4章：伪装：如何成为任何人"><span class="nav-text">第4章：伪装：如何成为任何人</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是伪装"><span class="nav-text">什么是伪装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪装的原则和计划阶段"><span class="nav-text">伪装的原则和计划阶段</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-调查越充分，成功的几率就越大"><span class="nav-text">1.调查越充分，成功的几率就越大</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-植入个人爱好会提高成功率"><span class="nav-text">2.植入个人爱好会提高成功率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-练习方言或者表达方式"><span class="nav-text">3.练习方言或者表达方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-使用电话不会减少社会工程人员投入的精力"><span class="nav-text">4.使用电话不会减少社会工程人员投入的精力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-伪装越简单，成功率越高"><span class="nav-text">5.伪装越简单，成功率越高</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-伪装必须显得自然"><span class="nav-text">6.伪装必须显得自然</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-为目标提供逻辑结论或下一步安排"><span class="nav-text">7.为目标提供逻辑结论或下一步安排</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#成功的伪装"><span class="nav-text">成功的伪装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#案例1：斯坦利·马克·瑞夫金"><span class="nav-text">案例1：斯坦利·马克·瑞夫金</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例2：惠普"><span class="nav-text">案例2：惠普</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遵纪守法"><span class="nav-text">遵纪守法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他伪装工具"><span class="nav-text">其他伪装工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结-2"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第5章：心理战术：社会工程心理学"><span class="nav-text">第5章：心理战术：社会工程心理学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#思维模式"><span class="nav-text">思维模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#感官"><span class="nav-text">感官</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3种主要的思维模式"><span class="nav-text">3种主要的思维模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-视觉"><span class="nav-text">1.视觉</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-听觉"><span class="nav-text">2.听觉</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-动觉"><span class="nav-text">3.动觉</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-辨别目标的主导感官"><span class="nav-text">4.辨别目标的主导感官</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-为何了解思维模式如此重要"><span class="nav-text">5.为何了解思维模式如此重要</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微表情"><span class="nav-text">微表情</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#愤怒"><span class="nav-text">愤怒</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#厌恶"><span class="nav-text">厌恶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#轻蔑"><span class="nav-text">轻蔑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#恐惧"><span class="nav-text">恐惧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#惊讶"><span class="nav-text">惊讶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#悲伤"><span class="nav-text">悲伤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快乐"><span class="nav-text">快乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#训练自己识别微表情"><span class="nav-text">训练自己识别微表情</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程人员如何运用微表情"><span class="nav-text">社会工程人员如何运用微表情</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#诱导对方产生某种情绪"><span class="nav-text">诱导对方产生某种情绪</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#识别欺骗"><span class="nav-text">识别欺骗</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#神经语言程序学（NLP）"><span class="nav-text">神经语言程序学（NLP）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#神经语言程序学的历史"><span class="nav-text">神经语言程序学的历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#神经语言程序学的准则"><span class="nav-text">神经语言程序学的准则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-NLP新准则"><span class="nav-text">1.NLP新准则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-新准则的脚本"><span class="nav-text">2.新准则的脚本</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程人员如何应用NLP"><span class="nav-text">社会工程人员如何应用NLP</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-NLP之于语音语调"><span class="nav-text">1.NLP之于语音语调</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-NLP之于句型结构"><span class="nav-text">2.NLP之于句型结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-在社会工程中使用终极声音"><span class="nav-text">3.在社会工程中使用终极声音</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#采访和审讯"><span class="nav-text">采访和审讯</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#专业的审讯技巧"><span class="nav-text">专业的审讯技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-正面交锋"><span class="nav-text">1.正面交锋</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-主题延伸"><span class="nav-text">2.主题延伸</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-应对拒绝和反对"><span class="nav-text">3.应对拒绝和反对</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-保持目标注意力集中"><span class="nav-text">4.保持目标注意力集中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-展示其他途径"><span class="nav-text">5.展示其他途径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-最终目标"><span class="nav-text">6.最终目标</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#手势"><span class="nav-text">手势</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#双臂和手的摆放"><span class="nav-text">双臂和手的摆放</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聆听：通往成功之门"><span class="nav-text">聆听：通往成功之门</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#即刻达成共识"><span class="nav-text">即刻达成共识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#真正地想要了解他人"><span class="nav-text">真正地想要了解他人</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意自身形象"><span class="nav-text">注意自身形象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#善于聆听"><span class="nav-text">善于聆听</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#留心自己对他人的影响"><span class="nav-text">留心自己对他人的影响</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#尽量少谈论自己"><span class="nav-text">尽量少谈论自己</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谨记：同情心是达成共识的关键"><span class="nav-text">谨记：同情心是达成共识的关键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩大知识领域"><span class="nav-text">扩大知识领域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#挖掘你的好奇心"><span class="nav-text">挖掘你的好奇心</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设法满足他人的需求"><span class="nav-text">设法满足他人的需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用其他建立共识的技巧"><span class="nav-text">使用其他建立共识的技巧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试“共识”"><span class="nav-text">测试“共识”</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人类思维缓冲区溢出"><span class="nav-text">人类思维缓冲区溢出</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设定最基本的原则"><span class="nav-text">设定最基本的原则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#人性操作系统的模糊测试"><span class="nav-text">人性操作系统的模糊测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#嵌入式指令的规则"><span class="nav-text">嵌入式指令的规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结-3"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第6章：影响：说服的力量"><span class="nav-text">第6章：影响：说服的力量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#影响和说服的5项基本原则"><span class="nav-text">影响和说服的5项基本原则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#心中有明确的目标"><span class="nav-text">心中有明确的目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共识、共识、共识（更像是共情）"><span class="nav-text">共识、共识、共识（更像是共情）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保持自身和环境一致"><span class="nav-text">保持自身和环境一致</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不要疯狂，要灵活应变"><span class="nav-text">不要疯狂，要灵活应变</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内省"><span class="nav-text">内省</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#影响战术"><span class="nav-text">影响战术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#回报"><span class="nav-text">回报</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#义务"><span class="nav-text">义务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#让步"><span class="nav-text">让步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#稀缺"><span class="nav-text">稀缺</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#权威"><span class="nav-text">权威</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#承诺和一致性"><span class="nav-text">承诺和一致性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#喜欢"><span class="nav-text">喜欢</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#共识或社会认同"><span class="nav-text">共识或社会认同</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改动现实：框架（更像是思维定势）"><span class="nav-text">改动现实：框架（更像是思维定势）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#政治活动"><span class="nav-text">政治活动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在日常生活中使用框架"><span class="nav-text">在日常生活中使用框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#框架联盟的4种类型"><span class="nav-text">框架联盟的4种类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程人员如何利用框架战术"><span class="nav-text">社会工程人员如何利用框架战术</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操纵：控制你的目标"><span class="nav-text">操纵：控制你的目标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#召回还是不召回"><span class="nav-text">召回还是不召回</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#焦虑的最终治愈"><span class="nav-text">焦虑的最终治愈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#你不能让我买那个"><span class="nav-text">你不能让我买那个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#令目标积极地响应"><span class="nav-text">令目标积极地响应</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操纵激励"><span class="nav-text">操纵激励</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#社会工程中的操纵"><span class="nav-text">社会工程中的操纵</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#提高目标的暗示感受性"><span class="nav-text">提高目标的暗示感受性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制目标的环境"><span class="nav-text">控制目标的环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迫使目标重新评估"><span class="nav-text">迫使目标重新评估</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#让目标感到无能为力"><span class="nav-text">让目标感到无能为力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给予非肉体惩罚"><span class="nav-text">给予非肉体惩罚</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#威胁目标"><span class="nav-text">威胁目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用积极的操纵"><span class="nav-text">使用积极的操纵</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结-4"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第7章：社会工程工具"><span class="nav-text">第7章：社会工程工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#物理工具"><span class="nav-text">物理工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#开锁器"><span class="nav-text">开锁器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#摄像机和录音设备"><span class="nav-text">摄像机和录音设备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用GPS跟踪器（当然这一部分所列设备也可能会过时）"><span class="nav-text">使用GPS跟踪器（当然这一部分所列设备也可能会过时）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在线信息收集工具"><span class="nav-text">在线信息收集工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Maltego"><span class="nav-text">Maltego</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程人员工具包（可能也是过时的）"><span class="nav-text">社会工程人员工具包（可能也是过时的）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于电话的工具"><span class="nav-text">基于电话的工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#密码分析工具"><span class="nav-text">密码分析工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结-5"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第8章：案例研究：剖析社会工程人员"><span class="nav-text">第8章：案例研究：剖析社会工程人员</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#米特尼克案例1：攻击DMV"><span class="nav-text">米特尼克案例1：攻击DMV</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目标"><span class="nav-text">目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#故事"><span class="nav-text">故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程框架的运用"><span class="nav-text">社会工程框架的运用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#米特尼克案例2：攻击美国社会保障局"><span class="nav-text">米特尼克案例2：攻击美国社会保障局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目标-1"><span class="nav-text">目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#故事-1"><span class="nav-text">故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程框架的运用-1"><span class="nav-text">社会工程框架的运用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#海德纳吉案例1：自负的CEO"><span class="nav-text">海德纳吉案例1：自负的CEO</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目标-2"><span class="nav-text">目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#故事-2"><span class="nav-text">故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程框架的运用-2"><span class="nav-text">社会工程框架的运用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#海德纳吉案例2：主题乐园丑闻"><span class="nav-text">海德纳吉案例2：主题乐园丑闻</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目标-3"><span class="nav-text">目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#故事-3"><span class="nav-text">故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程框架的运用-3"><span class="nav-text">社会工程框架的运用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最高机密案例1：不可能的使命"><span class="nav-text">最高机密案例1：不可能的使命</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目标-4"><span class="nav-text">目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#故事-4"><span class="nav-text">故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程框架的运用-4"><span class="nav-text">社会工程框架的运用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最高机密案例2：对黑客的社会工程"><span class="nav-text">最高机密案例2：对黑客的社会工程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目标-5"><span class="nav-text">目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#故事-5"><span class="nav-text">故事</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程框架的运用-5"><span class="nav-text">社会工程框架的运用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#案例学习的重要性"><span class="nav-text">案例学习的重要性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结-6"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第9章：预防和补救"><span class="nav-text">第9章：预防和补救</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#学会识别社会工程攻击"><span class="nav-text">学会识别社会工程攻击</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建具有个人安全意识的文化"><span class="nav-text">创建具有个人安全意识的文化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#充分认识信息的价值"><span class="nav-text">充分认识信息的价值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#及时更新软件"><span class="nav-text">及时更新软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编制参考指南"><span class="nav-text">编制参考指南</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习社会工程审计案例"><span class="nav-text">学习社会工程审计案例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#理解什么是社会安全审计"><span class="nav-text">理解什么是社会安全审计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设立审计目标"><span class="nav-text">设立审计目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#审计中的可为与不可为"><span class="nav-text">审计中的可为与不可为</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#挑选最好的审计人员"><span class="nav-text">挑选最好的审计人员</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#社会工程并非总是消极的"><span class="nav-text">社会工程并非总是消极的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#收集与组织信息的重要性"><span class="nav-text">收集与组织信息的重要性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#谨慎用词"><span class="nav-text">谨慎用词</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#巧妙伪装"><span class="nav-text">巧妙伪装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#练习解读表情"><span class="nav-text">练习解读表情</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操纵与影响"><span class="nav-text">操纵与影响</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#警惕恶意策略"><span class="nav-text">警惕恶意策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用你的恐惧"><span class="nav-text">利用你的恐惧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结-7"><span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一些网站"><span class="nav-text">一些网站</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章"><span class="nav-text">第一章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章"><span class="nav-text">第二章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三章"><span class="nav-text">第三章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四章"><span class="nav-text">第四章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五章"><span class="nav-text">第五章</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">马昱堃</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">82.8k</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('-1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+
+</body>
+</html>
